@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<workspace>
+  <project>
+    <path>$WS_DIR$\pca10036\dual_bank_ble_s132\iar\dfu_dual_bank_ble_s132_pca10036.ewp</path>
+  </project>
+  <project>
+    <path>$WS_DIR$\pca10036\dual_bank_ble_s332\iar\dfu_dual_bank_ble_s332_pca10036.ewp</path>
+  </project>
+  <project>
+    <path>$WS_DIR$\pca10040\dual_bank_ble_s132\iar\dfu_dual_bank_ble_s132_pca10040.ewp</path>
+  </project>
+  <project>
+    <path>$WS_DIR$\pca10040\dual_bank_ble_s332\iar\dfu_dual_bank_ble_s332_pca10040.ewp</path>
+  </project>
+  <project>
+    <path>$WS_DIR$\pca10036\dual_bank_serial_s132\iar\dfu_dual_bank_serial_s132_pca10036.ewp</path>
+  </project>
+  <project>
+    <path>$WS_DIR$\pca10036\dual_bank_serial_s332\iar\dfu_dual_bank_serial_s332_pca10036.ewp</path>
+  </project>
+  <project>
+    <path>$WS_DIR$\pca10040\dual_bank_serial_s332\iar\dfu_dual_bank_serial_s332_pca10040.ewp</path>
+  </project>
+  <project>
+    <path>$WS_DIR$\pca10040\dual_bank_serial_s132\iar\dfu_dual_bank_serial_s132_pca10040.ewp</path>
+  </project>
+  <project>
+    <path>$WS_DIR$\pca10040\single_bank_serial_s332\iar\dfu_single_bank_serial_s332_pca10040.ewp</path>
+  </project>
+  <project>
+    <path>$WS_DIR$\pca10040\single_bank_serial_s132\iar\dfu_single_bank_serial_s132_pca10040.ewp</path>
+  </project>
+  <project>
+    <path>$WS_DIR$\pca10036\single_bank_serial_s132\iar\dfu_single_bank_serial_s132_pca10036.ewp</path>
+  </project>
+  <project>
+    <path>$WS_DIR$\pca10036\single_bank_serial_s332\iar\dfu_single_bank_serial_s332_pca10036.ewp</path>
+  </project>
+  <batchBuild/>
+</workspace>

@@ -1,0 +1,10 @@
+
+RBL_DAPLink.name=RBL_DAPLink
+RBL_DAPLink.name.communication=USB
+RBL_DAPLink.name.protocol=
+RBL_DAPLink.name.program.protocol=
+RBL_DAPLink.program.tool=openocd
+RBL_DAPLink.program.interface=cmsis-dap
+RBL_DAPLink.program.extra_params=
+
+

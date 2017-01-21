@@ -1,0 +1,147 @@
+#######################################
+# Syntax Coloring Map Servo
+#######################################
+
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+
+BLE	KEYWORD1
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+
+ble	KEYWORD2
+init	KEYWORD2
+hasInitialized	KEYWORD2
+shutdown	KEYWORD2
+getVersion	KEYWORD2
+
+gap	KEYWORD2
+gattServer	KEYWORD2
+gattClient	KEYWORD2
+securityManager	KEYWORD2
+
+waitForEvent	KEYWORD2
+
+####Gap####
+setAddress	KEYWORD2
+getAddress	KEYWORD2
+setAdvertisingType	KEYWORD2
+setAdvertisingInterval	KEYWORD2
+getMinAdvertisingInterval	KEYWORD2
+getMinNonConnectableAdvertisingInterval	KEYWORD2
+getMaxAdvertisingInterval	KEYWORD2
+setAdvertisingTimeout	KEYWORD2
+setAdvertisingParams	KEYWORD2
+getAdvertisingParams	KEYWORD2
+accumulateAdvertisingPayload	KEYWORD2
+accumulateAdvertisingPayloadTxPower	KEYWORD2
+setAdvertisingData	KEYWORD2
+getAdvertisingData	KEYWORD2
+clearAdvertisingPayload	KEYWORD2
+setAdvertisingPayload	KEYWORD2
+accumulateScanResponse	KEYWORD2
+clearScanResponse	KEYWORD2
+startAdvertising	KEYWORD2
+stopAdvertising	KEYWORD2
+
+setScanParams	KEYWORD2
+setScanInterval	KEYWORD2
+setScanWindow	KEYWORD2
+setScanTimeout	KEYWORD2
+setActiveScan	KEYWORD2
+startScan	KEYWORD2
+stopScan	KEYWORD2
+connect	KEYWORD2
+disconnect	KEYWORD2
+getGapState	KEYWORD2
+getPreferredConnectionParams	KEYWORD2
+setPreferredConnectionParams	KEYWORD2
+updateConnectionParams	KEYWORD2
+setDeviceName	KEYWORD2
+getDeviceName	KEYWORD2
+setAppearance	KEYWORD2
+getAppearance	KEYWORD2
+setTxPower	KEYWORD2
+getPermittedTxPowerValues	KEYWORD2
+
+onTimeout	KEYWORD2
+onConnection	KEYWORD2
+onDisconnection	KEYWORD2
+onRadioNotification	KEYWORD2
+
+####GattServer####
+addService	KEYWORD2
+readCharacteristicValue	KEYWORD2
+updateCharacteristicValue	KEYWORD2
+
+onDataSent	KEYWORD2
+onDataWritten	KEYWORD2
+onDataRead	KEYWORD2
+onUpdatesEnabled	KEYWORD2
+onUpdatesDisabled	KEYWORD2
+onConfirmationReceived	KEYWORD2
+
+####GattClient####
+launchServiceDiscovery	KEYWORD2
+discoverServices	KEYWORD2
+terminateServiceDiscovery	KEYWORD2
+onServiceDiscoveryTermination	KEYWORD2
+discoverCharacteristicDescriptors	KEYWORD2
+terminateCharacteristicDescriptorDiscovery	KEYWORD2
+onHVX	KEYWORD2
+onShutdown	KEYWORD2
+onDataRead	KEYWORD2
+onDataWritten	KEYWORD2
+onDataWrite	KEYWORD2
+
+####securityManager####
+reset	KEYWORD2
+initializeSecurity	KEYWORD2
+getLinkSecurity	KEYWORD2
+setLinkSecurity	KEYWORD2
+purgeAllBondingState	KEYWORD2
+getAddressesFromBondTable	KEYWORD2
+onSecuritySetupInitiated	KEYWORD2
+onSecuritySetupCompleted	KEYWORD2
+onLinkSecured	KEYWORD2
+onSecurityContextStored	KEYWORD2
+onPasskeyDisplay	KEYWORD2
+
+####GattService####
+GattService	KEYWORD2
+getUUID	KEYWORD2
+getHandle	KEYWORD2
+getCharacteristicCount	KEYWORD2
+setHandle	KEYWORD2
+getCharacteristic	KEYWORD2
+
+####GattCharacteristic####
+GattCharacteristic	KEYWORD2
+requireSecurity	KEYWORD2
+setWriteAuthorizationCallback	KEYWORD2
+setReadAuthorizationCallback	KEYWORD2
+authorizeWrite	KEYWORD2
+authorizeRead	KEYWORD2
+getValueAttribute	KEYWORD2
+getValueHandle	KEYWORD2
+getProperties	KEYWORD2
+getRequiredSecurity	KEYWORD2
+getDescriptorCount	KEYWORD2
+isReadAuthorizationEnabled	KEYWORD2
+isWriteAuthorizationEnabled	KEYWORD2
+getDescriptor	KEYWORD2
+
+####UUID####
+UUID	KEYWORD2
+setupLong	KEYWORD2
+shortOrLong	KEYWORD2
+getBaseUUID	KEYWORD2
+getShortUUID	KEYWORD2
+getLen	KEYWORD2
+
+#######################################
+# Constants (LITERAL1)
+#######################################
