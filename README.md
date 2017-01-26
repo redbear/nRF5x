@@ -62,9 +62,9 @@ Before starting to use the nRF52832 boards, you need to do some preparations.
 
 * [Out-of-Box Test](./docs/Getting_Started_Guide.md) will guide you to test the nRF52 board.
   
-* [Updating the DAPLink interface firmware](daplink) to the latest version, otherwise, you may have problem for drag-n-drop programming the nRF52 SoC.
+* [Updating the DAPLink interface firmware](./daplink) to the latest version, otherwise, you may have problem for drag-n-drop programming the nRF52 SoC.
 
-* [Installing nRF52832 board package](https://github.com/redbear/nRF52-Beta/blob/master/docs/Arduino_Board_Package_Installation_Guide.md) for using the Arduino IDE for development your projects.
+* [Installing nRF52832 board package](./docs/Arduino_Board_Package_Installation_Guide.md) for using the Arduino IDE for development your projects.
 
 ## Technical Support
 
