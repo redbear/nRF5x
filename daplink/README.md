@@ -1,4 +1,4 @@
-# nRF2-DAPLink
+# nRF52-DAPLink
 
 This is the interface firmware for the DAPLink USB interface. The DAPLink User Guide can be found here:
 
