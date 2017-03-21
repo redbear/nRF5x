@@ -2,7 +2,7 @@
 
 ## nRF51822
 
-###BLE Nano
+### BLE Nano
 
 ![image](./nRF51822/docs/images/ble_nano_pinout.png)
 
@@ -29,7 +29,7 @@ The interface board (MK20 or DAPLink) provides the functions for software develo
 To update the interface firmware, please refer to the [USB-IF](USB-IF) folder.
 
 ### Resources
-For Arduino, please refer to this repo.: [nRF51822-Arduino](https://github.com/RedBear/nRF5x/nRF51822/arduino/)
+For Arduino, please refer to this repo.: [nRF51822-Arduino](https://github.com/RedBear/nRF5x/tree/develop/nRF51822/arduino/)
 
 For more information, please visit:
 [http://redbearlab.com/blenano](http://redbearlab.com/blenano)
@@ -55,7 +55,7 @@ With your support, we have our module certified for CE, FCC and Bluetooth. If yo
 
 Bluetooth QDID: [91904](https://www.bluetooth.org/tpg/QLI_viewQDL.cfm?qid=33543)
 
-![image](./docs/images/MB-N2/MB-N2.jpg)
+![image](./nRF52832/docs/images/MB-N2/MB-N2.jpg)
 
 If you have some great project ideas, please refer to the [datasheet](./datasheet/MB-N2 Datasheet.pdf) of the module MB-N2 for details.
 
