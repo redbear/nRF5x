@@ -1,0 +1,74 @@
+;#<FEEDBACK># ARM Linker, 5050106: Last Updated: Sun Dec 04 17:03:03 2016
+;VERSION 0.2
+;FILE app_error.o
+__asm___11_app_error_c_94ae794d____REV16 <= USED 0
+__asm___11_app_error_c_94ae794d____REVSH <= USED 0
+;FILE app_scheduler.o
+__asm___15_app_scheduler_c_d997b682____REV16 <= USED 0
+__asm___15_app_scheduler_c_d997b682____REVSH <= USED 0
+;FILE app_timer.o
+__asm___11_app_timer_c_cd27f9c3____REV16 <= USED 0
+__asm___11_app_timer_c_cd27f9c3____REVSH <= USED 0
+app_timer_cnt_diff_compute <= USED 0
+app_timer_cnt_get <= USED 0
+app_timer_stop_all <= USED 0
+;FILE app_timer_appsh.o
+;FILE arm_startup_nrf51.o
+;FILE ble_advdata.o
+;FILE ble_conn_params.o
+ble_conn_params_change_conn_params <= USED 0
+;FILE ble_dfu.o
+;FILE ble_srv_common.o
+ble_srv_ascii_to_utf8 <= USED 0
+ble_srv_report_ref_encode <= USED 0
+characteristic_add <= USED 0
+descriptor_add <= USED 0
+;FILE bootloader.o
+__asm___12_bootloader_c_cc6fb980____REV16 <= USED 0
+__asm___12_bootloader_c_cc6fb980____REVSH <= USED 0
+__asm___12_bootloader_c_cc6fb980__nrf_delay_us <= USED 0
+;FILE bootloader_settings.o
+__asm___21_bootloader_settings_c_bdb7f6cd____REV16 <= USED 0
+__asm___21_bootloader_settings_c_bdb7f6cd____REVSH <= USED 0
+;FILE bootloader_util.o
+;FILE crc16.o
+;FILE dfu_ble_svc.o
+__asm___13_dfu_ble_svc_c_bed51e37____REV16 <= USED 0
+__asm___13_dfu_ble_svc_c_bed51e37____REVSH <= USED 0
+;FILE dfu_init_template.o
+__asm___19_dfu_init_template_c_596f785c____REV16 <= USED 0
+__asm___19_dfu_init_template_c_596f785c____REVSH <= USED 0
+;FILE dfu_single_bank.o
+__asm___17_dfu_single_bank_c_3a65ea97____REV16 <= USED 0
+__asm___17_dfu_single_bank_c_3a65ea97____REVSH <= USED 0
+offset_calculate <= USED 0
+;FILE dfu_transport_ble.o
+__asm___19_dfu_transport_ble_c_5a937f2e____REV16 <= USED 0
+__asm___19_dfu_transport_ble_c_5a937f2e____REVSH <= USED 0
+__asm___19_dfu_transport_ble_c_5a937f2e__nrf_delay_us <= USED 0
+;FILE hci_mem_pool.o
+hci_mem_pool_close <= USED 0
+hci_mem_pool_tx_alloc <= USED 0
+hci_mem_pool_tx_free <= USED 0
+;FILE main.o
+__asm___6_main_c_48b9ef9b____REV16 <= USED 0
+__asm___6_main_c_48b9ef9b____REVSH <= USED 0
+;FILE nrf_delay.o
+__asm___11_nrf_delay_c_532987f3____REV16 <= USED 0
+__asm___11_nrf_delay_c_532987f3____REVSH <= USED 0
+;FILE pstorage_raw.o
+__asm___14_pstorage_raw_c_1dab5049____REV16 <= USED 0
+__asm___14_pstorage_raw_c_1dab5049____REVSH <= USED 0
+pstorage_block_identifier_get <= USED 0
+;FILE softdevice_handler.o
+__asm___20_softdevice_handler_c_370b0038____REV16 <= USED 0
+__asm___20_softdevice_handler_c_370b0038____REVSH <= USED 0
+softdevice_handler_isEnabled <= USED 0
+softdevice_handler_sd_disable <= USED 0
+;FILE softdevice_handler_appsh.o
+__asm___26_softdevice_handler_appsh_c_48b0e533____REV16 <= USED 0
+__asm___26_softdevice_handler_appsh_c_48b0e533____REVSH <= USED 0
+;FILE system_nrf51.o
+SystemCoreClockUpdate <= USED 0
+__asm___14_system_nrf51_c_5d646a67____REV16 <= USED 0
+__asm___14_system_nrf51_c_5d646a67____REVSH <= USED 0

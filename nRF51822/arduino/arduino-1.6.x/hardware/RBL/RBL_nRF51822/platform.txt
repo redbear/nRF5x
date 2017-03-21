@@ -1,0 +1,128 @@
+
+# RBL_nRF51822 compile variables
+# -------------------------
+
+name=RedBearLab Boards
+
+# Compile tool path
+compiler.path={runtime.tools.arm-none-eabi-gcc-4.8.3-2014q1.path}/bin/
+#compiler.path={runtime.platform.path}/tools/gcc-arm-none-eabi-4.8.3-2014q1/bin/
+
+# Compile s files options
+compiler.S.cmd=arm-none-eabi-as
+compiler.S.flags=-mcpu=cortex-m0 -mthumb
+
+# Compile c files options
+compiler.c.cmd=arm-none-eabi-gcc
+compiler.c.flags=-c -g -Os -w -std=gnu99 -fno-common -fmessage-length=0 -Wall -fno-exceptions -ffunction-sections -fdata-sections -fomit-frame-pointer -nostdlib --param max-inline-insns-single=500 -DBLE_STACK_SUPPORT_REQD -DDEBUG_NRF_USER -DNRF51 -DNRF51_S130 -DTARGET_NRF51822 -DTARGET_M0 -DTARGET_CORTEX_M -DTARGET_NORDIC -DTARGET_NRF51822_MKIT -DTARGET_MCU_NRF51822 -DTOOLCHAIN_GCC_ARM -DTOOLCHAIN_GCC -D__CORTEX_M0 -DARM_MATH_CM0 -DMBED_BUILD_TIMESTAMP=1435023129.97 -D__MBED__=1
+
+# Compile cpp files options
+compiler.cpp.cmd=arm-none-eabi-g++
+compiler.cpp.flags=-c -g -Os -w -std=gnu++98 -fno-common -fmessage-length=0 -Wall -fno-exceptions -ffunction-sections -fdata-sections -fomit-frame-pointer -nostdlib --param max-inline-insns-single=500 -fno-rtti -DBLE_STACK_SUPPORT_REQD -DDEBUG_NRF_USER -DNRF51 -DNRF51_S130 -DTARGET_NRF51822 -DTARGET_M0 -DTARGET_CORTEX_M -DTARGET_NORDIC -DTARGET_NRF51822_MKIT -DTARGET_MCU_NRF51822 -DTOOLCHAIN_GCC_ARM -DTOOLCHAIN_GCC -D__CORTEX_M0 -DARM_MATH_CM0 -DMBED_BUILD_TIMESTAMP=1435023129.97 -D__MBED__=1
+
+# Create archives options
+compiler.ar.cmd=arm-none-eabi-ar
+compiler.ar.flags=rcs
+
+# Combine to create elf file options
+compiler.c.elf.cmd=arm-none-eabi-gcc
+compiler.c.elf.flags=-mcpu=cortex-m0 -mthumb
+compiler.ldflags=--specs=nano.specs
+
+# Create bin file options
+compiler.elf2bin.cmd=arm-none-eabi-objcopy
+compiler.elf2bin.flags=-O binary
+
+# Create hex file options
+compiler.elf2hex.cmd=arm-none-eabi-objcopy
+compiler.elf2hex.flags=-O ihex -I binary 
+compiler.elf2hex.flagx=-O ihex
+
+# Calculate hex size options
+compiler.size.cmd=arm-none-eabi-size
+
+# RBL_nRF51822 compile patterns
+# ------------------------
+
+
+## Compile S files
+recipe.S.o.pattern="{compiler.path}{compiler.S.cmd}" {compiler.S.flags} "{source_file}" -o "{object_file}"
+
+## Compile c files
+recipe.c.o.pattern="{compiler.path}{compiler.c.cmd}" {compiler.c.flags} -mcpu={build.mcu} -DF_CPU={build.f_cpu} -D{software}={runtime.ide.version} -DARDUINO_{build.board} -DARDUINO_ARCH_{build.arch} {build.extra_flags} {build.mbed_api_include} {build.nRF51822_api_include} {build.ble_api_include} {includes} "{source_file}" -o "{object_file}"
+
+## Compile c++ files
+recipe.cpp.o.pattern="{compiler.path}{compiler.cpp.cmd}" {compiler.cpp.flags} -mcpu={build.mcu} -DF_CPU={build.f_cpu} -D{software}={runtime.ide.version} -DARDUINO_{build.board} -DARDUINO_ARCH_{build.arch} {build.extra_flags} {build.mbed_api_include} {build.nRF51822_api_include} {build.ble_api_include} {includes} "{source_file}" -o "{object_file}"
+
+## Create archives
+recipe.ar.pattern="{compiler.path}{compiler.ar.cmd}" {compiler.ar.flags} "{archive_file_path}" "{object_file}"
+#recipe.ar.pattern="{compiler.path}{compiler.ar.cmd}" {compiler.ar.flags} "{build.path}/{archive_file}" "{object_file}"
+
+## Combine gc-sections, archives, and objects
+recipe.c.combine.pattern="{compiler.path}{compiler.c.elf.cmd}" -mcpu={build.mcu} -mthumb -Wl,--gc-sections --specs=nano.specs -Wl,--wrap,main -Wl,-Map={build.path}/{build.project_name}.map,--cref "-T{build.variant.path}/{build.ldscript}" -o "{build.path}/{build.project_name}.elf" -Wl,--start-group {object_files} "{archive_file_path}" -Wl,--end-group -lstdc++ -lsupc++ -lm -lc -lgcc -lnosys
+
+## Create bin
+recipe.objcopy.eep.pattern="{compiler.path}{compiler.elf2bin.cmd}" {compiler.elf2bin.flags} "{build.path}/{build.project_name}.elf" "{build.path}/{build.project_name}.bin"
+
+## Create hex
+recipe.objcopy.hex1.pattern="{compiler.path}{compiler.elf2hex.cmd}" {compiler.elf2hex.flagx} "{build.path}/{build.project_name}.elf" "{build.path}/{build.project_name}_OTA.hex"
+recipe.objcopy.hex2.pattern="{compiler.path}{compiler.elf2hex.cmd}" {compiler.elf2hex.flags} "{build.path}/{build.project_name}.bin" "{build.path}/{build.project_name}.hex"
+
+## Save hex
+recipe.output.tmp_file={build.project_name}_OTA.hex
+recipe.output.save_file={build.project_name}_OTA.{build.variant}.hex
+
+## Compute size
+recipe.size.pattern="{compiler.path}{compiler.size.cmd}" -A "{build.path}/{build.project_name}.elf"
+recipe.size.regex=\.text\s+([0-9]+).*
+
+## Preprocessor
+#preproc.includes.flags=-w -x c++ -M -MG -MP
+#recipe.preproc.includes="{compiler.path}{compiler.cpp.cmd}" {compiler.cpp.flags} {preproc.includes.flags} -mcpu={build.mcu} -DF_CPU={build.f_cpu} -DARDUINO={runtime.ide.version} -DARDUINO_{build.board} {build.extra_flags} {build.mbed_api_include} {build.nRF51822_api_include} {build.ble_api_include} {includes} "{source_file}"
+
+#preproc.macros.flags=-w -x c++ -E -CC
+#recipe.preproc.macros="{compiler.path}{compiler.cpp.cmd}" {compiler.cpp.flags} {preproc.macros.flags} -mcpu={build.mcu} -DF_CPU={build.f_cpu} -DARDUINO={runtime.ide.version} -DARDUINO_{build.board} {build.extra_flags} {build.mbed_api_include} {build.nRF51822_api_include} {build.ble_api_include} {includes} "{source_file}"
+
+
+# RBL_nRF51822 Uploader tools
+# ----------------------
+
+## avrdude tool
+
+tools.avrdude.path={runtime.tools.avrdude.path}
+
+tools.avrdude.cmd.path={runtime.tools.avrdude.path}/bin/avrdude
+tools.avrdude.config.path={runtime.platform.path}/avrdude_conf/avrdude.conf
+tools.avrdude.cmd.path.linux={runtime.tools.avrdude.path}/bin/avrdude
+tools.avrdude.config.path.linux={runtime.platform.path}/avrdude_conf/avrdude.conf
+
+tools.avrdude.upload.params.verbose=-v -V
+tools.avrdude.upload.params.quiet=-q -q
+tools.avrdude.upload.pattern="{cmd.path}" "-C{config.path}" {upload.verbose} -p{build.mcu} -c{upload.protocol} -P{serial.port} -b{upload.speed} -D "-Uflash:w:{build.path}/{build.project_name}.hex:i"
+
+
+## OpenOCD tool
+
+#tools.openocd.path={runtime.tools.openocd.path}
+#tools.openocd.path={runtime.platform.path}/tools/OpenOCD-0.9.0-dev-arduino
+tools.openocd.path={runtime.tools.openocd-0.10.0-dev-nrf5.path}
+#tools.openocd.path={runtime.platform.path}/tools/openocd
+tools.openocd.cmd.macosx=bin/openocd
+tools.openocd.cmd.linux=bin/openocd
+tools.openocd.cmd.windows=bin/openocd.exe
+
+tools.openocd.upload.params.verbose=-d2
+tools.openocd.upload.params.quiet=-d0
+tools.openocd.upload.pattern="{path}/{cmd}" {upload.params.verbose} -s "{path}/scripts/" -f "{path}/scripts/interface/cmsis-dap.cfg" -f "{path}/scripts/target/nrf51.cfg" -c "init;reset halt;flash erase_address 0x3FC00 0x400;flash fillw 0x3FC00 0x00000001 1;flash fillw 0x3FC04 0x000000FF 1;flash fillw 0x3FC08 0x00000000 1;program {{{build.path}/{build.project_name}.bin}} verify reset exit 0x1C000"
+
+tools.openocd.program.params.verbose=-d2
+tools.openocd.program.params.quiet=-d0
+tools.openocd.program.pattern=
+
+tools.openocd.erase.params.verbose=-d3
+tools.openocd.erase.params.quiet=-d0
+tools.openocd.erase.pattern=
+
+tools.openocd.bootloader.params.verbose=-d2
+tools.openocd.bootloader.params.quiet=-d0
+tools.openocd.bootloader.pattern="{path}/{cmd}" {bootloader.verbose} -s "{path}/scripts/" -f "{path}/scripts/interface/cmsis-dap.cfg" -f "{path}/scripts/target/nrf51.cfg" -c "init; reset halt; nrf51 mass_erase; program {{{runtime.platform.path}/bootloaders/{bootloader.bootloader_file}}} verify reset exit"

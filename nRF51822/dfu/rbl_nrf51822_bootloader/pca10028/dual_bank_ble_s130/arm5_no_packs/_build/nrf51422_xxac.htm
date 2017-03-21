@@ -1,0 +1,1614 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html><head>
+<title>Static Call Graph - [.\_build\nrf51422_xxac.axf]</title></head>
+<body><HR>
+<H1>Static Call Graph for image .\_build\nrf51422_xxac.axf</H1><HR>
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5050106: Last Updated: Sun Dec 04 17:03:20 2016
+<BR><P>
+<H3>Maximum Stack Usage =        560 bytes + Unknown(Cycles, Untraceable Function Pointers)</H3><H3>
+Call chain for Maximum Stack Depth:</H3>
+ble_evt_dispatch &rArr; on_ble_evt &rArr; advertising_start &rArr; advertising_init &rArr; ble_advdata_set &rArr; adv_data_encode &rArr; uuid_list_encode &rArr; uuid_list_sized_encode
+<P>
+<H3>
+Mutually Recursive functions
+</H3> <LI><a href="#[a4]">dfu_sd_img_block_swap</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[a4]">dfu_sd_img_block_swap</a><BR>
+ <LI><a href="#[3a]">__asm___11_nrf_delay_c_532987f3__nrf_delay_us</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[3a]">__asm___11_nrf_delay_c_532987f3__nrf_delay_us</a><BR>
+ <LI><a href="#[3b]">__asm___11_app_timer_c_cd27f9c3__nrf_delay_us</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[3b]">__asm___11_app_timer_c_cd27f9c3__nrf_delay_us</a><BR>
+ <LI><a href="#[1]">NMI_Handler</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[1]">NMI_Handler</a><BR>
+ <LI><a href="#[2]">HardFault_Handler</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[2]">HardFault_Handler</a><BR>
+ <LI><a href="#[4]">PendSV_Handler</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[4]">PendSV_Handler</a><BR>
+ <LI><a href="#[5]">SysTick_Handler</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[5]">SysTick_Handler</a><BR>
+ <LI><a href="#[c]">ADC_IRQHandler</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[c]">ADC_IRQHandler</a><BR>
+</UL>
+<P>
+<H3>
+Function Pointers
+</H3><UL>
+ <LI><a href="#[c]">ADC_IRQHandler</a> from arm_startup_nrf51.o(.text) referenced from arm_startup_nrf51.o(RESET)
+ <LI><a href="#[14]">CCM_AAR_IRQHandler</a> from arm_startup_nrf51.o(.text) referenced from arm_startup_nrf51.o(RESET)
+ <LI><a href="#[20]">C_SVC_Handler</a> from dfu_ble_svc.o(.text) referenced from dfu_ble_svc.o(.emb_text)
+ <LI><a href="#[13]">ECB_IRQHandler</a> from arm_startup_nrf51.o(.text) referenced from arm_startup_nrf51.o(RESET)
+ <LI><a href="#[b]">GPIOTE_IRQHandler</a> from arm_startup_nrf51.o(.text) referenced from arm_startup_nrf51.o(RESET)
+ <LI><a href="#[2]">HardFault_Handler</a> from arm_startup_nrf51.o(.text) referenced from arm_startup_nrf51.o(RESET)
+ <LI><a href="#[18]">LPCOMP_IRQHandler</a> from arm_startup_nrf51.o(.text) referenced from arm_startup_nrf51.o(RESET)
+ <LI><a href="#[1]">NMI_Handler</a> from arm_startup_nrf51.o(.text) referenced from arm_startup_nrf51.o(RESET)
+ <LI><a href="#[6]">POWER_CLOCK_IRQHandler</a> from arm_startup_nrf51.o(.text) referenced from arm_startup_nrf51.o(RESET)
+ <LI><a href="#[4]">PendSV_Handler</a> from arm_startup_nrf51.o(.text) referenced from arm_startup_nrf51.o(RESET)
+ <LI><a href="#[17]">QDEC_IRQHandler</a> from arm_startup_nrf51.o(.text) referenced from arm_startup_nrf51.o(RESET)
+ <LI><a href="#[7]">RADIO_IRQHandler</a> from arm_startup_nrf51.o(.text) referenced from arm_startup_nrf51.o(RESET)
+ <LI><a href="#[12]">RNG_IRQHandler</a> from arm_startup_nrf51.o(.text) referenced from arm_startup_nrf51.o(RESET)
+ <LI><a href="#[10]">RTC0_IRQHandler</a> from arm_startup_nrf51.o(.text) referenced from arm_startup_nrf51.o(RESET)
+ <LI><a href="#[16]">RTC1_IRQHandler</a> from app_timer.o(.text) referenced from arm_startup_nrf51.o(RESET)
+ <LI><a href="#[0]">Reset_Handler</a> from arm_startup_nrf51.o(.text) referenced from arm_startup_nrf51.o(RESET)
+ <LI><a href="#[9]">SPI0_TWI0_IRQHandler</a> from arm_startup_nrf51.o(.text) referenced from arm_startup_nrf51.o(RESET)
+ <LI><a href="#[a]">SPI1_TWI1_IRQHandler</a> from arm_startup_nrf51.o(.text) referenced from arm_startup_nrf51.o(RESET)
+ <LI><a href="#[3]">SVC_Handler</a> from dfu_ble_svc.o(.emb_text) referenced from arm_startup_nrf51.o(RESET)
+ <LI><a href="#[19]">SWI0_IRQHandler</a> from app_timer.o(.text) referenced from arm_startup_nrf51.o(RESET)
+ <LI><a href="#[1a]">SWI1_IRQHandler</a> from arm_startup_nrf51.o(.text) referenced from arm_startup_nrf51.o(RESET)
+ <LI><a href="#[1b]">SWI2_IRQHandler</a> from softdevice_handler.o(.text) referenced from arm_startup_nrf51.o(RESET)
+ <LI><a href="#[1c]">SWI3_IRQHandler</a> from arm_startup_nrf51.o(.text) referenced from arm_startup_nrf51.o(RESET)
+ <LI><a href="#[1d]">SWI4_IRQHandler</a> from arm_startup_nrf51.o(.text) referenced from arm_startup_nrf51.o(RESET)
+ <LI><a href="#[1e]">SWI5_IRQHandler</a> from arm_startup_nrf51.o(.text) referenced from arm_startup_nrf51.o(RESET)
+ <LI><a href="#[5]">SysTick_Handler</a> from arm_startup_nrf51.o(.text) referenced from arm_startup_nrf51.o(RESET)
+ <LI><a href="#[34]">SystemInit</a> from system_nrf51.o(.text) referenced from arm_startup_nrf51.o(.text)
+ <LI><a href="#[11]">TEMP_IRQHandler</a> from arm_startup_nrf51.o(.text) referenced from arm_startup_nrf51.o(RESET)
+ <LI><a href="#[d]">TIMER0_IRQHandler</a> from arm_startup_nrf51.o(.text) referenced from arm_startup_nrf51.o(RESET)
+ <LI><a href="#[e]">TIMER1_IRQHandler</a> from arm_startup_nrf51.o(.text) referenced from arm_startup_nrf51.o(RESET)
+ <LI><a href="#[f]">TIMER2_IRQHandler</a> from arm_startup_nrf51.o(.text) referenced from arm_startup_nrf51.o(RESET)
+ <LI><a href="#[8]">UART0_IRQHandler</a> from arm_startup_nrf51.o(.text) referenced from arm_startup_nrf51.o(RESET)
+ <LI><a href="#[15]">WDT_IRQHandler</a> from arm_startup_nrf51.o(.text) referenced from arm_startup_nrf51.o(RESET)
+ <LI><a href="#[35]">__main</a> from entry.o(.ARM.Collect$$$$00000000) referenced from arm_startup_nrf51.o(.text)
+ <LI><a href="#[26]">app_timer_evt_get</a> from app_timer_appsh.o(.text) referenced from app_timer_appsh.o(.text)
+ <LI><a href="#[23]">app_timer_evt_schedule</a> from app_timer_appsh.o(.text) referenced from main.o(.text)
+ <LI><a href="#[2d]">ble_evt_dispatch</a> from dfu_transport_ble.o(.text) referenced from dfu_transport_ble.o(.text)
+ <LI><a href="#[31]">conn_params_error_handler</a> from dfu_transport_ble.o(.text) referenced from dfu_transport_ble.o(.text)
+ <LI><a href="#[24]">dfu_100ms_timer_handler</a> from main.o(.text) referenced from main.o(.text)
+ <LI><a href="#[2c]">dfu_activate_app</a> from dfu_single_bank.o(.text) referenced from dfu_single_bank.o(.text)
+ <LI><a href="#[2b]">dfu_activate_bl</a> from dfu_single_bank.o(.text) referenced from dfu_single_bank.o(.text)
+ <LI><a href="#[2a]">dfu_activate_sd</a> from dfu_single_bank.o(.text) referenced from dfu_single_bank.o(.text)
+ <LI><a href="#[2e]">dfu_cb_handler</a> from dfu_transport_ble.o(.text) referenced from dfu_transport_ble.o(.text)
+ <LI><a href="#[29]">dfu_cleared_func_app</a> from dfu_single_bank.o(.text) referenced from dfu_single_bank.o(.text)
+ <LI><a href="#[28]">dfu_prepare_func_app_erase</a> from dfu_single_bank.o(.text) referenced from dfu_single_bank.o(.text)
+ <LI><a href="#[27]">dfu_timeout_handler</a> from dfu_single_bank.o(.text) referenced from dfu_single_bank.o(.text)
+ <LI><a href="#[1f]">main</a> from main.o(.text) referenced from entry9a.o(.ARM.Collect$$$$0000000B)
+ <LI><a href="#[2f]">on_dfu_evt</a> from dfu_transport_ble.o(.text) referenced from dfu_transport_ble.o(.text)
+ <LI><a href="#[36]">pstorage_callback_handler</a> from bootloader.o(.text) referenced 2 times from bootloader.o(.constdata)
+ <LI><a href="#[30]">service_error_handler</a> from dfu_transport_ble.o(.text) referenced from dfu_transport_ble.o(.text)
+ <LI><a href="#[32]">softdevice_assertion_handler</a> from softdevice_handler.o(.text) referenced from softdevice_handler.o(.text)
+ <LI><a href="#[33]">softdevice_evt_get</a> from softdevice_handler_appsh.o(.text) referenced from softdevice_handler_appsh.o(.text)
+ <LI><a href="#[21]">softdevice_evt_schedule</a> from softdevice_handler_appsh.o(.text) referenced from main.o(.text)
+ <LI><a href="#[22]">sys_evt_dispatch</a> from main.o(.text) referenced from main.o(.text)
+ <LI><a href="#[25]">update_timeout_handler</a> from ble_conn_params.o(.text) referenced from ble_conn_params.o(.text)
+</UL>
+<P>
+<H3>
+Global Symbols
+</H3>
+<P><STRONG><a name="[35]"></a>__main</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry.o(.ARM.Collect$$$$00000000))
+<BR>[Address Reference Count : 1]<UL><LI> arm_startup_nrf51.o(.text)
+</UL>
+<P><STRONG><a name="[c2]"></a>_main_stk</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry2.o(.ARM.Collect$$$$00000001))
+
+<P><STRONG><a name="[38]"></a>_main_scatterload</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry5.o(.ARM.Collect$$$$00000004))
+<BR><BR>[Calls]<UL><LI><a href="#[39]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__scatterload
+</UL>
+
+<P><STRONG><a name="[c1]"></a>__main_after_scatterload</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry5.o(.ARM.Collect$$$$00000004))
+<BR><BR>[Called By]<UL><LI><a href="#[39]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__scatterload
+</UL>
+
+<P><STRONG><a name="[c3]"></a>_main_clock</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry7b.o(.ARM.Collect$$$$00000008))
+
+<P><STRONG><a name="[c4]"></a>_main_cpp_init</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry8b.o(.ARM.Collect$$$$0000000A))
+
+<P><STRONG><a name="[c5]"></a>_main_init</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry9a.o(.ARM.Collect$$$$0000000B))
+
+<P><STRONG><a name="[c6]"></a>__rt_final_cpp</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry10a.o(.ARM.Collect$$$$0000000D))
+
+<P><STRONG><a name="[c7]"></a>__rt_final_exit</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry11a.o(.ARM.Collect$$$$0000000F))
+
+<P><STRONG><a name="[3]"></a>SVC_Handler</STRONG> (Thumb, 28 bytes, Stack size 0 bytes, dfu_ble_svc.o(.emb_text))
+<BR>[Address Reference Count : 1]<UL><LI> arm_startup_nrf51.o(RESET)
+</UL>
+<P><STRONG><a name="[3a]"></a>__asm___11_nrf_delay_c_532987f3__nrf_delay_us</STRONG> (Thumb, 30 bytes, Stack size 0 bytes, nrf_delay.o(.emb_text))
+<BR><BR>[Calls]<UL><LI><a href="#[3a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__asm___11_nrf_delay_c_532987f3__nrf_delay_us
+</UL>
+<BR>[Called By]<UL><LI><a href="#[72]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nrf_delay_ms
+<LI><a href="#[3a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__asm___11_nrf_delay_c_532987f3__nrf_delay_us
+</UL>
+
+<P><STRONG><a name="[3b]"></a>__asm___11_app_timer_c_cd27f9c3__nrf_delay_us</STRONG> (Thumb, 30 bytes, Stack size 0 bytes, app_timer.o(.emb_text))
+<BR><BR>[Calls]<UL><LI><a href="#[3b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__asm___11_app_timer_c_cd27f9c3__nrf_delay_us
+</UL>
+<BR>[Called By]<UL><LI><a href="#[3b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__asm___11_app_timer_c_cd27f9c3__nrf_delay_us
+<LI><a href="#[8a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;compare_reg_update
+<LI><a href="#[7f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rtc1_stop
+</UL>
+
+<P><STRONG><a name="[99]"></a>__asm___17_bootloader_util_c_c13d365c__bootloader_util_reset</STRONG> (Thumb, 52 bytes, Stack size 0 bytes, bootloader_util.o(.emb_text))
+<BR><BR>[Called By]<UL><LI><a href="#[93]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bootloader_util_app_start
+</UL>
+
+<P><STRONG><a name="[20]"></a>C_SVC_Handler</STRONG> (Thumb, 88 bytes, Stack size 8 bytes, dfu_ble_svc.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = C_SVC_Handler &rArr; crc16_compute
+</UL>
+<BR>[Calls]<UL><LI><a href="#[3d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;crc16_compute
+<LI><a href="#[3c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> dfu_ble_svc.o(.emb_text)
+</UL>
+<P><STRONG><a name="[3e]"></a>dfu_ble_peer_data_get</STRONG> (Thumb, 54 bytes, Stack size 16 bytes, dfu_ble_svc.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = dfu_ble_peer_data_get &rArr; crc16_compute
+</UL>
+<BR>[Calls]<UL><LI><a href="#[3d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;crc16_compute
+<LI><a href="#[3c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy
+</UL>
+<BR>[Called By]<UL><LI><a href="#[92]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dfu_transport_update_start
+</UL>
+
+<P><STRONG><a name="[3f]"></a>assert_nrf_callback</STRONG> (Thumb, 14 bytes, Stack size 8 bytes, main.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = assert_nrf_callback
+</UL>
+<BR>[Calls]<UL><LI><a href="#[40]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_error_handler
+</UL>
+<BR>[Called By]<UL><LI><a href="#[32]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;softdevice_assertion_handler
+</UL>
+
+<P><STRONG><a name="[1f]"></a>main</STRONG> (Thumb, 388 bytes, Stack size 16 bytes, main.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 440<LI>Call Chain = main &rArr; bootloader_dfu_start &rArr; dfu_transport_update_start &rArr; advertising_start &rArr; advertising_init &rArr; ble_advdata_set &rArr; adv_data_encode &rArr; uuid_list_encode &rArr; uuid_list_sized_encode
+</UL>
+<BR>[Calls]<UL><LI><a href="#[49]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bootloader_init
+<LI><a href="#[51]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bootloader_dfu_start
+<LI><a href="#[4d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bootloader_dfu_sd_update_finalize
+<LI><a href="#[4b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bootloader_dfu_sd_update_continue
+<LI><a href="#[4a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bootloader_dfu_sd_in_progress
+<LI><a href="#[53]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bootloader_app_start
+<LI><a href="#[4e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bootloader_app_is_valid
+<LI><a href="#[52]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_timer_stop
+<LI><a href="#[50]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_timer_start
+<LI><a href="#[47]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_timer_init
+<LI><a href="#[4f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_timer_create
+<LI><a href="#[40]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_error_handler
+<LI><a href="#[4c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;scheduler_init
+<LI><a href="#[46]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nrf_gpio_cfg_output
+<LI><a href="#[48]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nrf_gpio_cfg
+<LI><a href="#[43]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ble_stack_init
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> entry9a.o(.ARM.Collect$$$$0000000B)
+</UL>
+<P><STRONG><a name="[57]"></a>adv_data_encode</STRONG> (Thumb, 532 bytes, Stack size 48 bytes, ble_advdata.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 144<LI>Call Chain = adv_data_encode &rArr; uuid_list_encode &rArr; uuid_list_sized_encode
+</UL>
+<BR>[Calls]<UL><LI><a href="#[5d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;service_data_encode
+<LI><a href="#[5c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;manuf_specific_data_encode
+<LI><a href="#[5b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;conn_int_encode
+<LI><a href="#[5e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;name_encode
+<LI><a href="#[59]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ble_device_addr_encode
+<LI><a href="#[58]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;le_role_encode
+<LI><a href="#[5a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uint16_encode
+<LI><a href="#[55]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uuid_list_encode
+</UL>
+<BR>[Called By]<UL><LI><a href="#[5f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ble_advdata_set
+</UL>
+
+<P><STRONG><a name="[5f]"></a>ble_advdata_set</STRONG> (Thumb, 104 bytes, Stack size 96 bytes, ble_advdata.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 240<LI>Call Chain = ble_advdata_set &rArr; adv_data_encode &rArr; uuid_list_encode &rArr; uuid_list_sized_encode
+</UL>
+<BR>[Calls]<UL><LI><a href="#[57]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;adv_data_encode
+</UL>
+<BR>[Called By]<UL><LI><a href="#[b1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;advertising_init
+</UL>
+
+<P><STRONG><a name="[60]"></a>ble_conn_params_init</STRONG> (Thumb, 68 bytes, Stack size 16 bytes, ble_conn_params.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = ble_conn_params_init
+</UL>
+<BR>[Calls]<UL><LI><a href="#[4f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_timer_create
+<LI><a href="#[61]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy4
+<LI><a href="#[3c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy
+</UL>
+<BR>[Called By]<UL><LI><a href="#[92]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dfu_transport_update_start
+</UL>
+
+<P><STRONG><a name="[62]"></a>ble_conn_params_stop</STRONG> (Thumb, 12 bytes, Stack size 8 bytes, ble_conn_params.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = ble_conn_params_stop &rArr; app_timer_stop
+</UL>
+<BR>[Calls]<UL><LI><a href="#[52]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_timer_stop
+</UL>
+<BR>[Called By]<UL><LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dfu_transport_close
+</UL>
+
+<P><STRONG><a name="[65]"></a>ble_conn_params_on_ble_evt</STRONG> (Thumb, 132 bytes, Stack size 24 bytes, ble_conn_params.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 80<LI>Call Chain = ble_conn_params_on_ble_evt &rArr; conn_params_negotiation &rArr; app_timer_start
+</UL>
+<BR>[Calls]<UL><LI><a href="#[63]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;conn_params_negotiation
+<LI><a href="#[52]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_timer_stop
+<LI><a href="#[3c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy
+</UL>
+<BR>[Called By]<UL><LI><a href="#[2d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ble_evt_dispatch
+</UL>
+
+<P><STRONG><a name="[68]"></a>ble_dfu_response_send</STRONG> (Thumb, 86 bytes, Stack size 32 bytes, ble_dfu.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = ble_dfu_response_send
+</UL>
+<BR>[Called By]<UL><LI><a href="#[66]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;on_ctrl_pt_write
+<LI><a href="#[b0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;init_data_process
+<LI><a href="#[af]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;start_data_process
+<LI><a href="#[ad]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dfu_error_notify
+<LI><a href="#[2f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;on_dfu_evt
+<LI><a href="#[a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_data_process
+<LI><a href="#[2e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dfu_cb_handler
+</UL>
+
+<P><STRONG><a name="[69]"></a>ble_dfu_init</STRONG> (Thumb, 128 bytes, Stack size 32 bytes, ble_dfu.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 112<LI>Call Chain = ble_dfu_init &rArr; dfu_rev_char_add
+</UL>
+<BR>[Calls]<UL><LI><a href="#[6b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dfu_ctrl_pt_add
+<LI><a href="#[6c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dfu_rev_char_add
+<LI><a href="#[6a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dfu_pkt_char_add
+</UL>
+<BR>[Called By]<UL><LI><a href="#[92]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dfu_transport_update_start
+</UL>
+
+<P><STRONG><a name="[6d]"></a>ble_dfu_on_ble_evt</STRONG> (Thumb, 132 bytes, Stack size 24 bytes, ble_dfu.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 120<LI>Call Chain = ble_dfu_on_ble_evt &rArr; on_ctrl_pt_write &rArr; ble_dfu_response_send
+</UL>
+<BR>[Calls]<UL><LI><a href="#[66]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;on_ctrl_pt_write
+</UL>
+<BR>[Called By]<UL><LI><a href="#[2d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ble_evt_dispatch
+</UL>
+
+<P><STRONG><a name="[6e]"></a>ble_dfu_bytes_rcvd_report</STRONG> (Thumb, 110 bytes, Stack size 40 bytes, ble_dfu.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = ble_dfu_bytes_rcvd_report
+</UL>
+<BR>[Calls]<UL><LI><a href="#[6f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uint32_encode
+</UL>
+<BR>[Called By]<UL><LI><a href="#[2f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;on_dfu_evt
+</UL>
+
+<P><STRONG><a name="[70]"></a>ble_dfu_pkts_rcpt_notify</STRONG> (Thumb, 100 bytes, Stack size 40 bytes, ble_dfu.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = ble_dfu_pkts_rcpt_notify
+</UL>
+<BR>[Calls]<UL><LI><a href="#[6f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uint32_encode
+</UL>
+<BR>[Called By]<UL><LI><a href="#[a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_data_process
+</UL>
+
+<P><STRONG><a name="[72]"></a>nrf_delay_ms</STRONG> (Thumb, 24 bytes, Stack size 16 bytes, nrf_delay.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = nrf_delay_ms
+</UL>
+<BR>[Calls]<UL><LI><a href="#[3a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__asm___11_nrf_delay_c_532987f3__nrf_delay_us
+</UL>
+<BR>[Called By]<UL><LI><a href="#[4b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bootloader_dfu_sd_update_continue
+</UL>
+
+<P><STRONG><a name="[42]"></a>pstorage_sys_event_handler</STRONG> (Thumb, 140 bytes, Stack size 24 bytes, pstorage_raw.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 52<LI>Call Chain = pstorage_sys_event_handler &rArr; cmd_process &rArr; __aeabi_uidivmod
+</UL>
+<BR>[Calls]<UL><LI><a href="#[76]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_notify
+<LI><a href="#[73]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;cmd_process
+<LI><a href="#[77]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;cmd_queue_element_init
+</UL>
+<BR>[Called By]<UL><LI><a href="#[22]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sys_evt_dispatch
+</UL>
+
+<P><STRONG><a name="[78]"></a>pstorage_init</STRONG> (Thumb, 54 bytes, Stack size 16 bytes, pstorage_raw.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = pstorage_init
+</UL>
+<BR>[Calls]<UL><LI><a href="#[77]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;cmd_queue_element_init
+</UL>
+<BR>[Called By]<UL><LI><a href="#[49]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bootloader_init
+</UL>
+
+<P><STRONG><a name="[90]"></a>pstorage_register</STRONG> (Thumb, 34 bytes, Stack size 8 bytes, pstorage_raw.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = pstorage_register
+</UL>
+<BR>[Called By]<UL><LI><a href="#[91]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dfu_init
+<LI><a href="#[49]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bootloader_init
+</UL>
+
+<P><STRONG><a name="[79]"></a>pstorage_store</STRONG> (Thumb, 50 bytes, Stack size 24 bytes, pstorage_raw.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 76<LI>Call Chain = pstorage_store &rArr; cmd_queue_enqueue &rArr; cmd_process &rArr; __aeabi_uidivmod
+</UL>
+<BR>[Calls]<UL><LI><a href="#[7a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;is_word_aligned
+<LI><a href="#[75]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;cmd_queue_enqueue
+</UL>
+<BR>[Called By]<UL><LI><a href="#[8d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bootloader_settings_save
+<LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dfu_data_pkt_handle
+</UL>
+
+<P><STRONG><a name="[7b]"></a>pstorage_clear</STRONG> (Thumb, 18 bytes, Stack size 8 bytes, pstorage_raw.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 60<LI>Call Chain = pstorage_clear &rArr; cmd_queue_enqueue &rArr; cmd_process &rArr; __aeabi_uidivmod
+</UL>
+<BR>[Calls]<UL><LI><a href="#[75]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;cmd_queue_enqueue
+</UL>
+<BR>[Called By]<UL><LI><a href="#[28]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dfu_prepare_func_app_erase
+<LI><a href="#[8d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bootloader_settings_save
+</UL>
+
+<P><STRONG><a name="[40]"></a>app_error_handler</STRONG> (Thumb, 18 bytes, Stack size 0 bytes, app_error.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[28]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dfu_prepare_func_app_erase
+<LI><a href="#[9a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dfu_timer_restart
+<LI><a href="#[37]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pstorage_callback_handler
+<LI><a href="#[92]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dfu_transport_update_start
+<LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dfu_transport_close
+<LI><a href="#[91]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dfu_init
+<LI><a href="#[8e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bootloader_dfu_update_process
+<LI><a href="#[8d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bootloader_settings_save
+<LI><a href="#[8b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;wait_for_events
+<LI><a href="#[36]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pstorage_callback_handler
+<LI><a href="#[26]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_timer_evt_get
+<LI><a href="#[82]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;timer_timeouts_check
+<LI><a href="#[7c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_sched_event_put
+<LI><a href="#[4b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bootloader_dfu_sd_update_continue
+<LI><a href="#[53]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bootloader_app_start
+<LI><a href="#[1f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+<LI><a href="#[3f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;assert_nrf_callback
+<LI><a href="#[4c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;scheduler_init
+<LI><a href="#[43]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ble_stack_init
+<LI><a href="#[33]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;softdevice_evt_get
+<LI><a href="#[1b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SWI2_IRQHandler
+<LI><a href="#[bc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;intern_softdevice_events_execute
+<LI><a href="#[b0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;init_data_process
+<LI><a href="#[af]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;start_data_process
+<LI><a href="#[ad]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dfu_error_notify
+<LI><a href="#[30]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;service_error_handler
+<LI><a href="#[b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;on_ble_evt
+<LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;advertising_start
+<LI><a href="#[b1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;advertising_init
+<LI><a href="#[2f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;on_dfu_evt
+<LI><a href="#[31]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;conn_params_error_handler
+<LI><a href="#[a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_data_process
+<LI><a href="#[2e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dfu_cb_handler
+<LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dfu_image_activate
+</UL>
+
+<P><STRONG><a name="[54]"></a>app_sched_init</STRONG> (Thumb, 40 bytes, Stack size 12 bytes, app_scheduler.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 12<LI>Call Chain = app_sched_init
+</UL>
+<BR>[Called By]<UL><LI><a href="#[4c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;scheduler_init
+</UL>
+
+<P><STRONG><a name="[7c]"></a>app_sched_event_put</STRONG> (Thumb, 240 bytes, Stack size 40 bytes, app_scheduler.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = app_sched_event_put
+</UL>
+<BR>[Calls]<UL><LI><a href="#[40]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_error_handler
+<LI><a href="#[3c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy
+</UL>
+<BR>[Called By]<UL><LI><a href="#[21]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;softdevice_evt_schedule
+<LI><a href="#[23]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_timer_evt_schedule
+</UL>
+
+<P><STRONG><a name="[7d]"></a>app_sched_execute</STRONG> (Thumb, 30 bytes, Stack size 16 bytes, app_scheduler.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = app_sched_execute &rArr; app_sched_event_get
+</UL>
+<BR>[Calls]<UL><LI><a href="#[7e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_sched_event_get
+</UL>
+<BR>[Called By]<UL><LI><a href="#[8b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;wait_for_events
+</UL>
+
+<P><STRONG><a name="[16]"></a>RTC1_IRQHandler</STRONG> (Thumb, 28 bytes, Stack size 8 bytes, app_timer.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = RTC1_IRQHandler &rArr; timer_timeouts_check
+</UL>
+<BR>[Calls]<UL><LI><a href="#[82]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;timer_timeouts_check
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> arm_startup_nrf51.o(RESET)
+</UL>
+<P><STRONG><a name="[19]"></a>SWI0_IRQHandler</STRONG> (Thumb, 8 bytes, Stack size 8 bytes, app_timer.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 80<LI>Call Chain = SWI0_IRQHandler &rArr; timer_list_handler &rArr; compare_reg_update &rArr; rtc1_stop
+</UL>
+<BR>[Calls]<UL><LI><a href="#[83]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;timer_list_handler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> arm_startup_nrf51.o(RESET)
+</UL>
+<P><STRONG><a name="[47]"></a>app_timer_init</STRONG> (Thumb, 128 bytes, Stack size 40 bytes, app_timer.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = app_timer_init &rArr; rtc1_stop
+</UL>
+<BR>[Calls]<UL><LI><a href="#[7f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rtc1_stop
+<LI><a href="#[84]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NVIC_SetPriority
+</UL>
+<BR>[Called By]<UL><LI><a href="#[1f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[4f]"></a>app_timer_create</STRONG> (Thumb, 40 bytes, Stack size 0 bytes, app_timer.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[91]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dfu_init
+<LI><a href="#[60]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ble_conn_params_init
+<LI><a href="#[1f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[50]"></a>app_timer_start</STRONG> (Thumb, 114 bytes, Stack size 32 bytes, app_timer.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = app_timer_start
+</UL>
+<BR>[Calls]<UL><LI><a href="#[86]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;user_op_alloc
+<LI><a href="#[87]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;timer_list_handler_sched
+<LI><a href="#[85]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;user_id_get
+</UL>
+<BR>[Called By]<UL><LI><a href="#[9a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dfu_timer_restart
+<LI><a href="#[91]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dfu_init
+<LI><a href="#[63]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;conn_params_negotiation
+<LI><a href="#[1f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[52]"></a>app_timer_stop</STRONG> (Thumb, 78 bytes, Stack size 24 bytes, app_timer.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = app_timer_stop
+</UL>
+<BR>[Calls]<UL><LI><a href="#[86]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;user_op_alloc
+<LI><a href="#[87]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;timer_list_handler_sched
+<LI><a href="#[85]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;user_id_get
+</UL>
+<BR>[Called By]<UL><LI><a href="#[9a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dfu_timer_restart
+<LI><a href="#[65]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ble_conn_params_on_ble_evt
+<LI><a href="#[62]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ble_conn_params_stop
+<LI><a href="#[1f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+<LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dfu_image_activate
+</UL>
+
+<P><STRONG><a name="[23]"></a>app_timer_evt_schedule</STRONG> (Thumb, 18 bytes, Stack size 16 bytes, app_timer_appsh.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = app_timer_evt_schedule &rArr; app_sched_event_put
+</UL>
+<BR>[Calls]<UL><LI><a href="#[7c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_sched_event_put
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> main.o(.text)
+</UL>
+<P><STRONG><a name="[4e]"></a>bootloader_app_is_valid</STRONG> (Thumb, 62 bytes, Stack size 16 bytes, bootloader.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = bootloader_app_is_valid &rArr; crc16_compute
+</UL>
+<BR>[Calls]<UL><LI><a href="#[8c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bootloader_util_settings_get
+<LI><a href="#[3d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;crc16_compute
+</UL>
+<BR>[Called By]<UL><LI><a href="#[1f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[8e]"></a>bootloader_dfu_update_process</STRONG> (Thumb, 222 bytes, Stack size 40 bytes, bootloader.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 124<LI>Call Chain = bootloader_dfu_update_process &rArr; bootloader_settings_save &rArr; pstorage_store &rArr; cmd_queue_enqueue &rArr; cmd_process &rArr; __aeabi_uidivmod
+</UL>
+<BR>[Calls]<UL><LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dfu_transport_close
+<LI><a href="#[8c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bootloader_util_settings_get
+<LI><a href="#[8d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bootloader_settings_save
+<LI><a href="#[40]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_error_handler
+</UL>
+<BR>[Called By]<UL><LI><a href="#[2b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dfu_activate_bl
+<LI><a href="#[2c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dfu_activate_app
+<LI><a href="#[2a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dfu_activate_sd
+<LI><a href="#[29]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dfu_cleared_func_app
+<LI><a href="#[27]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dfu_timeout_handler
+<LI><a href="#[4d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bootloader_dfu_sd_update_finalize
+<LI><a href="#[b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;on_ble_evt
+<LI><a href="#[a3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dfu_reset
+</UL>
+
+<P><STRONG><a name="[49]"></a>bootloader_init</STRONG> (Thumb, 36 bytes, Stack size 16 bytes, bootloader.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = bootloader_init &rArr; pstorage_init
+</UL>
+<BR>[Calls]<UL><LI><a href="#[90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pstorage_register
+<LI><a href="#[78]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pstorage_init
+</UL>
+<BR>[Called By]<UL><LI><a href="#[1f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[51]"></a>bootloader_dfu_start</STRONG> (Thumb, 24 bytes, Stack size 8 bytes, bootloader.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 424<LI>Call Chain = bootloader_dfu_start &rArr; dfu_transport_update_start &rArr; advertising_start &rArr; advertising_init &rArr; ble_advdata_set &rArr; adv_data_encode &rArr; uuid_list_encode &rArr; uuid_list_sized_encode
+</UL>
+<BR>[Calls]<UL><LI><a href="#[92]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dfu_transport_update_start
+<LI><a href="#[91]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dfu_init
+<LI><a href="#[8b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;wait_for_events
+</UL>
+<BR>[Called By]<UL><LI><a href="#[1f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[53]"></a>bootloader_app_start</STRONG> (Thumb, 80 bytes, Stack size 16 bytes, bootloader.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = bootloader_app_start &rArr; bootloader_util_app_start
+</UL>
+<BR>[Calls]<UL><LI><a href="#[93]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bootloader_util_app_start
+<LI><a href="#[40]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_error_handler
+</UL>
+<BR>[Called By]<UL><LI><a href="#[1f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[4a]"></a>bootloader_dfu_sd_in_progress</STRONG> (Thumb, 30 bytes, Stack size 8 bytes, bootloader.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = bootloader_dfu_sd_in_progress
+</UL>
+<BR>[Calls]<UL><LI><a href="#[8c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bootloader_util_settings_get
+</UL>
+<BR>[Called By]<UL><LI><a href="#[1f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[4b]"></a>bootloader_dfu_sd_update_continue</STRONG> (Thumb, 76 bytes, Stack size 8 bytes, bootloader.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 128<LI>Call Chain = bootloader_dfu_sd_update_continue &rArr; dfu_sd_image_validate &rArr; dfu_sd_img_block_swap &rArr;  dfu_sd_img_block_swap (Cycle)
+</UL>
+<BR>[Calls]<UL><LI><a href="#[94]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dfu_sd_image_validate
+<LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dfu_sd_image_swap
+<LI><a href="#[95]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dfu_bl_image_validate
+<LI><a href="#[97]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dfu_bl_image_swap
+<LI><a href="#[72]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nrf_delay_ms
+<LI><a href="#[40]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_error_handler
+</UL>
+<BR>[Called By]<UL><LI><a href="#[1f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[4d]"></a>bootloader_dfu_sd_update_finalize</STRONG> (Thumb, 38 bytes, Stack size 32 bytes, bootloader.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 156<LI>Call Chain = bootloader_dfu_sd_update_finalize &rArr; bootloader_dfu_update_process &rArr; bootloader_settings_save &rArr; pstorage_store &rArr; cmd_queue_enqueue &rArr; cmd_process &rArr; __aeabi_uidivmod
+</UL>
+<BR>[Calls]<UL><LI><a href="#[8e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bootloader_dfu_update_process
+<LI><a href="#[8b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;wait_for_events
+<LI><a href="#[61]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy4
+</UL>
+<BR>[Called By]<UL><LI><a href="#[1f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[98]"></a>bootloader_settings_get</STRONG> (Thumb, 46 bytes, Stack size 16 bytes, bootloader.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = bootloader_settings_get
+</UL>
+<BR>[Calls]<UL><LI><a href="#[8c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bootloader_util_settings_get
+</UL>
+<BR>[Called By]<UL><LI><a href="#[94]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dfu_sd_image_validate
+<LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dfu_sd_image_swap
+<LI><a href="#[95]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dfu_bl_image_validate
+<LI><a href="#[97]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dfu_bl_image_swap
+</UL>
+
+<P><STRONG><a name="[8c]"></a>bootloader_util_settings_get</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, bootloader_settings.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[98]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bootloader_settings_get
+<LI><a href="#[8e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bootloader_dfu_update_process
+<LI><a href="#[4a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bootloader_dfu_sd_in_progress
+<LI><a href="#[4e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bootloader_app_is_valid
+</UL>
+
+<P><STRONG><a name="[93]"></a>bootloader_util_app_start</STRONG> (Thumb, 8 bytes, Stack size 8 bytes, bootloader_util.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = bootloader_util_app_start
+</UL>
+<BR>[Calls]<UL><LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__asm___17_bootloader_util_c_c13d365c__bootloader_util_reset
+</UL>
+<BR>[Called By]<UL><LI><a href="#[53]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bootloader_app_start
+</UL>
+
+<P><STRONG><a name="[3d]"></a>crc16_compute</STRONG> (Thumb, 54 bytes, Stack size 8 bytes, crc16.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = crc16_compute
+</UL>
+<BR>[Called By]<UL><LI><a href="#[4e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bootloader_app_is_valid
+<LI><a href="#[3e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dfu_ble_peer_data_get
+<LI><a href="#[20]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;C_SVC_Handler
+<LI><a href="#[a1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dfu_init_postvalidate
+</UL>
+
+<P><STRONG><a name="[91]"></a>dfu_init</STRONG> (Thumb, 108 bytes, Stack size 32 bytes, dfu_single_bank.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 64<LI>Call Chain = dfu_init &rArr; app_timer_start
+</UL>
+<BR>[Calls]<UL><LI><a href="#[90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pstorage_register
+<LI><a href="#[50]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_timer_start
+<LI><a href="#[4f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_timer_create
+<LI><a href="#[40]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_error_handler
+</UL>
+<BR>[Called By]<UL><LI><a href="#[51]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bootloader_dfu_start
+</UL>
+
+<P><STRONG><a name="[b8]"></a>dfu_register_callback</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, dfu_single_bank.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[92]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dfu_transport_update_start
+</UL>
+
+<P><STRONG><a name="[9b]"></a>dfu_start_pkt_handle</STRONG> (Thumb, 142 bytes, Stack size 16 bytes, dfu_single_bank.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = dfu_start_pkt_handle &rArr; dfu_timer_restart &rArr; app_timer_start
+</UL>
+<BR>[Calls]<UL><LI><a href="#[9a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dfu_timer_restart
+</UL>
+<BR>[Called By]<UL><LI><a href="#[af]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;start_data_process
+</UL>
+
+<P><STRONG><a name="[9c]"></a>dfu_data_pkt_handle</STRONG> (Thumb, 104 bytes, Stack size 16 bytes, dfu_single_bank.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 92<LI>Call Chain = dfu_data_pkt_handle &rArr; pstorage_store &rArr; cmd_queue_enqueue &rArr; cmd_process &rArr; __aeabi_uidivmod
+</UL>
+<BR>[Calls]<UL><LI><a href="#[9a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dfu_timer_restart
+<LI><a href="#[79]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pstorage_store
+</UL>
+<BR>[Called By]<UL><LI><a href="#[a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_data_process
+</UL>
+
+<P><STRONG><a name="[9d]"></a>dfu_init_pkt_complete</STRONG> (Thumb, 46 bytes, Stack size 8 bytes, dfu_single_bank.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = dfu_init_pkt_complete &rArr; dfu_init_prevalidate
+</UL>
+<BR>[Calls]<UL><LI><a href="#[9e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dfu_init_prevalidate
+</UL>
+<BR>[Called By]<UL><LI><a href="#[2f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;on_dfu_evt
+</UL>
+
+<P><STRONG><a name="[9f]"></a>dfu_init_pkt_handle</STRONG> (Thumb, 82 bytes, Stack size 24 bytes, dfu_single_bank.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 64<LI>Call Chain = dfu_init_pkt_handle &rArr; dfu_timer_restart &rArr; app_timer_start
+</UL>
+<BR>[Calls]<UL><LI><a href="#[9a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dfu_timer_restart
+<LI><a href="#[3c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy
+</UL>
+<BR>[Called By]<UL><LI><a href="#[b0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;init_data_process
+</UL>
+
+<P><STRONG><a name="[a0]"></a>dfu_image_validate</STRONG> (Thumb, 54 bytes, Stack size 8 bytes, dfu_single_bank.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 48<LI>Call Chain = dfu_image_validate &rArr; dfu_timer_restart &rArr; app_timer_start
+</UL>
+<BR>[Calls]<UL><LI><a href="#[9a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dfu_timer_restart
+<LI><a href="#[a1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dfu_init_postvalidate
+</UL>
+<BR>[Called By]<UL><LI><a href="#[2f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;on_dfu_evt
+</UL>
+
+<P><STRONG><a name="[a2]"></a>dfu_image_activate</STRONG> (Thumb, 42 bytes, Stack size 8 bytes, dfu_single_bank.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = dfu_image_activate &rArr; app_timer_stop
+</UL>
+<BR>[Calls]<UL><LI><a href="#[52]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_timer_stop
+<LI><a href="#[40]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_error_handler
+</UL>
+<BR>[Called By]<UL><LI><a href="#[2f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;on_dfu_evt
+</UL>
+
+<P><STRONG><a name="[a3]"></a>dfu_reset</STRONG> (Thumb, 62 bytes, Stack size 32 bytes, dfu_single_bank.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 156<LI>Call Chain = dfu_reset &rArr; bootloader_dfu_update_process &rArr; bootloader_settings_save &rArr; pstorage_store &rArr; cmd_queue_enqueue &rArr; cmd_process &rArr; __aeabi_uidivmod
+</UL>
+<BR>[Calls]<UL><LI><a href="#[8e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bootloader_dfu_update_process
+</UL>
+<BR>[Called By]<UL><LI><a href="#[2f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;on_dfu_evt
+</UL>
+
+<P><STRONG><a name="[96]"></a>dfu_sd_image_swap</STRONG> (Thumb, 116 bytes, Stack size 56 bytes, dfu_single_bank.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 104<LI>Call Chain = dfu_sd_image_swap &rArr; dfu_sd_img_block_swap &rArr;  dfu_sd_img_block_swap (Cycle)
+</UL>
+<BR>[Calls]<UL><LI><a href="#[a6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dfu_copy_sd
+<LI><a href="#[a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dfu_sd_img_block_swap
+<LI><a href="#[98]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bootloader_settings_get
+</UL>
+<BR>[Called By]<UL><LI><a href="#[4b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bootloader_dfu_sd_update_continue
+</UL>
+
+<P><STRONG><a name="[97]"></a>dfu_bl_image_swap</STRONG> (Thumb, 56 bytes, Stack size 48 bytes, dfu_single_bank.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 64<LI>Call Chain = dfu_bl_image_swap &rArr; bootloader_settings_get
+</UL>
+<BR>[Calls]<UL><LI><a href="#[98]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bootloader_settings_get
+</UL>
+<BR>[Called By]<UL><LI><a href="#[4b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bootloader_dfu_sd_update_continue
+</UL>
+
+<P><STRONG><a name="[95]"></a>dfu_bl_image_validate</STRONG> (Thumb, 60 bytes, Stack size 48 bytes, dfu_single_bank.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 64<LI>Call Chain = dfu_bl_image_validate &rArr; bootloader_settings_get
+</UL>
+<BR>[Calls]<UL><LI><a href="#[98]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bootloader_settings_get
+</UL>
+<BR>[Called By]<UL><LI><a href="#[4b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bootloader_dfu_sd_update_continue
+</UL>
+
+<P><STRONG><a name="[94]"></a>dfu_sd_image_validate</STRONG> (Thumb, 88 bytes, Stack size 72 bytes, dfu_single_bank.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 120<LI>Call Chain = dfu_sd_image_validate &rArr; dfu_sd_img_block_swap &rArr;  dfu_sd_img_block_swap (Cycle)
+</UL>
+<BR>[Calls]<UL><LI><a href="#[a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dfu_sd_img_block_swap
+<LI><a href="#[98]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bootloader_settings_get
+</UL>
+<BR>[Called By]<UL><LI><a href="#[4b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bootloader_dfu_sd_update_continue
+</UL>
+
+<P><STRONG><a name="[9e]"></a>dfu_init_prevalidate</STRONG> (Thumb, 118 bytes, Stack size 16 bytes, dfu_init_template.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = dfu_init_prevalidate
+</UL>
+<BR>[Calls]<UL><LI><a href="#[3c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy
+</UL>
+<BR>[Called By]<UL><LI><a href="#[9d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dfu_init_pkt_complete
+</UL>
+
+<P><STRONG><a name="[a1]"></a>dfu_init_postvalidate</STRONG> (Thumb, 30 bytes, Stack size 8 bytes, dfu_init_template.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = dfu_init_postvalidate &rArr; crc16_compute
+</UL>
+<BR>[Calls]<UL><LI><a href="#[3d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;crc16_compute
+</UL>
+<BR>[Called By]<UL><LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dfu_image_validate
+</UL>
+
+<P><STRONG><a name="[8f]"></a>dfu_transport_close</STRONG> (Thumb, 84 bytes, Stack size 8 bytes, dfu_transport_ble.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = dfu_transport_close &rArr; ble_conn_params_stop &rArr; app_timer_stop
+</UL>
+<BR>[Calls]<UL><LI><a href="#[62]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ble_conn_params_stop
+<LI><a href="#[40]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_error_handler
+<LI><a href="#[ae]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nrf_gpio_pin_set
+</UL>
+<BR>[Called By]<UL><LI><a href="#[8e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bootloader_dfu_update_process
+<LI><a href="#[2f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;on_dfu_evt
+</UL>
+
+<P><STRONG><a name="[92]"></a>dfu_transport_update_start</STRONG> (Thumb, 310 bytes, Stack size 40 bytes, dfu_transport_ble.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 416<LI>Call Chain = dfu_transport_update_start &rArr; advertising_start &rArr; advertising_init &rArr; ble_advdata_set &rArr; adv_data_encode &rArr; uuid_list_encode &rArr; uuid_list_sized_encode
+</UL>
+<BR>[Calls]<UL><LI><a href="#[69]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ble_dfu_init
+<LI><a href="#[60]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ble_conn_params_init
+<LI><a href="#[40]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_error_handler
+<LI><a href="#[3e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dfu_ble_peer_data_get
+<LI><a href="#[71]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memclr4
+<LI><a href="#[b7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;softdevice_ble_evt_handler_set
+<LI><a href="#[b9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hci_mem_pool_open
+<LI><a href="#[ae]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nrf_gpio_pin_set
+<LI><a href="#[b6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nrf_gpio_cfg_output
+<LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;advertising_start
+<LI><a href="#[b8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dfu_register_callback
+</UL>
+<BR>[Called By]<UL><LI><a href="#[51]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bootloader_dfu_start
+</UL>
+
+<P><STRONG><a name="[b9]"></a>hci_mem_pool_open</STRONG> (Thumb, 30 bytes, Stack size 0 bytes, hci_mem_pool.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[92]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dfu_transport_update_start
+</UL>
+
+<P><STRONG><a name="[aa]"></a>hci_mem_pool_rx_produce</STRONG> (Thumb, 78 bytes, Stack size 8 bytes, hci_mem_pool.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = hci_mem_pool_rx_produce
+</UL>
+<BR>[Called By]<UL><LI><a href="#[a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_data_process
+</UL>
+
+<P><STRONG><a name="[a7]"></a>hci_mem_pool_rx_consume</STRONG> (Thumb, 102 bytes, Stack size 20 bytes, hci_mem_pool.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 20<LI>Call Chain = hci_mem_pool_rx_consume
+</UL>
+<BR>[Called By]<UL><LI><a href="#[a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_data_process
+<LI><a href="#[2e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dfu_cb_handler
+</UL>
+
+<P><STRONG><a name="[ab]"></a>hci_mem_pool_rx_data_size_set</STRONG> (Thumb, 24 bytes, Stack size 0 bytes, hci_mem_pool.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_data_process
+</UL>
+
+<P><STRONG><a name="[ac]"></a>hci_mem_pool_rx_extract</STRONG> (Thumb, 68 bytes, Stack size 16 bytes, hci_mem_pool.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = hci_mem_pool_rx_extract
+</UL>
+<BR>[Called By]<UL><LI><a href="#[a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_data_process
+</UL>
+
+<P><STRONG><a name="[32]"></a>softdevice_assertion_handler</STRONG> (Thumb, 12 bytes, Stack size 8 bytes, softdevice_handler.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = softdevice_assertion_handler &rArr; assert_nrf_callback
+</UL>
+<BR>[Calls]<UL><LI><a href="#[3f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;assert_nrf_callback
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> softdevice_handler.o(.text)
+</UL>
+<P><STRONG><a name="[bc]"></a>intern_softdevice_events_execute</STRONG> (Thumb, 124 bytes, Stack size 24 bytes, softdevice_handler.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = intern_softdevice_events_execute
+</UL>
+<BR>[Calls]<UL><LI><a href="#[40]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_error_handler
+</UL>
+<BR>[Called By]<UL><LI><a href="#[33]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;softdevice_evt_get
+<LI><a href="#[1b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SWI2_IRQHandler
+</UL>
+
+<P><STRONG><a name="[44]"></a>softdevice_handler_init</STRONG> (Thumb, 40 bytes, Stack size 16 bytes, softdevice_handler.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = softdevice_handler_init
+</UL>
+<BR>[Called By]<UL><LI><a href="#[43]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ble_stack_init
+</UL>
+
+<P><STRONG><a name="[b7]"></a>softdevice_ble_evt_handler_set</STRONG> (Thumb, 16 bytes, Stack size 0 bytes, softdevice_handler.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[92]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dfu_transport_update_start
+</UL>
+
+<P><STRONG><a name="[45]"></a>softdevice_sys_evt_handler_set</STRONG> (Thumb, 16 bytes, Stack size 0 bytes, softdevice_handler.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[43]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ble_stack_init
+</UL>
+
+<P><STRONG><a name="[1b]"></a>SWI2_IRQHandler</STRONG> (Thumb, 32 bytes, Stack size 8 bytes, softdevice_handler.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = SWI2_IRQHandler &rArr; intern_softdevice_events_execute
+</UL>
+<BR>[Calls]<UL><LI><a href="#[40]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_error_handler
+<LI><a href="#[bc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;intern_softdevice_events_execute
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> arm_startup_nrf51.o(RESET)
+</UL>
+<P><STRONG><a name="[33]"></a>softdevice_evt_get</STRONG> (Thumb, 22 bytes, Stack size 8 bytes, softdevice_handler_appsh.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = softdevice_evt_get &rArr; intern_softdevice_events_execute
+</UL>
+<BR>[Calls]<UL><LI><a href="#[40]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_error_handler
+<LI><a href="#[bc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;intern_softdevice_events_execute
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> softdevice_handler_appsh.o(.text)
+</UL>
+<P><STRONG><a name="[21]"></a>softdevice_evt_schedule</STRONG> (Thumb, 14 bytes, Stack size 8 bytes, softdevice_handler_appsh.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 48<LI>Call Chain = softdevice_evt_schedule &rArr; app_sched_event_put
+</UL>
+<BR>[Calls]<UL><LI><a href="#[7c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_sched_event_put
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> main.o(.text)
+</UL>
+<P><STRONG><a name="[0]"></a>Reset_Handler</STRONG> (Thumb, 26 bytes, Stack size 0 bytes, arm_startup_nrf51.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> arm_startup_nrf51.o(RESET)
+</UL>
+<P><STRONG><a name="[1]"></a>NMI_Handler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, arm_startup_nrf51.o(.text))
+<BR><BR>[Calls]<UL><LI><a href="#[1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NMI_Handler
+</UL>
+<BR>[Called By]<UL><LI><a href="#[1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NMI_Handler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> arm_startup_nrf51.o(RESET)
+</UL>
+<P><STRONG><a name="[2]"></a>HardFault_Handler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, arm_startup_nrf51.o(.text))
+<BR><BR>[Calls]<UL><LI><a href="#[2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HardFault_Handler
+</UL>
+<BR>[Called By]<UL><LI><a href="#[2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HardFault_Handler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> arm_startup_nrf51.o(RESET)
+</UL>
+<P><STRONG><a name="[4]"></a>PendSV_Handler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, arm_startup_nrf51.o(.text))
+<BR><BR>[Calls]<UL><LI><a href="#[4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PendSV_Handler
+</UL>
+<BR>[Called By]<UL><LI><a href="#[4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PendSV_Handler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> arm_startup_nrf51.o(RESET)
+</UL>
+<P><STRONG><a name="[5]"></a>SysTick_Handler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, arm_startup_nrf51.o(.text))
+<BR><BR>[Calls]<UL><LI><a href="#[5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysTick_Handler
+</UL>
+<BR>[Called By]<UL><LI><a href="#[5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysTick_Handler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> arm_startup_nrf51.o(RESET)
+</UL>
+<P><STRONG><a name="[c]"></a>ADC_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, arm_startup_nrf51.o(.text))
+<BR><BR>[Calls]<UL><LI><a href="#[c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ADC_IRQHandler
+</UL>
+<BR>[Called By]<UL><LI><a href="#[c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ADC_IRQHandler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> arm_startup_nrf51.o(RESET)
+</UL>
+<P><STRONG><a name="[14]"></a>CCM_AAR_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, arm_startup_nrf51.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> arm_startup_nrf51.o(RESET)
+</UL>
+<P><STRONG><a name="[13]"></a>ECB_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, arm_startup_nrf51.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> arm_startup_nrf51.o(RESET)
+</UL>
+<P><STRONG><a name="[b]"></a>GPIOTE_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, arm_startup_nrf51.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> arm_startup_nrf51.o(RESET)
+</UL>
+<P><STRONG><a name="[18]"></a>LPCOMP_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, arm_startup_nrf51.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> arm_startup_nrf51.o(RESET)
+</UL>
+<P><STRONG><a name="[6]"></a>POWER_CLOCK_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, arm_startup_nrf51.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> arm_startup_nrf51.o(RESET)
+</UL>
+<P><STRONG><a name="[17]"></a>QDEC_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, arm_startup_nrf51.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> arm_startup_nrf51.o(RESET)
+</UL>
+<P><STRONG><a name="[7]"></a>RADIO_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, arm_startup_nrf51.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> arm_startup_nrf51.o(RESET)
+</UL>
+<P><STRONG><a name="[12]"></a>RNG_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, arm_startup_nrf51.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> arm_startup_nrf51.o(RESET)
+</UL>
+<P><STRONG><a name="[10]"></a>RTC0_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, arm_startup_nrf51.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> arm_startup_nrf51.o(RESET)
+</UL>
+<P><STRONG><a name="[9]"></a>SPI0_TWI0_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, arm_startup_nrf51.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> arm_startup_nrf51.o(RESET)
+</UL>
+<P><STRONG><a name="[a]"></a>SPI1_TWI1_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, arm_startup_nrf51.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> arm_startup_nrf51.o(RESET)
+</UL>
+<P><STRONG><a name="[1a]"></a>SWI1_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, arm_startup_nrf51.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> arm_startup_nrf51.o(RESET)
+</UL>
+<P><STRONG><a name="[1c]"></a>SWI3_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, arm_startup_nrf51.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> arm_startup_nrf51.o(RESET)
+</UL>
+<P><STRONG><a name="[1d]"></a>SWI4_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, arm_startup_nrf51.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> arm_startup_nrf51.o(RESET)
+</UL>
+<P><STRONG><a name="[1e]"></a>SWI5_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, arm_startup_nrf51.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> arm_startup_nrf51.o(RESET)
+</UL>
+<P><STRONG><a name="[11]"></a>TEMP_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, arm_startup_nrf51.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> arm_startup_nrf51.o(RESET)
+</UL>
+<P><STRONG><a name="[d]"></a>TIMER0_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, arm_startup_nrf51.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> arm_startup_nrf51.o(RESET)
+</UL>
+<P><STRONG><a name="[e]"></a>TIMER1_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, arm_startup_nrf51.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> arm_startup_nrf51.o(RESET)
+</UL>
+<P><STRONG><a name="[f]"></a>TIMER2_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, arm_startup_nrf51.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> arm_startup_nrf51.o(RESET)
+</UL>
+<P><STRONG><a name="[8]"></a>UART0_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, arm_startup_nrf51.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> arm_startup_nrf51.o(RESET)
+</UL>
+<P><STRONG><a name="[15]"></a>WDT_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, arm_startup_nrf51.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> arm_startup_nrf51.o(RESET)
+</UL>
+<P><STRONG><a name="[34]"></a>SystemInit</STRONG> (Thumb, 64 bytes, Stack size 8 bytes, system_nrf51.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = SystemInit
+</UL>
+<BR>[Calls]<UL><LI><a href="#[bd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;is_manual_peripheral_setup_needed
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> arm_startup_nrf51.o(.text)
+</UL>
+<P><STRONG><a name="[c8]"></a>__aeabi_uidiv</STRONG> (Thumb, 0 bytes, Stack size 12 bytes, uidiv.o(.text), UNUSED)
+
+<P><STRONG><a name="[74]"></a>__aeabi_uidivmod</STRONG> (Thumb, 44 bytes, Stack size 12 bytes, uidiv.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 12<LI>Call Chain = __aeabi_uidivmod
+</UL>
+<BR>[Called By]<UL><LI><a href="#[73]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;cmd_process
+</UL>
+
+<P><STRONG><a name="[3c]"></a>__aeabi_memcpy</STRONG> (Thumb, 36 bytes, Stack size 0 bytes, memcpya.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[7c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_sched_event_put
+<LI><a href="#[65]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ble_conn_params_on_ble_evt
+<LI><a href="#[60]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ble_conn_params_init
+<LI><a href="#[5d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;service_data_encode
+<LI><a href="#[5c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;manuf_specific_data_encode
+<LI><a href="#[59]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ble_device_addr_encode
+<LI><a href="#[3e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dfu_ble_peer_data_get
+<LI><a href="#[20]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;C_SVC_Handler
+<LI><a href="#[b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;on_ble_evt
+<LI><a href="#[a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_data_process
+<LI><a href="#[9e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dfu_init_prevalidate
+<LI><a href="#[9f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dfu_init_pkt_handle
+</UL>
+
+<P><STRONG><a name="[61]"></a>__aeabi_memcpy4</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, memcpya.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[29]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dfu_cleared_func_app
+<LI><a href="#[60]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ble_conn_params_init
+<LI><a href="#[4d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bootloader_dfu_sd_update_finalize
+<LI><a href="#[b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;on_ble_evt
+</UL>
+
+<P><STRONG><a name="[c9]"></a>__aeabi_memcpy8</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, memcpya.o(.text), UNUSED)
+
+<P><STRONG><a name="[bf]"></a>__aeabi_memset</STRONG> (Thumb, 14 bytes, Stack size 0 bytes, memseta.o(.text), UNUSED)
+<BR><BR>[Called By]<UL><LI><a href="#[c0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_memset$wrapper
+<LI><a href="#[be]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memclr
+</UL>
+
+<P><STRONG><a name="[ca]"></a>__aeabi_memset4</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, memseta.o(.text), UNUSED)
+
+<P><STRONG><a name="[cb]"></a>__aeabi_memset8</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, memseta.o(.text), UNUSED)
+
+<P><STRONG><a name="[be]"></a>__aeabi_memclr</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, memseta.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[bf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memset
+</UL>
+
+<P><STRONG><a name="[71]"></a>__aeabi_memclr4</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, memseta.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[2c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dfu_activate_app
+<LI><a href="#[92]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dfu_transport_update_start
+<LI><a href="#[6b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dfu_ctrl_pt_add
+<LI><a href="#[6c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dfu_rev_char_add
+<LI><a href="#[6a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dfu_pkt_char_add
+<LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;advertising_start
+<LI><a href="#[b1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;advertising_init
+</UL>
+
+<P><STRONG><a name="[cc]"></a>__aeabi_memclr8</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, memseta.o(.text), UNUSED)
+
+<P><STRONG><a name="[c0]"></a>_memset$wrapper</STRONG> (Thumb, 18 bytes, Stack size 8 bytes, memseta.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[bf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memset
+</UL>
+
+<P><STRONG><a name="[b3]"></a>memcmp</STRONG> (Thumb, 26 bytes, Stack size 12 bytes, memcmp.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 12<LI>Call Chain = memcmp
+</UL>
+<BR>[Called By]<UL><LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;advertising_start
+</UL>
+
+<P><STRONG><a name="[bb]"></a>__aeabi_uread4</STRONG> (Thumb, 20 bytes, Stack size 0 bytes, uread4.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[ba]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uint32_decode
+</UL>
+
+<P><STRONG><a name="[cd]"></a>__rt_uread4</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, uread4.o(.text), UNUSED)
+
+<P><STRONG><a name="[ce]"></a>_uread4</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, uread4.o(.text), UNUSED)
+
+<P><STRONG><a name="[39]"></a>__scatterload</STRONG> (Thumb, 28 bytes, Stack size 0 bytes, init.o(.text))
+<BR><BR>[Calls]<UL><LI><a href="#[c1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__main_after_scatterload
+</UL>
+<BR>[Called By]<UL><LI><a href="#[38]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_main_scatterload
+</UL>
+
+<P><STRONG><a name="[cf]"></a>__scatterload_rt2</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, init.o(.text), UNUSED)
+
+<P><STRONG><a name="[67]"></a>__ARM_common_switch8</STRONG> (Thumb, 26 bytes, Stack size 8 bytes, ble_dfu.o(i.__ARM_common_switch8))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = __ARM_common_switch8
+</UL>
+<BR>[Called By]<UL><LI><a href="#[66]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;on_ctrl_pt_write
+<LI><a href="#[2f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;on_dfu_evt
+</UL>
+
+<P><STRONG><a name="[d0]"></a>__scatterload_copy</STRONG> (Thumb, 14 bytes, Stack size unknown bytes, handlers.o(i.__scatterload_copy), UNUSED)
+
+<P><STRONG><a name="[d1]"></a>__scatterload_null</STRONG> (Thumb, 2 bytes, Stack size unknown bytes, handlers.o(i.__scatterload_null), UNUSED)
+
+<P><STRONG><a name="[d2]"></a>__scatterload_zeroinit</STRONG> (Thumb, 14 bytes, Stack size unknown bytes, handlers.o(i.__scatterload_zeroinit), UNUSED)
+<P>
+<H3>
+Local Symbols
+</H3>
+<P><STRONG><a name="[24]"></a>dfu_100ms_timer_handler</STRONG> (Thumb, 16 bytes, Stack size 8 bytes, main.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = dfu_100ms_timer_handler
+</UL>
+<BR>[Calls]<UL><LI><a href="#[41]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nrf_gpio_pin_toggle
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> main.o(.text)
+</UL>
+<P><STRONG><a name="[22]"></a>sys_evt_dispatch</STRONG> (Thumb, 8 bytes, Stack size 8 bytes, main.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 60<LI>Call Chain = sys_evt_dispatch &rArr; pstorage_sys_event_handler &rArr; cmd_process &rArr; __aeabi_uidivmod
+</UL>
+<BR>[Calls]<UL><LI><a href="#[42]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pstorage_sys_event_handler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> main.o(.text)
+</UL>
+<P><STRONG><a name="[43]"></a>ble_stack_init</STRONG> (Thumb, 126 bytes, Stack size 32 bytes, main.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 48<LI>Call Chain = ble_stack_init &rArr; softdevice_handler_init
+</UL>
+<BR>[Calls]<UL><LI><a href="#[45]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;softdevice_sys_evt_handler_set
+<LI><a href="#[44]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;softdevice_handler_init
+<LI><a href="#[40]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_error_handler
+</UL>
+<BR>[Called By]<UL><LI><a href="#[1f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[48]"></a>nrf_gpio_cfg</STRONG> (Thumb, 32 bytes, Stack size 12 bytes, main.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 12<LI>Call Chain = nrf_gpio_cfg
+</UL>
+<BR>[Called By]<UL><LI><a href="#[1f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+<LI><a href="#[46]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nrf_gpio_cfg_output
+</UL>
+
+<P><STRONG><a name="[46]"></a>nrf_gpio_cfg_output</STRONG> (Thumb, 20 bytes, Stack size 16 bytes, main.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 28<LI>Call Chain = nrf_gpio_cfg_output &rArr; nrf_gpio_cfg
+</UL>
+<BR>[Calls]<UL><LI><a href="#[48]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nrf_gpio_cfg
+</UL>
+<BR>[Called By]<UL><LI><a href="#[1f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[41]"></a>nrf_gpio_pin_toggle</STRONG> (Thumb, 24 bytes, Stack size 0 bytes, main.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[24]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dfu_100ms_timer_handler
+</UL>
+
+<P><STRONG><a name="[4c]"></a>scheduler_init</STRONG> (Thumb, 28 bytes, Stack size 8 bytes, main.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 20<LI>Call Chain = scheduler_init &rArr; app_sched_init
+</UL>
+<BR>[Calls]<UL><LI><a href="#[54]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_sched_init
+<LI><a href="#[40]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_error_handler
+</UL>
+<BR>[Called By]<UL><LI><a href="#[1f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[56]"></a>uuid_list_sized_encode</STRONG> (Thumb, 174 bytes, Stack size 48 bytes, ble_advdata.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 48<LI>Call Chain = uuid_list_sized_encode
+</UL>
+<BR>[Called By]<UL><LI><a href="#[55]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uuid_list_encode
+</UL>
+
+<P><STRONG><a name="[55]"></a>uuid_list_encode</STRONG> (Thumb, 46 bytes, Stack size 48 bytes, ble_advdata.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 96<LI>Call Chain = uuid_list_encode &rArr; uuid_list_sized_encode
+</UL>
+<BR>[Calls]<UL><LI><a href="#[56]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uuid_list_sized_encode
+</UL>
+<BR>[Called By]<UL><LI><a href="#[57]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;adv_data_encode
+</UL>
+
+<P><STRONG><a name="[5a]"></a>uint16_encode</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, ble_advdata.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[57]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;adv_data_encode
+<LI><a href="#[5d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;service_data_encode
+<LI><a href="#[5c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;manuf_specific_data_encode
+<LI><a href="#[5b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;conn_int_encode
+</UL>
+
+<P><STRONG><a name="[58]"></a>le_role_encode</STRONG> (Thumb, 84 bytes, Stack size 12 bytes, ble_advdata.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 12<LI>Call Chain = le_role_encode
+</UL>
+<BR>[Called By]<UL><LI><a href="#[57]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;adv_data_encode
+</UL>
+
+<P><STRONG><a name="[59]"></a>ble_device_addr_encode</STRONG> (Thumb, 94 bytes, Stack size 24 bytes, ble_advdata.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = ble_device_addr_encode
+</UL>
+<BR>[Calls]<UL><LI><a href="#[3c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy
+</UL>
+<BR>[Called By]<UL><LI><a href="#[57]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;adv_data_encode
+</UL>
+
+<P><STRONG><a name="[5e]"></a>name_encode</STRONG> (Thumb, 158 bytes, Stack size 24 bytes, ble_advdata.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = name_encode
+</UL>
+<BR>[Called By]<UL><LI><a href="#[57]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;adv_data_encode
+</UL>
+
+<P><STRONG><a name="[5b]"></a>conn_int_encode</STRONG> (Thumb, 130 bytes, Stack size 24 bytes, ble_advdata.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = conn_int_encode
+</UL>
+<BR>[Calls]<UL><LI><a href="#[5a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uint16_encode
+</UL>
+<BR>[Called By]<UL><LI><a href="#[57]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;adv_data_encode
+</UL>
+
+<P><STRONG><a name="[5c]"></a>manuf_specific_data_encode</STRONG> (Thumb, 104 bytes, Stack size 16 bytes, ble_advdata.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = manuf_specific_data_encode
+</UL>
+<BR>[Calls]<UL><LI><a href="#[5a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uint16_encode
+<LI><a href="#[3c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy
+</UL>
+<BR>[Called By]<UL><LI><a href="#[57]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;adv_data_encode
+</UL>
+
+<P><STRONG><a name="[5d]"></a>service_data_encode</STRONG> (Thumb, 142 bytes, Stack size 40 bytes, ble_advdata.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = service_data_encode
+</UL>
+<BR>[Calls]<UL><LI><a href="#[5a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uint16_encode
+<LI><a href="#[3c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy
+</UL>
+<BR>[Called By]<UL><LI><a href="#[57]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;adv_data_encode
+</UL>
+
+<P><STRONG><a name="[25]"></a>update_timeout_handler</STRONG> (Thumb, 86 bytes, Stack size 16 bytes, ble_conn_params.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = update_timeout_handler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> ble_conn_params.o(.text)
+</UL>
+<P><STRONG><a name="[63]"></a>conn_params_negotiation</STRONG> (Thumb, 92 bytes, Stack size 24 bytes, ble_conn_params.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = conn_params_negotiation &rArr; app_timer_start
+</UL>
+<BR>[Calls]<UL><LI><a href="#[64]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;is_conn_params_ok
+<LI><a href="#[50]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_timer_start
+</UL>
+<BR>[Called By]<UL><LI><a href="#[65]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ble_conn_params_on_ble_evt
+</UL>
+
+<P><STRONG><a name="[64]"></a>is_conn_params_ok</STRONG> (Thumb, 26 bytes, Stack size 0 bytes, ble_conn_params.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[63]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;conn_params_negotiation
+</UL>
+
+<P><STRONG><a name="[66]"></a>on_ctrl_pt_write</STRONG> (Thumb, 230 bytes, Stack size 64 bytes, ble_dfu.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 96<LI>Call Chain = on_ctrl_pt_write &rArr; ble_dfu_response_send
+</UL>
+<BR>[Calls]<UL><LI><a href="#[67]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__ARM_common_switch8
+<LI><a href="#[68]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ble_dfu_response_send
+</UL>
+<BR>[Called By]<UL><LI><a href="#[6d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ble_dfu_on_ble_evt
+</UL>
+
+<P><STRONG><a name="[6f]"></a>uint32_encode</STRONG> (Thumb, 18 bytes, Stack size 0 bytes, ble_dfu.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[70]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ble_dfu_pkts_rcpt_notify
+<LI><a href="#[6e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ble_dfu_bytes_rcvd_report
+</UL>
+
+<P><STRONG><a name="[6a]"></a>dfu_pkt_char_add</STRONG> (Thumb, 130 bytes, Stack size 72 bytes, ble_dfu.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 72<LI>Call Chain = dfu_pkt_char_add
+</UL>
+<BR>[Calls]<UL><LI><a href="#[71]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memclr4
+</UL>
+<BR>[Called By]<UL><LI><a href="#[69]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ble_dfu_init
+</UL>
+
+<P><STRONG><a name="[6c]"></a>dfu_rev_char_add</STRONG> (Thumb, 158 bytes, Stack size 80 bytes, ble_dfu.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 80<LI>Call Chain = dfu_rev_char_add
+</UL>
+<BR>[Calls]<UL><LI><a href="#[71]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memclr4
+</UL>
+<BR>[Called By]<UL><LI><a href="#[69]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ble_dfu_init
+</UL>
+
+<P><STRONG><a name="[6b]"></a>dfu_ctrl_pt_add</STRONG> (Thumb, 130 bytes, Stack size 72 bytes, ble_dfu.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 72<LI>Call Chain = dfu_ctrl_pt_add
+</UL>
+<BR>[Calls]<UL><LI><a href="#[71]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memclr4
+</UL>
+<BR>[Called By]<UL><LI><a href="#[69]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ble_dfu_init
+</UL>
+
+<P><STRONG><a name="[77]"></a>cmd_queue_element_init</STRONG> (Thumb, 26 bytes, Stack size 0 bytes, pstorage_raw.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[78]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pstorage_init
+<LI><a href="#[42]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pstorage_sys_event_handler
+</UL>
+
+<P><STRONG><a name="[73]"></a>cmd_process</STRONG> (Thumb, 98 bytes, Stack size 16 bytes, pstorage_raw.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 28<LI>Call Chain = cmd_process &rArr; __aeabi_uidivmod
+</UL>
+<BR>[Calls]<UL><LI><a href="#[74]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_uidivmod
+</UL>
+<BR>[Called By]<UL><LI><a href="#[75]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;cmd_queue_enqueue
+<LI><a href="#[42]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pstorage_sys_event_handler
+</UL>
+
+<P><STRONG><a name="[75]"></a>cmd_queue_enqueue</STRONG> (Thumb, 76 bytes, Stack size 24 bytes, pstorage_raw.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 52<LI>Call Chain = cmd_queue_enqueue &rArr; cmd_process &rArr; __aeabi_uidivmod
+</UL>
+<BR>[Calls]<UL><LI><a href="#[73]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;cmd_process
+</UL>
+<BR>[Called By]<UL><LI><a href="#[7b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pstorage_clear
+<LI><a href="#[79]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pstorage_store
+</UL>
+
+<P><STRONG><a name="[7a]"></a>is_word_aligned</STRONG> (Thumb, 12 bytes, Stack size 0 bytes, pstorage_raw.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[79]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pstorage_store
+</UL>
+
+<P><STRONG><a name="[76]"></a>app_notify</STRONG> (Thumb, 32 bytes, Stack size 16 bytes, pstorage_raw.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = app_notify
+</UL>
+<BR>[Called By]<UL><LI><a href="#[42]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pstorage_sys_event_handler
+</UL>
+
+<P><STRONG><a name="[7e]"></a>app_sched_event_get</STRONG> (Thumb, 62 bytes, Stack size 16 bytes, app_scheduler.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = app_sched_event_get
+</UL>
+<BR>[Called By]<UL><LI><a href="#[7d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_sched_execute
+</UL>
+
+<P><STRONG><a name="[84]"></a>NVIC_SetPriority</STRONG> (Thumb, 60 bytes, Stack size 0 bytes, app_timer.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[47]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_timer_init
+</UL>
+
+<P><STRONG><a name="[7f]"></a>rtc1_stop</STRONG> (Thumb, 50 bytes, Stack size 16 bytes, app_timer.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = rtc1_stop
+</UL>
+<BR>[Calls]<UL><LI><a href="#[3b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__asm___11_app_timer_c_cd27f9c3__nrf_delay_us
+</UL>
+<BR>[Called By]<UL><LI><a href="#[8a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;compare_reg_update
+<LI><a href="#[47]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_timer_init
+</UL>
+
+<P><STRONG><a name="[89]"></a>list_deletions_handler</STRONG> (Thumb, 180 bytes, Stack size 24 bytes, app_timer.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = list_deletions_handler
+</UL>
+<BR>[Called By]<UL><LI><a href="#[83]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;timer_list_handler
+</UL>
+
+<P><STRONG><a name="[80]"></a>list_insertions_handler</STRONG> (Thumb, 202 bytes, Stack size 24 bytes, app_timer.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = list_insertions_handler &rArr; timer_list_insert
+</UL>
+<BR>[Calls]<UL><LI><a href="#[81]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;timer_list_insert
+</UL>
+<BR>[Called By]<UL><LI><a href="#[83]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;timer_list_handler
+</UL>
+
+<P><STRONG><a name="[85]"></a>user_id_get</STRONG> (Thumb, 74 bytes, Stack size 0 bytes, app_timer.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[52]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_timer_stop
+<LI><a href="#[50]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_timer_start
+</UL>
+
+<P><STRONG><a name="[81]"></a>timer_list_insert</STRONG> (Thumb, 102 bytes, Stack size 8 bytes, app_timer.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = timer_list_insert
+</UL>
+<BR>[Called By]<UL><LI><a href="#[80]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;list_insertions_handler
+</UL>
+
+<P><STRONG><a name="[87]"></a>timer_list_handler_sched</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, app_timer.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[82]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;timer_timeouts_check
+<LI><a href="#[52]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_timer_stop
+<LI><a href="#[50]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_timer_start
+</UL>
+
+<P><STRONG><a name="[82]"></a>timer_timeouts_check</STRONG> (Thumb, 122 bytes, Stack size 24 bytes, app_timer.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = timer_timeouts_check
+</UL>
+<BR>[Calls]<UL><LI><a href="#[87]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;timer_list_handler_sched
+<LI><a href="#[40]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_error_handler
+</UL>
+<BR>[Called By]<UL><LI><a href="#[16]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RTC1_IRQHandler
+</UL>
+
+<P><STRONG><a name="[83]"></a>timer_list_handler</STRONG> (Thumb, 128 bytes, Stack size 32 bytes, app_timer.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 72<LI>Call Chain = timer_list_handler &rArr; compare_reg_update &rArr; rtc1_stop
+</UL>
+<BR>[Calls]<UL><LI><a href="#[8a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;compare_reg_update
+<LI><a href="#[88]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;elapsed_ticks_acquire
+<LI><a href="#[80]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;list_insertions_handler
+<LI><a href="#[89]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;list_deletions_handler
+</UL>
+<BR>[Called By]<UL><LI><a href="#[19]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SWI0_IRQHandler
+</UL>
+
+<P><STRONG><a name="[86]"></a>user_op_alloc</STRONG> (Thumb, 38 bytes, Stack size 0 bytes, app_timer.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[52]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_timer_stop
+<LI><a href="#[50]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_timer_start
+</UL>
+
+<P><STRONG><a name="[88]"></a>elapsed_ticks_acquire</STRONG> (Thumb, 58 bytes, Stack size 8 bytes, app_timer.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = elapsed_ticks_acquire
+</UL>
+<BR>[Called By]<UL><LI><a href="#[83]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;timer_list_handler
+</UL>
+
+<P><STRONG><a name="[8a]"></a>compare_reg_update</STRONG> (Thumb, 142 bytes, Stack size 24 bytes, app_timer.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = compare_reg_update &rArr; rtc1_stop
+</UL>
+<BR>[Calls]<UL><LI><a href="#[3b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__asm___11_app_timer_c_cd27f9c3__nrf_delay_us
+<LI><a href="#[7f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rtc1_stop
+</UL>
+<BR>[Called By]<UL><LI><a href="#[83]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;timer_list_handler
+</UL>
+
+<P><STRONG><a name="[26]"></a>app_timer_evt_get</STRONG> (Thumb, 26 bytes, Stack size 8 bytes, app_timer_appsh.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = app_timer_evt_get
+</UL>
+<BR>[Calls]<UL><LI><a href="#[40]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_error_handler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> app_timer_appsh.o(.text)
+</UL>
+<P><STRONG><a name="[36]"></a>pstorage_callback_handler</STRONG> (Thumb, 32 bytes, Stack size 8 bytes, bootloader.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = pstorage_callback_handler
+</UL>
+<BR>[Calls]<UL><LI><a href="#[40]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_error_handler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> bootloader.o(.constdata)
+</UL>
+<P><STRONG><a name="[8b]"></a>wait_for_events</STRONG> (Thumb, 38 bytes, Stack size 8 bytes, bootloader.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = wait_for_events &rArr; app_sched_execute &rArr; app_sched_event_get
+</UL>
+<BR>[Calls]<UL><LI><a href="#[7d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_sched_execute
+<LI><a href="#[40]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_error_handler
+</UL>
+<BR>[Called By]<UL><LI><a href="#[51]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bootloader_dfu_start
+<LI><a href="#[4d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bootloader_dfu_sd_update_finalize
+</UL>
+
+<P><STRONG><a name="[8d]"></a>bootloader_settings_save</STRONG> (Thumb, 54 bytes, Stack size 8 bytes, bootloader.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 84<LI>Call Chain = bootloader_settings_save &rArr; pstorage_store &rArr; cmd_queue_enqueue &rArr; cmd_process &rArr; __aeabi_uidivmod
+</UL>
+<BR>[Calls]<UL><LI><a href="#[7b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pstorage_clear
+<LI><a href="#[79]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pstorage_store
+<LI><a href="#[40]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_error_handler
+</UL>
+<BR>[Called By]<UL><LI><a href="#[8e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bootloader_dfu_update_process
+</UL>
+
+<P><STRONG><a name="[37]"></a>pstorage_callback_handler</STRONG> (Thumb, 78 bytes, Stack size 16 bytes, dfu_single_bank.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = pstorage_callback_handler
+</UL>
+<BR>[Calls]<UL><LI><a href="#[40]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_error_handler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> dfu_single_bank.o(.constdata)
+</UL>
+<P><STRONG><a name="[27]"></a>dfu_timeout_handler</STRONG> (Thumb, 32 bytes, Stack size 32 bytes, dfu_single_bank.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 156<LI>Call Chain = dfu_timeout_handler &rArr; bootloader_dfu_update_process &rArr; bootloader_settings_save &rArr; pstorage_store &rArr; cmd_queue_enqueue &rArr; cmd_process &rArr; __aeabi_uidivmod
+</UL>
+<BR>[Calls]<UL><LI><a href="#[8e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bootloader_dfu_update_process
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> dfu_single_bank.o(.text)
+</UL>
+<P><STRONG><a name="[9a]"></a>dfu_timer_restart</STRONG> (Thumb, 62 bytes, Stack size 8 bytes, dfu_single_bank.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = dfu_timer_restart &rArr; app_timer_start
+</UL>
+<BR>[Calls]<UL><LI><a href="#[52]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_timer_stop
+<LI><a href="#[50]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_timer_start
+<LI><a href="#[40]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_error_handler
+</UL>
+<BR>[Called By]<UL><LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dfu_image_validate
+<LI><a href="#[9f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dfu_init_pkt_handle
+<LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dfu_data_pkt_handle
+<LI><a href="#[9b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dfu_start_pkt_handle
+</UL>
+
+<P><STRONG><a name="[28]"></a>dfu_prepare_func_app_erase</STRONG> (Thumb, 36 bytes, Stack size 8 bytes, dfu_single_bank.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 68<LI>Call Chain = dfu_prepare_func_app_erase &rArr; pstorage_clear &rArr; cmd_queue_enqueue &rArr; cmd_process &rArr; __aeabi_uidivmod
+</UL>
+<BR>[Calls]<UL><LI><a href="#[7b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pstorage_clear
+<LI><a href="#[40]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_error_handler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> dfu_single_bank.o(.text)
+</UL>
+<P><STRONG><a name="[29]"></a>dfu_cleared_func_app</STRONG> (Thumb, 30 bytes, Stack size 32 bytes, dfu_single_bank.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 156<LI>Call Chain = dfu_cleared_func_app &rArr; bootloader_dfu_update_process &rArr; bootloader_settings_save &rArr; pstorage_store &rArr; cmd_queue_enqueue &rArr; cmd_process &rArr; __aeabi_uidivmod
+</UL>
+<BR>[Calls]<UL><LI><a href="#[8e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bootloader_dfu_update_process
+<LI><a href="#[61]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy4
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> dfu_single_bank.o(.text)
+</UL>
+<P><STRONG><a name="[2a]"></a>dfu_activate_sd</STRONG> (Thumb, 62 bytes, Stack size 32 bytes, dfu_single_bank.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 156<LI>Call Chain = dfu_activate_sd &rArr; bootloader_dfu_update_process &rArr; bootloader_settings_save &rArr; pstorage_store &rArr; cmd_queue_enqueue &rArr; cmd_process &rArr; __aeabi_uidivmod
+</UL>
+<BR>[Calls]<UL><LI><a href="#[8e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bootloader_dfu_update_process
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> dfu_single_bank.o(.text)
+</UL>
+<P><STRONG><a name="[2c]"></a>dfu_activate_app</STRONG> (Thumb, 52 bytes, Stack size 32 bytes, dfu_single_bank.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 156<LI>Call Chain = dfu_activate_app &rArr; bootloader_dfu_update_process &rArr; bootloader_settings_save &rArr; pstorage_store &rArr; cmd_queue_enqueue &rArr; cmd_process &rArr; __aeabi_uidivmod
+</UL>
+<BR>[Calls]<UL><LI><a href="#[8e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bootloader_dfu_update_process
+<LI><a href="#[71]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memclr4
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> dfu_single_bank.o(.text)
+</UL>
+<P><STRONG><a name="[2b]"></a>dfu_activate_bl</STRONG> (Thumb, 54 bytes, Stack size 32 bytes, dfu_single_bank.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 156<LI>Call Chain = dfu_activate_bl &rArr; bootloader_dfu_update_process &rArr; bootloader_settings_save &rArr; pstorage_store &rArr; cmd_queue_enqueue &rArr; cmd_process &rArr; __aeabi_uidivmod
+</UL>
+<BR>[Calls]<UL><LI><a href="#[8e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bootloader_dfu_update_process
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> dfu_single_bank.o(.text)
+</UL>
+<P><STRONG><a name="[a4]"></a>dfu_sd_img_block_swap</STRONG> (Thumb, 68 bytes, Stack size 24 bytes, dfu_single_bank.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 48 + In Cycle
+<LI>Call Chain = dfu_sd_img_block_swap &rArr;  dfu_sd_img_block_swap (Cycle)
+</UL>
+<BR>[Calls]<UL><LI><a href="#[a6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dfu_copy_sd
+<LI><a href="#[a5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dfu_compare_block
+<LI><a href="#[a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dfu_sd_img_block_swap
+</UL>
+<BR>[Called By]<UL><LI><a href="#[a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dfu_sd_img_block_swap
+<LI><a href="#[94]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dfu_sd_image_validate
+<LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dfu_sd_image_swap
+</UL>
+
+<P><STRONG><a name="[a5]"></a>dfu_compare_block</STRONG> (Thumb, 22 bytes, Stack size 24 bytes, dfu_single_bank.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = dfu_compare_block
+</UL>
+<BR>[Called By]<UL><LI><a href="#[a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dfu_sd_img_block_swap
+</UL>
+
+<P><STRONG><a name="[a6]"></a>dfu_copy_sd</STRONG> (Thumb, 20 bytes, Stack size 24 bytes, dfu_single_bank.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = dfu_copy_sd
+</UL>
+<BR>[Called By]<UL><LI><a href="#[a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dfu_sd_img_block_swap
+<LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dfu_sd_image_swap
+</UL>
+
+<P><STRONG><a name="[a8]"></a>nrf_err_code_translate</STRONG> (Thumb, 54 bytes, Stack size 0 bytes, dfu_transport_ble.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[b0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;init_data_process
+<LI><a href="#[af]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;start_data_process
+<LI><a href="#[ad]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dfu_error_notify
+<LI><a href="#[2f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;on_dfu_evt
+<LI><a href="#[2e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dfu_cb_handler
+</UL>
+
+<P><STRONG><a name="[2e]"></a>dfu_cb_handler</STRONG> (Thumb, 96 bytes, Stack size 16 bytes, dfu_transport_ble.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 48<LI>Call Chain = dfu_cb_handler &rArr; ble_dfu_response_send
+</UL>
+<BR>[Calls]<UL><LI><a href="#[68]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ble_dfu_response_send
+<LI><a href="#[40]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_error_handler
+<LI><a href="#[a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hci_mem_pool_rx_consume
+<LI><a href="#[a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nrf_err_code_translate
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> dfu_transport_ble.o(.text)
+</UL>
+<P><STRONG><a name="[a9]"></a>app_data_process</STRONG> (Thumb, 210 bytes, Stack size 40 bytes, dfu_transport_ble.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 132<LI>Call Chain = app_data_process &rArr; dfu_data_pkt_handle &rArr; pstorage_store &rArr; cmd_queue_enqueue &rArr; cmd_process &rArr; __aeabi_uidivmod
+</UL>
+<BR>[Calls]<UL><LI><a href="#[70]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ble_dfu_pkts_rcpt_notify
+<LI><a href="#[68]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ble_dfu_response_send
+<LI><a href="#[40]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_error_handler
+<LI><a href="#[3c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy
+<LI><a href="#[aa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hci_mem_pool_rx_produce
+<LI><a href="#[ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hci_mem_pool_rx_extract
+<LI><a href="#[ab]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hci_mem_pool_rx_data_size_set
+<LI><a href="#[a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hci_mem_pool_rx_consume
+<LI><a href="#[ad]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dfu_error_notify
+<LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dfu_data_pkt_handle
+</UL>
+<BR>[Called By]<UL><LI><a href="#[2f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;on_dfu_evt
+</UL>
+
+<P><STRONG><a name="[31]"></a>conn_params_error_handler</STRONG> (Thumb, 12 bytes, Stack size 8 bytes, dfu_transport_ble.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = conn_params_error_handler
+</UL>
+<BR>[Calls]<UL><LI><a href="#[40]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_error_handler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> dfu_transport_ble.o(.text)
+</UL>
+<P><STRONG><a name="[2f]"></a>on_dfu_evt</STRONG> (Thumb, 218 bytes, Stack size 16 bytes, dfu_transport_ble.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 172<LI>Call Chain = on_dfu_evt &rArr; dfu_reset &rArr; bootloader_dfu_update_process &rArr; bootloader_settings_save &rArr; pstorage_store &rArr; cmd_queue_enqueue &rArr; cmd_process &rArr; __aeabi_uidivmod
+</UL>
+<BR>[Calls]<UL><LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dfu_transport_close
+<LI><a href="#[67]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__ARM_common_switch8
+<LI><a href="#[6e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ble_dfu_bytes_rcvd_report
+<LI><a href="#[68]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ble_dfu_response_send
+<LI><a href="#[40]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_error_handler
+<LI><a href="#[b0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;init_data_process
+<LI><a href="#[af]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;start_data_process
+<LI><a href="#[a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_data_process
+<LI><a href="#[a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nrf_err_code_translate
+<LI><a href="#[a3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dfu_reset
+<LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dfu_image_activate
+<LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dfu_image_validate
+<LI><a href="#[9d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dfu_init_pkt_complete
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> dfu_transport_ble.o(.text)
+</UL>
+<P><STRONG><a name="[b1]"></a>advertising_init</STRONG> (Thumb, 68 bytes, Stack size 72 bytes, dfu_transport_ble.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 312<LI>Call Chain = advertising_init &rArr; ble_advdata_set &rArr; adv_data_encode &rArr; uuid_list_encode &rArr; uuid_list_sized_encode
+</UL>
+<BR>[Calls]<UL><LI><a href="#[5f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ble_advdata_set
+<LI><a href="#[40]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_error_handler
+<LI><a href="#[71]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memclr4
+</UL>
+<BR>[Called By]<UL><LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;advertising_start
+</UL>
+
+<P><STRONG><a name="[b2]"></a>advertising_start</STRONG> (Thumb, 172 bytes, Stack size 64 bytes, dfu_transport_ble.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 376<LI>Call Chain = advertising_start &rArr; advertising_init &rArr; ble_advdata_set &rArr; adv_data_encode &rArr; uuid_list_encode &rArr; uuid_list_sized_encode
+</UL>
+<BR>[Calls]<UL><LI><a href="#[40]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_error_handler
+<LI><a href="#[b3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;memcmp
+<LI><a href="#[71]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memclr4
+<LI><a href="#[b1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;advertising_init
+</UL>
+<BR>[Called By]<UL><LI><a href="#[92]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dfu_transport_update_start
+<LI><a href="#[b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;on_ble_evt
+</UL>
+
+<P><STRONG><a name="[b4]"></a>on_ble_evt</STRONG> (Thumb, 390 bytes, Stack size 176 bytes, dfu_transport_ble.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 552<LI>Call Chain = on_ble_evt &rArr; advertising_start &rArr; advertising_init &rArr; ble_advdata_set &rArr; adv_data_encode &rArr; uuid_list_encode &rArr; uuid_list_sized_encode
+</UL>
+<BR>[Calls]<UL><LI><a href="#[8e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bootloader_dfu_update_process
+<LI><a href="#[40]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_error_handler
+<LI><a href="#[61]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy4
+<LI><a href="#[3c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy
+<LI><a href="#[b5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;service_change_indicate
+<LI><a href="#[ae]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nrf_gpio_pin_set
+<LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;advertising_start
+</UL>
+<BR>[Called By]<UL><LI><a href="#[2d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ble_evt_dispatch
+</UL>
+
+<P><STRONG><a name="[2d]"></a>ble_evt_dispatch</STRONG> (Thumb, 26 bytes, Stack size 8 bytes, dfu_transport_ble.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 560<LI>Call Chain = ble_evt_dispatch &rArr; on_ble_evt &rArr; advertising_start &rArr; advertising_init &rArr; ble_advdata_set &rArr; adv_data_encode &rArr; uuid_list_encode &rArr; uuid_list_sized_encode
+</UL>
+<BR>[Calls]<UL><LI><a href="#[6d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ble_dfu_on_ble_evt
+<LI><a href="#[65]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ble_conn_params_on_ble_evt
+<LI><a href="#[b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;on_ble_evt
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> dfu_transport_ble.o(.text)
+</UL>
+<P><STRONG><a name="[30]"></a>service_error_handler</STRONG> (Thumb, 12 bytes, Stack size 8 bytes, dfu_transport_ble.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = service_error_handler
+</UL>
+<BR>[Calls]<UL><LI><a href="#[40]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_error_handler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> dfu_transport_ble.o(.text)
+</UL>
+<P><STRONG><a name="[b6]"></a>nrf_gpio_cfg_output</STRONG> (Thumb, 12 bytes, Stack size 0 bytes, dfu_transport_ble.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[92]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dfu_transport_update_start
+</UL>
+
+<P><STRONG><a name="[ae]"></a>nrf_gpio_pin_set</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, dfu_transport_ble.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[92]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dfu_transport_update_start
+<LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dfu_transport_close
+<LI><a href="#[b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;on_ble_evt
+</UL>
+
+<P><STRONG><a name="[b5]"></a>service_change_indicate</STRONG> (Thumb, 90 bytes, Stack size 16 bytes, dfu_transport_ble.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = service_change_indicate
+</UL>
+<BR>[Called By]<UL><LI><a href="#[b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;on_ble_evt
+</UL>
+
+<P><STRONG><a name="[ad]"></a>dfu_error_notify</STRONG> (Thumb, 38 bytes, Stack size 8 bytes, dfu_transport_ble.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = dfu_error_notify &rArr; ble_dfu_response_send
+</UL>
+<BR>[Calls]<UL><LI><a href="#[68]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ble_dfu_response_send
+<LI><a href="#[40]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_error_handler
+<LI><a href="#[a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nrf_err_code_translate
+</UL>
+<BR>[Called By]<UL><LI><a href="#[a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_data_process
+</UL>
+
+<P><STRONG><a name="[af]"></a>start_data_process</STRONG> (Thumb, 122 bytes, Stack size 40 bytes, dfu_transport_ble.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 96<LI>Call Chain = start_data_process &rArr; dfu_start_pkt_handle &rArr; dfu_timer_restart &rArr; app_timer_start
+</UL>
+<BR>[Calls]<UL><LI><a href="#[68]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ble_dfu_response_send
+<LI><a href="#[40]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_error_handler
+<LI><a href="#[ba]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uint32_decode
+<LI><a href="#[a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nrf_err_code_translate
+<LI><a href="#[9b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dfu_start_pkt_handle
+</UL>
+<BR>[Called By]<UL><LI><a href="#[2f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;on_dfu_evt
+</UL>
+
+<P><STRONG><a name="[b0]"></a>init_data_process</STRONG> (Thumb, 94 bytes, Stack size 32 bytes, dfu_transport_ble.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 96<LI>Call Chain = init_data_process &rArr; dfu_init_pkt_handle &rArr; dfu_timer_restart &rArr; app_timer_start
+</UL>
+<BR>[Calls]<UL><LI><a href="#[68]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ble_dfu_response_send
+<LI><a href="#[40]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_error_handler
+<LI><a href="#[a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nrf_err_code_translate
+<LI><a href="#[9f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dfu_init_pkt_handle
+</UL>
+<BR>[Called By]<UL><LI><a href="#[2f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;on_dfu_evt
+</UL>
+
+<P><STRONG><a name="[ba]"></a>uint32_decode</STRONG> (Thumb, 20 bytes, Stack size 8 bytes, dfu_transport_ble.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = uint32_decode
+</UL>
+<BR>[Calls]<UL><LI><a href="#[bb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_uread4
+</UL>
+<BR>[Called By]<UL><LI><a href="#[af]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;start_data_process
+</UL>
+
+<P><STRONG><a name="[bd]"></a>is_manual_peripheral_setup_needed</STRONG> (Thumb, 66 bytes, Stack size 0 bytes, system_nrf51.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[34]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SystemInit
+</UL>
+<P>
+<H3>
+Undefined Global Symbols
+</H3><HR></body></html>

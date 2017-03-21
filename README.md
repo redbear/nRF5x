@@ -1,12 +1,43 @@
 # nRF5x
 
-Thank you for supporting [RedBear nRF52832 Kickstarter](https://www.kickstarter.com/projects/redbearinc/bluetooth-5-ready-ble-module-nano-2-and-blend-2) campaign.
+## nRF51822
 
-Currently, this repository is for nRF52832 based boards, we will merge nRF51 to this later.
+###BLE Nano
+
+![image](./nRF51822/docs/images/ble_nano_pinout.png)
+
+The BLE Nano is compatible to Arduino (but not 100%) and allows you to use the Arduino IDE for development. Also, it supports mbed online development.
+
+For mbed, please visit, [mbed for BLE Nano](https://developer.mbed.org/platforms/RedBearLab-BLE-Nano/).
+
+It targets for makers, engineers and students to develop low power Internet-Of-Things (IoT) projects/prototypes quickly and easily.
+
+### RBL_nRF51822
+
+RBL nRF51822 is an integrated "ARM + BLE 4.0" development board. It contains a Nordic nRF51822 SoC (ARM Cortex-M0 with BLE) and a Freescale MK20DX MCU (ARM Cortex-M4).
+
+The MK20DX MCU acts as an interface chip that adds USB to the board so that user can upload firmware to the target nRF51822 chip. For more about the USB interface, please see the [USB-IF](USB-IF) folder.
+
+Also, it supports [mbed](https://developer.mbed.org/platforms/RedBearLab-nRF51822/) for online development. 
+
+This board targets for makers, engineers and students to develop low power Internet-Of-Things (IoT) projects/prototypes quickly and easily.
+
+### Interface board
+
+The interface board (MK20 or DAPLink) provides the functions for software development such as downloading firmware.
+
+To update the interface firmware, please refer to the [USB-IF](USB-IF) folder.
+
+### Resources
+For Arduino, please refer to this repo.: [nRF51822-Arduino](https://github.com/RedBear/nRF5x/nRF51822/arduino/)
+
+For more information, please visit:
+[http://redbearlab.com/blenano](http://redbearlab.com/blenano)
 
 ## nRF52832
+Thank you for supporting [RedBear nRF52832 Kickstarter](https://www.kickstarter.com/projects/redbearinc/bluetooth-5-ready-ble-module-nano-2-and-blend-2) campaign.
 
-![image](./docs/images/nRF52832.png)
+![image](./nRF52832/docs/images/nRF52832.png)
 
 The nRF52832 BLE SoC combines its ARM processor with a 2.4GHz multiprotocol radio featuring -96 dB RX sensitivity, 512 kB Flash memory, 64 kB RAM and NFC-A tag for “Touch-to-Pair” capability. You can read all [nRF52832 advanced features](https://www.nordicsemi.com/eng/Products/Bluetooth-low-energy/nRF52832) on Nordic's website.
 
@@ -14,7 +45,7 @@ The nRF52832 BLE SoC combines its ARM processor with a 2.4GHz multiprotocol radi
 
 The nRF51822 runs at 16 MHz only, it is only a Cortex-M0 MCU without DSP and FPU for complicated applications. You will not be able to develop Apple HomeKit projects using nRF51.
 
-## BLE Module (MB-N2)
+### BLE Module (MB-N2)
 
 At the heart of all the new products is our new BLE Module model# MB-N2. It houses the Nordic nRF52832, an on-board antenna and other components special tuning for great performance and low power consumption.
 
@@ -28,43 +59,43 @@ Bluetooth QDID: [91904](https://www.bluetooth.org/tpg/QLI_viewQDL.cfm?qid=33543)
 
 If you have some great project ideas, please refer to the [datasheet](./datasheet/MB-N2 Datasheet.pdf) of the module MB-N2 for details.
 
-## BLE Nano 2
+### BLE Nano 2
 
-![image](./docs/images/Nano2/Nano2.png)
+![image](./nRF52832/docs/images/Nano2/Nano2.png)
 
 We launched our first BLE Nano in 2014 and it is our most popular product. We design Nano 2 as a ‘drop-in’ replacement, with exactly the same form factor, and in most instances only need to change few firmware code. In addition, the new development board also offers a U.FL connector for an external NFC antenna, while users will benefit from the extra processing power and hardware resources of the nRF52832 SoC.
 
-![image](./docs/images/Nano2/Nano2_Pinout.png)
+![image](./nRF52832/docs/images/Nano2/Nano2_Pinout.png)
 
 ### DAPLink
 
 This board has an ARM Cortex-M3 MCU and is used to program and debug an application running on Nano 2 via SWD. DAPLink is an open source project by ARM mbed team, more about [DAPLink](https://developer.mbed.org/handbook/DAPLink).
 
-![image](./docs/images/DAPLink/DAPLink_Pinout.jpg)
+![image](./nRF52832/docs/images/DAPLink/DAPLink_Pinout.jpg)
 
 ### Proto Board
 
-![image](./docs/images/Nano2/ProtoBoard.jpg)
+![image](./nRF52832/docs/images/Nano2/ProtoBoard.jpg)
 
 We design this new Proto Board for you to get started easily. You can power your Nano via coin cell battery, rechargeable battery or USB. The top part could be removed if you don't need it. It has 3 connectors for Seeed's Grove modules (more details below). Last but not least, we have reserved a place for the Apple MFi authentication coprocessor; you can develop BLE HomeKit product if you have the MFi license. 
 
-## Blend 2
+### Blend 2
 
 Our Blend is very popular as it is a "full-size" Arduino compatible board which supports most shields. It has on board a Cortex-M3 MCU that supports DAPLink, slot for Apple MFi coprocessor and two Grove connectors.
 
 You should choose the Blend 2 if you want to test all GPIOs and functions available on the Nordic nRF52832 SoC. 
 
-![image](./docs/images/Blend2/Blend2_Pinout.png)
+![image](./nRF52832/docs/images/Blend2/Blend2_Pinout.png)
 
 ## Getting Started
 
 Before starting to use the nRF52832 boards, you need to do some preparations.
 
-* [Out-of-Box Test](./docs/Getting_Started_Guide.md) will guide you to test the nRF52 board.
+* [Out-of-Box Test](./nRF52832/docs/Getting_Started_Guide.md) will guide you to test the nRF52 board.
   
-* [Updating the DAPLink interface firmware](./daplink) to the latest version, otherwise, you may have problem for drag-n-drop programming the nRF52 SoC.
+* [Updating the DAPLink interface firmware](./nRF52832/daplink) to the latest version, otherwise, you may have problem for drag-n-drop programming the nRF52 SoC.
 
-* [Installing nRF52832 board package](./docs/Arduino_Board_Package_Installation_Guide.md) for using the Arduino IDE for development your projects.
+* [Installing nRF52832 board package](./nRF52832/docs/Arduino_Board_Package_Installation_Guide.md) for using the Arduino IDE for development your projects.
 
 ## Technical Support
 
@@ -78,12 +109,12 @@ Before starting to use the nRF52832 boards, you need to do some preparations.
 
 ## Resoureces
 
-* [Documentations](./docs)
-	* [Product Specifications](./docs/Specifications.md)
-	* [Getting Started Guide](./docs/Getting_Started_Guide.md)
+* [Documentations](./nRF52832/docs)
+	* [Product Specifications](./nRF52832/docs/Specifications.md)
+	* [Getting Started Guide](./nRF52832/docs/Getting_Started_Guide.md)
 * [Nordic nRF52832 Product Specification](http://infocenter.nordicsemi.com/index.jsp?topic=%2Fcom.nordic.infocenter.nrf52%2Fdita%2Fnrf52%2Fchips%2Fnrf52832_ps.html)
-* [MB-N2 Datasheet](./datasheet/MB-N2 Datasheet.pdf)
-* [PCB Files](./pcb)
+* [MB-N2 Datasheet](./nRF52832/datasheet/MB-N2_Datasheet.pdf)
+* [PCB Files](./nRF52832/pcb)
 
 
 
