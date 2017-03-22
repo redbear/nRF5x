@@ -1,12 +1,21 @@
 # USB Interface
 
-## MK20/DAPLink USB Interface(old)
+##DAPLink USB Interface (new)
+The DAPLink V1.5 User Guide can be found here:
 
-## PCB Version
+* [DAPLink V1.5 User Guide](../nRF52832/docs/DAPLink_User_Guide.md)
+
+### Updating Interface Firmware
+
+Pressing and holding the button and then connecting the board to PC USB, the drive ***"MAINTENANCE"*** will appeare. Drag & drop the interface firmware (.bin file) into the drive, re-connected the board to PC USB.
+
+## MK20/DAPLink USB Interface (old)
+
+### PCB Version
 
 ![image](interface.jpg)
 
-## New Interface Firmwre - DAPLink
+### New Interface Firmwre - DAPLink
 
 ARM mbed has changed the interface firmware from CMSIS-DAP to DAPLink, it has all features as the CMSIS-DAP. Note that for the DAPLINK, the drag-and-drop drive is called `DAPLINK` instead of `MBED`.
 
@@ -76,7 +85,7 @@ For F103 DAPLink:
 
 6. Reconnect it to the USB port, your OS will show a drive labelled 'DAPLink' (for DAPLink firmware) or 'MBED' (for CMSIS-DAP firmware)
 
-## MK20 on board
+## MK20 on board (RBL_nRF51822)
 
 ### Interface Chip
 
@@ -119,12 +128,3 @@ In case you have changed the USB interface firmware inside the MK20 interface ch
 8. Now, you can drag the [test](../nRF51822/test) firmware to the DAPLink drive to test. 
  
 9. Note that the DAPLink will not reset the target chip by default, press the `RESET` button to allow the target to run the uploaded firmware, you can change this by sending MSD commands to the DAPLink drive, for the details about the DAPLink automation, please refer to the [MSD Commands](https://github.com/mbedmicro/DAPLink/blob/master/docs/MSD_COMMANDS.md).
-
-##DAPLink USB Interface(new)
-The DAPLink V1.5 User Guide can be found here:
-
-* [DAPLink V1.5 User Guide](../nRF52832/docs/DAPLink_User_Guide.md)
-
-### Updating Interface Firmware
-
-Pressing and holding the button and then connecting the board to PC USB, the drive ***"MAINTENANCE"*** will appeare. Drag & drop the interface firmware (.bin file) into the drive, re-connected the board to PC USB.

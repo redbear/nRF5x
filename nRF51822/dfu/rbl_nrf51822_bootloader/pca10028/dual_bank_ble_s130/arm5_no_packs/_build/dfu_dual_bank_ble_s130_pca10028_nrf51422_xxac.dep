@@ -1,562 +1,0 @@
-Dependencies for Project 'dfu_dual_bank_ble_s130_pca10028', Target 'nrf51422_xxac': (DO NOT MODIFY !)
-F (..\..\..\dfu_ble_svc.c)(0x56407688)(-c --cpu Cortex-M0 -D__MICROLIB -g -O3 --apcs=interwork --bss-threshold=0 -I..\..\..\config\dfu_dual_bank_ble_s130_pca10028 -I..\..\..\config -I..\..\..\..\..\bsp -I..\..\..\..\..\..\components\toolchain -I..\..\..\..\..\..\components\ble\ble_services\ble_dfu -I..\..\..\..\..\..\components\ble\common -I..\..\..\..\..\..\components\drivers_nrf\delay -I..\..\..\..\..\..\components\drivers_nrf\hal -I..\..\..\..\..\..\components\drivers_nrf\pstorage -I..\..\..\..\..\..\components\libraries\bootloader_dfu -I..\..\..\..\..\..\components\libraries\bootloader_dfu\ble_transport -I..\..\..\..\..\..\components\libraries\crc16 -I..\..\..\..\..\..\components\libraries\hci -I..\..\..\..\..\..\components\libraries\scheduler -I..\..\..\..\..\..\components\libraries\timer -I..\..\..\..\..\..\components\libraries\util -I..\..\..\..\..\..\components\softdevice\common\softdevice_handler -I..\..\..\..\..\..\components\softdevice\s130\headers --c99-I F:\RedBear_Work_Finished\nRF51822_N4\Bootloader\nRF51_SDK_10.0.0_DFU_S130_1.0\examples\dfu\bootloader\pca10028\dual_bank_ble_s130\arm5_no_packs\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.2.0\Device\Include-I C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.7.1\Device\Include-D__UVISION_VERSION="513" -D_RTE_ -DNRF51 -DBLE_STACK_SUPPORT_REQD -D__HEAP_SIZE="0" -DBOARD_PCA10028 -DS130 -DBSP_DEFINES_ONLY -DNRF51 -DSOFTDEVICE_PRESENT -DSWI_DISABLE0-o .\_build\dfu_ble_svc.o --omf_browse .\_build\dfu_ble_svc.crf --depend .\_build\dfu_ble_svc.d)
-I (..\..\..\..\..\..\components\libraries\bootloader_dfu\dfu_ble_svc.h)(0x56407685)
-I (..\..\..\..\..\..\components\softdevice\s130\headers\nrf_svc.h)(0x56407687)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5475F300)
-I (..\..\..\..\..\..\components\softdevice\s130\headers\ble_gap.h)(0x56407687)
-I (..\..\..\..\..\..\components\softdevice\s130\headers\ble_types.h)(0x56407687)
-I (..\..\..\..\..\..\components\softdevice\s130\headers\ble_ranges.h)(0x56407687)
-I (C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.2.0\Device\Include\nrf.h)(0x5625C0AA)
-I (C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.2.0\Device\Include\nrf51.h)(0x5625C0A6)
-I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cm0.h)(0x5625B70C)
-I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cmInstr.h)(0x5625A350)
-I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\cmsis_armcc.h)(0x5625A350)
-I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cmFunc.h)(0x5625A350)
-I (C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.2.0\Device\Include\system_nrf51.h)(0x5625C0AA)
-I (C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.2.0\Device\Include\nrf51_bitfields.h)(0x5625C0A8)
-I (C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.2.0\Device\Include\nrf51_deprecated.h)(0x5625C0AA)
-I (C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.2.0\Device\Include\compiler_abstraction.h)(0x5625C0AA)
-I (..\..\..\..\..\..\components\softdevice\s130\headers\nrf_soc.h)(0x56407687)
-I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x5475F300)
-I (..\..\..\..\..\..\components\softdevice\s130\headers\nrf_error_soc.h)(0x56407687)
-I (..\..\..\..\..\..\components\softdevice\s130\headers\nrf_error.h)(0x56407687)
-I (..\..\..\..\..\..\components\softdevice\s130\headers\nrf_error_sdm.h)(0x56407687)
-I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5475F300)
-I (..\..\..\..\..\..\components\libraries\crc16\crc16.h)(0x56407685)
-F (..\..\..\main.c)(0x5843DBB4)(-c --cpu Cortex-M0 -D__MICROLIB -g -O3 --apcs=interwork -I..\..\..\config\dfu_dual_bank_ble_s130_pca10028 -I..\..\..\config -I..\..\..\..\..\bsp -I..\..\..\..\..\..\components\toolchain -I..\..\..\..\..\..\components\ble\ble_services\ble_dfu -I..\..\..\..\..\..\components\ble\common -I..\..\..\..\..\..\components\drivers_nrf\delay -I..\..\..\..\..\..\components\drivers_nrf\hal -I..\..\..\..\..\..\components\drivers_nrf\pstorage -I..\..\..\..\..\..\components\libraries\bootloader_dfu -I..\..\..\..\..\..\components\libraries\bootloader_dfu\ble_transport -I..\..\..\..\..\..\components\libraries\crc16 -I..\..\..\..\..\..\components\libraries\hci -I..\..\..\..\..\..\components\libraries\scheduler -I..\..\..\..\..\..\components\libraries\timer -I..\..\..\..\..\..\components\libraries\util -I..\..\..\..\..\..\components\softdevice\common\softdevice_handler -I..\..\..\..\..\..\components\softdevice\s130\headers --c99-I F:\RedBear_Work_Finished\nRF51822_N4\Bootloader\nRF51_SDK_10.0.0_DFU_S130_1.0\examples\dfu\bootloader\pca10028\dual_bank_ble_s130\arm5_no_packs\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.2.0\Device\Include-I C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.7.1\Device\Include-D__UVISION_VERSION="513" -D_RTE_ -DNRF51 -DBLE_STACK_SUPPORT_REQD -D__HEAP_SIZE="0" -DBOARD_PCA10028 -DS130 -DBSP_DEFINES_ONLY -DNRF51 -DSOFTDEVICE_PRESENT -DSWI_DISABLE0-o .\_build\main.o --omf_browse .\_build\main.crf --depend .\_build\main.d)
-I (..\..\..\..\..\..\components\libraries\bootloader_dfu\dfu_transport.h)(0x56407685)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5475F300)
-I (..\..\..\..\..\..\components\libraries\bootloader_dfu\bootloader.h)(0x56407685)
-I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x5475F300)
-I (..\..\..\..\..\..\components\libraries\bootloader_dfu\bootloader_types.h)(0x56407685)
-I (..\..\..\..\..\..\components\libraries\bootloader_dfu\dfu_types.h)(0x56407685)
-I (..\..\..\..\..\..\components\softdevice\s130\headers\nrf_sdm.h)(0x56407687)
-I (..\..\..\..\..\..\components\softdevice\s130\headers\nrf_svc.h)(0x56407687)
-I (C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.2.0\Device\Include\nrf.h)(0x5625C0AA)
-I (C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.2.0\Device\Include\nrf51.h)(0x5625C0A6)
-I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cm0.h)(0x5625B70C)
-I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cmInstr.h)(0x5625A350)
-I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\cmsis_armcc.h)(0x5625A350)
-I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cmFunc.h)(0x5625A350)
-I (C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.2.0\Device\Include\system_nrf51.h)(0x5625C0AA)
-I (C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.2.0\Device\Include\nrf51_bitfields.h)(0x5625C0A8)
-I (C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.2.0\Device\Include\nrf51_deprecated.h)(0x5625C0AA)
-I (C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.2.0\Device\Include\compiler_abstraction.h)(0x5625C0AA)
-I (..\..\..\..\..\..\components\softdevice\s130\headers\nrf_soc.h)(0x56407687)
-I (..\..\..\..\..\..\components\softdevice\s130\headers\nrf_error_soc.h)(0x56407687)
-I (..\..\..\..\..\..\components\softdevice\s130\headers\nrf_error.h)(0x56407687)
-I (..\..\..\..\..\..\components\softdevice\s130\headers\nrf_error_sdm.h)(0x56407687)
-I (..\..\..\..\..\..\components\libraries\util\app_util.h)(0x56407685)
-I (..\..\..\..\..\..\components\libraries\bootloader_dfu\bootloader_util.h)(0x56407685)
-I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5475F300)
-I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5475F300)
-I (..\..\..\..\..\..\components\libraries\util\nordic_common.h)(0x56407685)
-I (..\..\..\..\..\..\components\libraries\util\app_error.h)(0x56407685)
-I (..\..\..\..\..\..\components\drivers_nrf\hal\nrf_gpio.h)(0x56407685)
-I (..\..\..\..\..\..\components\softdevice\s130\headers\ble.h)(0x56407687)
-I (..\..\..\..\..\..\components\softdevice\s130\headers\ble_ranges.h)(0x56407687)
-I (..\..\..\..\..\..\components\softdevice\s130\headers\ble_types.h)(0x56407687)
-I (..\..\..\..\..\..\components\softdevice\s130\headers\ble_gap.h)(0x56407687)
-I (..\..\..\..\..\..\components\softdevice\s130\headers\ble_l2cap.h)(0x56407687)
-I (..\..\..\..\..\..\components\softdevice\s130\headers\ble_err.h)(0x56407687)
-I (..\..\..\..\..\..\components\softdevice\s130\headers\ble_gatt.h)(0x56407687)
-I (..\..\..\..\..\..\components\softdevice\s130\headers\ble_gattc.h)(0x56407687)
-I (..\..\..\..\..\..\components\softdevice\s130\headers\ble_gatts.h)(0x56407687)
-I (..\..\..\..\..\..\components\softdevice\s130\headers\ble_hci.h)(0x56407687)
-I (..\..\..\..\..\..\components\libraries\scheduler\app_scheduler.h)(0x56407685)
-I (..\..\..\..\..\..\components\libraries\timer\app_timer_appsh.h)(0x56407685)
-I (..\..\..\..\..\..\components\libraries\timer\app_timer.h)(0x56407685)
-I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5475F300)
-I (..\..\..\..\..\bsp\bsp.h)(0x56407688)
-I (..\..\..\..\..\bsp\boards.h)(0x56407688)
-I (..\..\..\..\..\bsp\pca10028.h)(0x56407688)
-I (..\..\..\..\..\..\components\softdevice\common\softdevice_handler\softdevice_handler_appsh.h)(0x56407687)
-I (..\..\..\..\..\..\components\softdevice\common\softdevice_handler\softdevice_handler.h)(0x56407687)
-I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x5475F300)
-I (..\..\..\..\..\..\components\softdevice\common\softdevice_handler\ble_stack_handler_types.h)(0x56407687)
-I (..\..\..\..\..\..\components\softdevice\common\softdevice_handler\ant_stack_handler_types.h)(0x56407687)
-I (..\..\..\config\pstorage_platform.h)(0x56407688)
-I (..\..\..\..\..\..\components\softdevice\s130\headers\nrf_mbr.h)(0x56407687)
-F (..\..\..\Abstract.txt)(0x564076B1)()
-F (..\..\..\license.txt)(0x564076B1)()
-F (..\..\..\..\..\..\components\ble\common\ble_advdata.c)(0x56407685)(-c --cpu Cortex-M0 -D__MICROLIB -g -O3 --apcs=interwork -I..\..\..\config\dfu_dual_bank_ble_s130_pca10028 -I..\..\..\config -I..\..\..\..\..\bsp -I..\..\..\..\..\..\components\toolchain -I..\..\..\..\..\..\components\ble\ble_services\ble_dfu -I..\..\..\..\..\..\components\ble\common -I..\..\..\..\..\..\components\drivers_nrf\delay -I..\..\..\..\..\..\components\drivers_nrf\hal -I..\..\..\..\..\..\components\drivers_nrf\pstorage -I..\..\..\..\..\..\components\libraries\bootloader_dfu -I..\..\..\..\..\..\components\libraries\bootloader_dfu\ble_transport -I..\..\..\..\..\..\components\libraries\crc16 -I..\..\..\..\..\..\components\libraries\hci -I..\..\..\..\..\..\components\libraries\scheduler -I..\..\..\..\..\..\components\libraries\timer -I..\..\..\..\..\..\components\libraries\util -I..\..\..\..\..\..\components\softdevice\common\softdevice_handler -I..\..\..\..\..\..\components\softdevice\s130\headers --c99-I F:\RedBear_Work_Finished\nRF51822_N4\Bootloader\nRF51_SDK_10.0.0_DFU_S130_1.0\examples\dfu\bootloader\pca10028\dual_bank_ble_s130\arm5_no_packs\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.2.0\Device\Include-I C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.7.1\Device\Include-D__UVISION_VERSION="513" -D_RTE_ -DNRF51 -DBLE_STACK_SUPPORT_REQD -D__HEAP_SIZE="0" -DBOARD_PCA10028 -DS130 -DBSP_DEFINES_ONLY -DNRF51 -DSOFTDEVICE_PRESENT -DSWI_DISABLE0-o .\_build\ble_advdata.o --omf_browse .\_build\ble_advdata.crf --depend .\_build\ble_advdata.d)
-I (..\..\..\..\..\..\components\ble\common\ble_advdata.h)(0x56407685)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5475F300)
-I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x5475F300)
-I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5475F300)
-I (..\..\..\..\..\..\components\softdevice\s130\headers\ble.h)(0x56407687)
-I (..\..\..\..\..\..\components\softdevice\s130\headers\ble_ranges.h)(0x56407687)
-I (..\..\..\..\..\..\components\softdevice\s130\headers\ble_types.h)(0x56407687)
-I (..\..\..\..\..\..\components\softdevice\s130\headers\ble_gap.h)(0x56407687)
-I (..\..\..\..\..\..\components\softdevice\s130\headers\nrf_svc.h)(0x56407687)
-I (..\..\..\..\..\..\components\softdevice\s130\headers\ble_l2cap.h)(0x56407687)
-I (..\..\..\..\..\..\components\softdevice\s130\headers\ble_err.h)(0x56407687)
-I (..\..\..\..\..\..\components\softdevice\s130\headers\nrf_error.h)(0x56407687)
-I (..\..\..\..\..\..\components\softdevice\s130\headers\ble_gatt.h)(0x56407687)
-I (..\..\..\..\..\..\components\softdevice\s130\headers\ble_gattc.h)(0x56407687)
-I (..\..\..\..\..\..\components\softdevice\s130\headers\ble_gatts.h)(0x56407687)
-I (..\..\..\..\..\..\components\libraries\util\app_util.h)(0x56407685)
-I (C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.2.0\Device\Include\compiler_abstraction.h)(0x5625C0AA)
-I (..\..\..\..\..\..\components\libraries\util\nordic_common.h)(0x56407685)
-I (..\..\..\..\..\..\components\ble\common\ble_srv_common.h)(0x56407685)
-F (..\..\..\..\..\..\components\ble\common\ble_conn_params.c)(0x56407685)(-c --cpu Cortex-M0 -D__MICROLIB -g -O3 --apcs=interwork -I..\..\..\config\dfu_dual_bank_ble_s130_pca10028 -I..\..\..\config -I..\..\..\..\..\bsp -I..\..\..\..\..\..\components\toolchain -I..\..\..\..\..\..\components\ble\ble_services\ble_dfu -I..\..\..\..\..\..\components\ble\common -I..\..\..\..\..\..\components\drivers_nrf\delay -I..\..\..\..\..\..\components\drivers_nrf\hal -I..\..\..\..\..\..\components\drivers_nrf\pstorage -I..\..\..\..\..\..\components\libraries\bootloader_dfu -I..\..\..\..\..\..\components\libraries\bootloader_dfu\ble_transport -I..\..\..\..\..\..\components\libraries\crc16 -I..\..\..\..\..\..\components\libraries\hci -I..\..\..\..\..\..\components\libraries\scheduler -I..\..\..\..\..\..\components\libraries\timer -I..\..\..\..\..\..\components\libraries\util -I..\..\..\..\..\..\components\softdevice\common\softdevice_handler -I..\..\..\..\..\..\components\softdevice\s130\headers --c99-I F:\RedBear_Work_Finished\nRF51822_N4\Bootloader\nRF51_SDK_10.0.0_DFU_S130_1.0\examples\dfu\bootloader\pca10028\dual_bank_ble_s130\arm5_no_packs\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.2.0\Device\Include-I C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.7.1\Device\Include-D__UVISION_VERSION="513" -D_RTE_ -DNRF51 -DBLE_STACK_SUPPORT_REQD -D__HEAP_SIZE="0" -DBOARD_PCA10028 -DS130 -DBSP_DEFINES_ONLY -DNRF51 -DSOFTDEVICE_PRESENT -DSWI_DISABLE0-o .\_build\ble_conn_params.o --omf_browse .\_build\ble_conn_params.crf --depend .\_build\ble_conn_params.d)
-I (..\..\..\..\..\..\components\ble\common\ble_conn_params.h)(0x56407685)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5475F300)
-I (..\..\..\..\..\..\components\softdevice\s130\headers\ble.h)(0x56407687)
-I (..\..\..\..\..\..\components\softdevice\s130\headers\ble_ranges.h)(0x56407687)
-I (..\..\..\..\..\..\components\softdevice\s130\headers\ble_types.h)(0x56407687)
-I (..\..\..\..\..\..\components\softdevice\s130\headers\ble_gap.h)(0x56407687)
-I (..\..\..\..\..\..\components\softdevice\s130\headers\nrf_svc.h)(0x56407687)
-I (..\..\..\..\..\..\components\softdevice\s130\headers\ble_l2cap.h)(0x56407687)
-I (..\..\..\..\..\..\components\softdevice\s130\headers\ble_err.h)(0x56407687)
-I (..\..\..\..\..\..\components\softdevice\s130\headers\nrf_error.h)(0x56407687)
-I (..\..\..\..\..\..\components\softdevice\s130\headers\ble_gatt.h)(0x56407687)
-I (..\..\..\..\..\..\components\softdevice\s130\headers\ble_gattc.h)(0x56407687)
-I (..\..\..\..\..\..\components\softdevice\s130\headers\ble_gatts.h)(0x56407687)
-I (..\..\..\..\..\..\components\ble\common\ble_srv_common.h)(0x56407685)
-I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x5475F300)
-I (..\..\..\..\..\..\components\libraries\util\app_util.h)(0x56407685)
-I (C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.2.0\Device\Include\compiler_abstraction.h)(0x5625C0AA)
-I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x5475F300)
-I (..\..\..\..\..\..\components\libraries\util\nordic_common.h)(0x56407685)
-I (..\..\..\..\..\..\components\softdevice\s130\headers\ble_hci.h)(0x56407687)
-I (..\..\..\..\..\..\components\libraries\timer\app_timer.h)(0x56407685)
-I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5475F300)
-I (..\..\..\..\..\..\components\libraries\util\app_error.h)(0x56407685)
-F (..\..\..\..\..\..\components\ble\ble_services\ble_dfu\ble_dfu.c)(0x56407685)(-c --cpu Cortex-M0 -D__MICROLIB -g -O3 --apcs=interwork -I..\..\..\config\dfu_dual_bank_ble_s130_pca10028 -I..\..\..\config -I..\..\..\..\..\bsp -I..\..\..\..\..\..\components\toolchain -I..\..\..\..\..\..\components\ble\ble_services\ble_dfu -I..\..\..\..\..\..\components\ble\common -I..\..\..\..\..\..\components\drivers_nrf\delay -I..\..\..\..\..\..\components\drivers_nrf\hal -I..\..\..\..\..\..\components\drivers_nrf\pstorage -I..\..\..\..\..\..\components\libraries\bootloader_dfu -I..\..\..\..\..\..\components\libraries\bootloader_dfu\ble_transport -I..\..\..\..\..\..\components\libraries\crc16 -I..\..\..\..\..\..\components\libraries\hci -I..\..\..\..\..\..\components\libraries\scheduler -I..\..\..\..\..\..\components\libraries\timer -I..\..\..\..\..\..\components\libraries\util -I..\..\..\..\..\..\components\softdevice\common\softdevice_handler -I..\..\..\..\..\..\components\softdevice\s130\headers --c99-I F:\RedBear_Work_Finished\nRF51822_N4\Bootloader\nRF51_SDK_10.0.0_DFU_S130_1.0\examples\dfu\bootloader\pca10028\dual_bank_ble_s130\arm5_no_packs\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.2.0\Device\Include-I C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.7.1\Device\Include-D__UVISION_VERSION="513" -D_RTE_ -DNRF51 -DBLE_STACK_SUPPORT_REQD -D__HEAP_SIZE="0" -DBOARD_PCA10028 -DS130 -DBSP_DEFINES_ONLY -DNRF51 -DSOFTDEVICE_PRESENT -DSWI_DISABLE0-o .\_build\ble_dfu.o --omf_browse .\_build\ble_dfu.crf --depend .\_build\ble_dfu.d)
-I (..\..\..\..\..\..\components\ble\ble_services\ble_dfu\ble_dfu.h)(0x56407685)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5475F300)
-I (..\..\..\..\..\..\components\softdevice\s130\headers\ble_gatts.h)(0x56407687)
-I (..\..\..\..\..\..\components\softdevice\s130\headers\ble_types.h)(0x56407687)
-I (..\..\..\..\..\..\components\softdevice\s130\headers\ble_ranges.h)(0x56407687)
-I (..\..\..\..\..\..\components\softdevice\s130\headers\ble_l2cap.h)(0x56407687)
-I (..\..\..\..\..\..\components\softdevice\s130\headers\ble_err.h)(0x56407687)
-I (..\..\..\..\..\..\components\softdevice\s130\headers\nrf_error.h)(0x56407687)
-I (..\..\..\..\..\..\components\softdevice\s130\headers\nrf_svc.h)(0x56407687)
-I (..\..\..\..\..\..\components\softdevice\s130\headers\ble_gap.h)(0x56407687)
-I (..\..\..\..\..\..\components\softdevice\s130\headers\ble_gatt.h)(0x56407687)
-I (..\..\..\..\..\..\components\softdevice\s130\headers\ble.h)(0x56407687)
-I (..\..\..\..\..\..\components\softdevice\s130\headers\ble_gattc.h)(0x56407687)
-I (..\..\..\..\..\..\components\ble\common\ble_srv_common.h)(0x56407685)
-I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x5475F300)
-I (..\..\..\..\..\..\components\libraries\util\app_util.h)(0x56407685)
-I (C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.2.0\Device\Include\compiler_abstraction.h)(0x5625C0AA)
-I (..\..\..\..\..\..\components\libraries\util\nordic_common.h)(0x56407685)
-I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5475F300)
-I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5475F300)
-F (..\..\..\..\..\..\components\ble\common\ble_srv_common.c)(0x56407685)(-c --cpu Cortex-M0 -D__MICROLIB -g -O3 --apcs=interwork -I..\..\..\config\dfu_dual_bank_ble_s130_pca10028 -I..\..\..\config -I..\..\..\..\..\bsp -I..\..\..\..\..\..\components\toolchain -I..\..\..\..\..\..\components\ble\ble_services\ble_dfu -I..\..\..\..\..\..\components\ble\common -I..\..\..\..\..\..\components\drivers_nrf\delay -I..\..\..\..\..\..\components\drivers_nrf\hal -I..\..\..\..\..\..\components\drivers_nrf\pstorage -I..\..\..\..\..\..\components\libraries\bootloader_dfu -I..\..\..\..\..\..\components\libraries\bootloader_dfu\ble_transport -I..\..\..\..\..\..\components\libraries\crc16 -I..\..\..\..\..\..\components\libraries\hci -I..\..\..\..\..\..\components\libraries\scheduler -I..\..\..\..\..\..\components\libraries\timer -I..\..\..\..\..\..\components\libraries\util -I..\..\..\..\..\..\components\softdevice\common\softdevice_handler -I..\..\..\..\..\..\components\softdevice\s130\headers --c99-I F:\RedBear_Work_Finished\nRF51822_N4\Bootloader\nRF51_SDK_10.0.0_DFU_S130_1.0\examples\dfu\bootloader\pca10028\dual_bank_ble_s130\arm5_no_packs\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.2.0\Device\Include-I C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.7.1\Device\Include-D__UVISION_VERSION="513" -D_RTE_ -DNRF51 -DBLE_STACK_SUPPORT_REQD -D__HEAP_SIZE="0" -DBOARD_PCA10028 -DS130 -DBSP_DEFINES_ONLY -DNRF51 -DSOFTDEVICE_PRESENT -DSWI_DISABLE0-o .\_build\ble_srv_common.o --omf_browse .\_build\ble_srv_common.crf --depend .\_build\ble_srv_common.d)
-I (..\..\..\..\..\..\components\ble\common\ble_srv_common.h)(0x56407685)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5475F300)
-I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x5475F300)
-I (..\..\..\..\..\..\components\softdevice\s130\headers\ble_types.h)(0x56407687)
-I (..\..\..\..\..\..\components\libraries\util\app_util.h)(0x56407685)
-I (C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.2.0\Device\Include\compiler_abstraction.h)(0x5625C0AA)
-I (..\..\..\..\..\..\components\softdevice\s130\headers\ble.h)(0x56407687)
-I (..\..\..\..\..\..\components\softdevice\s130\headers\ble_ranges.h)(0x56407687)
-I (..\..\..\..\..\..\components\softdevice\s130\headers\ble_gap.h)(0x56407687)
-I (..\..\..\..\..\..\components\softdevice\s130\headers\nrf_svc.h)(0x56407687)
-I (..\..\..\..\..\..\components\softdevice\s130\headers\ble_l2cap.h)(0x56407687)
-I (..\..\..\..\..\..\components\softdevice\s130\headers\ble_err.h)(0x56407687)
-I (..\..\..\..\..\..\components\softdevice\s130\headers\nrf_error.h)(0x56407687)
-I (..\..\..\..\..\..\components\softdevice\s130\headers\ble_gatt.h)(0x56407687)
-I (..\..\..\..\..\..\components\softdevice\s130\headers\ble_gattc.h)(0x56407687)
-I (..\..\..\..\..\..\components\softdevice\s130\headers\ble_gatts.h)(0x56407687)
-I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5475F300)
-I (..\..\..\..\..\..\components\libraries\util\nordic_common.h)(0x56407685)
-I (..\..\..\..\..\..\components\libraries\util\app_error.h)(0x56407685)
-F (..\..\..\..\..\..\components\drivers_nrf\delay\nrf_delay.c)(0x56407685)(-c --cpu Cortex-M0 -D__MICROLIB -g -O3 --apcs=interwork -I..\..\..\config\dfu_dual_bank_ble_s130_pca10028 -I..\..\..\config -I..\..\..\..\..\bsp -I..\..\..\..\..\..\components\toolchain -I..\..\..\..\..\..\components\ble\ble_services\ble_dfu -I..\..\..\..\..\..\components\ble\common -I..\..\..\..\..\..\components\drivers_nrf\delay -I..\..\..\..\..\..\components\drivers_nrf\hal -I..\..\..\..\..\..\components\drivers_nrf\pstorage -I..\..\..\..\..\..\components\libraries\bootloader_dfu -I..\..\..\..\..\..\components\libraries\bootloader_dfu\ble_transport -I..\..\..\..\..\..\components\libraries\crc16 -I..\..\..\..\..\..\components\libraries\hci -I..\..\..\..\..\..\components\libraries\scheduler -I..\..\..\..\..\..\components\libraries\timer -I..\..\..\..\..\..\components\libraries\util -I..\..\..\..\..\..\components\softdevice\common\softdevice_handler -I..\..\..\..\..\..\components\softdevice\s130\headers --c99-I F:\RedBear_Work_Finished\nRF51822_N4\Bootloader\nRF51_SDK_10.0.0_DFU_S130_1.0\examples\dfu\bootloader\pca10028\dual_bank_ble_s130\arm5_no_packs\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.2.0\Device\Include-I C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.7.1\Device\Include-D__UVISION_VERSION="513" -D_RTE_ -DNRF51 -DBLE_STACK_SUPPORT_REQD -D__HEAP_SIZE="0" -DBOARD_PCA10028 -DS130 -DBSP_DEFINES_ONLY -DNRF51 -DSOFTDEVICE_PRESENT -DSWI_DISABLE0-o .\_build\nrf_delay.o --omf_browse .\_build\nrf_delay.crf --depend .\_build\nrf_delay.d)
-I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5475F300)
-I (C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.2.0\Device\Include\compiler_abstraction.h)(0x5625C0AA)
-I (C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.2.0\Device\Include\nrf.h)(0x5625C0AA)
-I (C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.2.0\Device\Include\nrf51.h)(0x5625C0A6)
-I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cm0.h)(0x5625B70C)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5475F300)
-I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cmInstr.h)(0x5625A350)
-I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\cmsis_armcc.h)(0x5625A350)
-I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cmFunc.h)(0x5625A350)
-I (C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.2.0\Device\Include\system_nrf51.h)(0x5625C0AA)
-I (C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.2.0\Device\Include\nrf51_bitfields.h)(0x5625C0A8)
-I (C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.2.0\Device\Include\nrf51_deprecated.h)(0x5625C0AA)
-I (..\..\..\..\..\..\components\drivers_nrf\delay\nrf_delay.h)(0x56407685)
-F (..\..\..\..\..\..\components\drivers_nrf\pstorage\pstorage_raw.c)(0x56407685)(-c --cpu Cortex-M0 -D__MICROLIB -g -O3 --apcs=interwork -I..\..\..\config\dfu_dual_bank_ble_s130_pca10028 -I..\..\..\config -I..\..\..\..\..\bsp -I..\..\..\..\..\..\components\toolchain -I..\..\..\..\..\..\components\ble\ble_services\ble_dfu -I..\..\..\..\..\..\components\ble\common -I..\..\..\..\..\..\components\drivers_nrf\delay -I..\..\..\..\..\..\components\drivers_nrf\hal -I..\..\..\..\..\..\components\drivers_nrf\pstorage -I..\..\..\..\..\..\components\libraries\bootloader_dfu -I..\..\..\..\..\..\components\libraries\bootloader_dfu\ble_transport -I..\..\..\..\..\..\components\libraries\crc16 -I..\..\..\..\..\..\components\libraries\hci -I..\..\..\..\..\..\components\libraries\scheduler -I..\..\..\..\..\..\components\libraries\timer -I..\..\..\..\..\..\components\libraries\util -I..\..\..\..\..\..\components\softdevice\common\softdevice_handler -I..\..\..\..\..\..\components\softdevice\s130\headers --c99-I F:\RedBear_Work_Finished\nRF51822_N4\Bootloader\nRF51_SDK_10.0.0_DFU_S130_1.0\examples\dfu\bootloader\pca10028\dual_bank_ble_s130\arm5_no_packs\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.2.0\Device\Include-I C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.7.1\Device\Include-D__UVISION_VERSION="513" -D_RTE_ -DNRF51 -DBLE_STACK_SUPPORT_REQD -D__HEAP_SIZE="0" -DBOARD_PCA10028 -DS130 -DBSP_DEFINES_ONLY -DNRF51 -DSOFTDEVICE_PRESENT -DSWI_DISABLE0-o .\_build\pstorage_raw.o --omf_browse .\_build\pstorage_raw.crf --depend .\_build\pstorage_raw.d)
-I (..\..\..\..\..\..\components\drivers_nrf\pstorage\pstorage.h)(0x56407685)
-I (..\..\..\config\pstorage_platform.h)(0x56407688)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5475F300)
-I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x5475F300)
-I (..\..\..\..\..\..\components\libraries\util\nordic_common.h)(0x56407685)
-I (..\..\..\..\..\..\components\softdevice\s130\headers\nrf_error.h)(0x56407687)
-I (..\..\..\..\..\..\components\libraries\util\nrf_assert.h)(0x56407685)
-I (C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.2.0\Device\Include\compiler_abstraction.h)(0x5625C0AA)
-I (C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.2.0\Device\Include\nrf.h)(0x5625C0AA)
-I (C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.2.0\Device\Include\nrf51.h)(0x5625C0A6)
-I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cm0.h)(0x5625B70C)
-I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cmInstr.h)(0x5625A350)
-I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\cmsis_armcc.h)(0x5625A350)
-I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cmFunc.h)(0x5625A350)
-I (C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.2.0\Device\Include\system_nrf51.h)(0x5625C0AA)
-I (C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.2.0\Device\Include\nrf51_bitfields.h)(0x5625C0A8)
-I (C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.2.0\Device\Include\nrf51_deprecated.h)(0x5625C0AA)
-I (..\..\..\..\..\..\components\softdevice\s130\headers\nrf_soc.h)(0x56407687)
-I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x5475F300)
-I (..\..\..\..\..\..\components\softdevice\s130\headers\nrf_svc.h)(0x56407687)
-I (..\..\..\..\..\..\components\softdevice\s130\headers\nrf_error_soc.h)(0x56407687)
-I (..\..\..\..\..\..\components\libraries\util\app_util.h)(0x56407685)
-F (..\..\..\..\..\..\components\libraries\util\app_error.c)(0x56407685)(-c --cpu Cortex-M0 -D__MICROLIB -g -O3 --apcs=interwork -I..\..\..\config\dfu_dual_bank_ble_s130_pca10028 -I..\..\..\config -I..\..\..\..\..\bsp -I..\..\..\..\..\..\components\toolchain -I..\..\..\..\..\..\components\ble\ble_services\ble_dfu -I..\..\..\..\..\..\components\ble\common -I..\..\..\..\..\..\components\drivers_nrf\delay -I..\..\..\..\..\..\components\drivers_nrf\hal -I..\..\..\..\..\..\components\drivers_nrf\pstorage -I..\..\..\..\..\..\components\libraries\bootloader_dfu -I..\..\..\..\..\..\components\libraries\bootloader_dfu\ble_transport -I..\..\..\..\..\..\components\libraries\crc16 -I..\..\..\..\..\..\components\libraries\hci -I..\..\..\..\..\..\components\libraries\scheduler -I..\..\..\..\..\..\components\libraries\timer -I..\..\..\..\..\..\components\libraries\util -I..\..\..\..\..\..\components\softdevice\common\softdevice_handler -I..\..\..\..\..\..\components\softdevice\s130\headers --c99-I F:\RedBear_Work_Finished\nRF51822_N4\Bootloader\nRF51_SDK_10.0.0_DFU_S130_1.0\examples\dfu\bootloader\pca10028\dual_bank_ble_s130\arm5_no_packs\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.2.0\Device\Include-I C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.7.1\Device\Include-D__UVISION_VERSION="513" -D_RTE_ -DNRF51 -DBLE_STACK_SUPPORT_REQD -D__HEAP_SIZE="0" -DBOARD_PCA10028 -DS130 -DBSP_DEFINES_ONLY -DNRF51 -DSOFTDEVICE_PRESENT -DSWI_DISABLE0-o .\_build\app_error.o --omf_browse .\_build\app_error.crf --depend .\_build\app_error.d)
-I (C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.2.0\Device\Include\nrf.h)(0x5625C0AA)
-I (C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.2.0\Device\Include\nrf51.h)(0x5625C0A6)
-I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cm0.h)(0x5625B70C)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5475F300)
-I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cmInstr.h)(0x5625A350)
-I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\cmsis_armcc.h)(0x5625A350)
-I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cmFunc.h)(0x5625A350)
-I (C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.2.0\Device\Include\system_nrf51.h)(0x5625C0AA)
-I (C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.2.0\Device\Include\nrf51_bitfields.h)(0x5625C0A8)
-I (C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.2.0\Device\Include\nrf51_deprecated.h)(0x5625C0AA)
-I (C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.2.0\Device\Include\compiler_abstraction.h)(0x5625C0AA)
-I (..\..\..\..\..\..\components\libraries\util\app_error.h)(0x56407685)
-I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x5475F300)
-I (..\..\..\..\..\..\components\softdevice\s130\headers\nrf_error.h)(0x56407687)
-I (..\..\..\..\..\..\components\libraries\util\nordic_common.h)(0x56407685)
-F (..\..\..\..\..\..\components\libraries\scheduler\app_scheduler.c)(0x56407685)(-c --cpu Cortex-M0 -D__MICROLIB -g -O3 --apcs=interwork -I..\..\..\config\dfu_dual_bank_ble_s130_pca10028 -I..\..\..\config -I..\..\..\..\..\bsp -I..\..\..\..\..\..\components\toolchain -I..\..\..\..\..\..\components\ble\ble_services\ble_dfu -I..\..\..\..\..\..\components\ble\common -I..\..\..\..\..\..\components\drivers_nrf\delay -I..\..\..\..\..\..\components\drivers_nrf\hal -I..\..\..\..\..\..\components\drivers_nrf\pstorage -I..\..\..\..\..\..\components\libraries\bootloader_dfu -I..\..\..\..\..\..\components\libraries\bootloader_dfu\ble_transport -I..\..\..\..\..\..\components\libraries\crc16 -I..\..\..\..\..\..\components\libraries\hci -I..\..\..\..\..\..\components\libraries\scheduler -I..\..\..\..\..\..\components\libraries\timer -I..\..\..\..\..\..\components\libraries\util -I..\..\..\..\..\..\components\softdevice\common\softdevice_handler -I..\..\..\..\..\..\components\softdevice\s130\headers --c99-I F:\RedBear_Work_Finished\nRF51822_N4\Bootloader\nRF51_SDK_10.0.0_DFU_S130_1.0\examples\dfu\bootloader\pca10028\dual_bank_ble_s130\arm5_no_packs\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.2.0\Device\Include-I C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.7.1\Device\Include-D__UVISION_VERSION="513" -D_RTE_ -DNRF51 -DBLE_STACK_SUPPORT_REQD -D__HEAP_SIZE="0" -DBOARD_PCA10028 -DS130 -DBSP_DEFINES_ONLY -DNRF51 -DSOFTDEVICE_PRESENT -DSWI_DISABLE0-o .\_build\app_scheduler.o --omf_browse .\_build\app_scheduler.crf --depend .\_build\app_scheduler.d)
-I (..\..\..\..\..\..\components\libraries\scheduler\app_scheduler.h)(0x56407685)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5475F300)
-I (..\..\..\..\..\..\components\libraries\util\app_error.h)(0x56407685)
-I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x5475F300)
-I (..\..\..\..\..\..\components\softdevice\s130\headers\nrf_error.h)(0x56407687)
-I (..\..\..\..\..\..\components\libraries\util\app_util.h)(0x56407685)
-I (C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.2.0\Device\Include\compiler_abstraction.h)(0x5625C0AA)
-I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x5475F300)
-I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5475F300)
-I (..\..\..\..\..\..\components\softdevice\s130\headers\nrf_soc.h)(0x56407687)
-I (..\..\..\..\..\..\components\softdevice\s130\headers\nrf_svc.h)(0x56407687)
-I (C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.2.0\Device\Include\nrf.h)(0x5625C0AA)
-I (C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.2.0\Device\Include\nrf51.h)(0x5625C0A6)
-I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cm0.h)(0x5625B70C)
-I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cmInstr.h)(0x5625A350)
-I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\cmsis_armcc.h)(0x5625A350)
-I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cmFunc.h)(0x5625A350)
-I (C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.2.0\Device\Include\system_nrf51.h)(0x5625C0AA)
-I (C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.2.0\Device\Include\nrf51_bitfields.h)(0x5625C0A8)
-I (C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.2.0\Device\Include\nrf51_deprecated.h)(0x5625C0AA)
-I (..\..\..\..\..\..\components\softdevice\s130\headers\nrf_error_soc.h)(0x56407687)
-I (..\..\..\..\..\..\components\libraries\util\nrf_assert.h)(0x56407685)
-I (..\..\..\..\..\..\components\libraries\util\app_util_platform.h)(0x56407685)
-F (..\..\..\..\..\..\components\libraries\timer\app_timer.c)(0x56407685)(-c --cpu Cortex-M0 -D__MICROLIB -g -O3 --apcs=interwork -I..\..\..\config\dfu_dual_bank_ble_s130_pca10028 -I..\..\..\config -I..\..\..\..\..\bsp -I..\..\..\..\..\..\components\toolchain -I..\..\..\..\..\..\components\ble\ble_services\ble_dfu -I..\..\..\..\..\..\components\ble\common -I..\..\..\..\..\..\components\drivers_nrf\delay -I..\..\..\..\..\..\components\drivers_nrf\hal -I..\..\..\..\..\..\components\drivers_nrf\pstorage -I..\..\..\..\..\..\components\libraries\bootloader_dfu -I..\..\..\..\..\..\components\libraries\bootloader_dfu\ble_transport -I..\..\..\..\..\..\components\libraries\crc16 -I..\..\..\..\..\..\components\libraries\hci -I..\..\..\..\..\..\components\libraries\scheduler -I..\..\..\..\..\..\components\libraries\timer -I..\..\..\..\..\..\components\libraries\util -I..\..\..\..\..\..\components\softdevice\common\softdevice_handler -I..\..\..\..\..\..\components\softdevice\s130\headers --c99-I F:\RedBear_Work_Finished\nRF51822_N4\Bootloader\nRF51_SDK_10.0.0_DFU_S130_1.0\examples\dfu\bootloader\pca10028\dual_bank_ble_s130\arm5_no_packs\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.2.0\Device\Include-I C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.7.1\Device\Include-D__UVISION_VERSION="513" -D_RTE_ -DNRF51 -DBLE_STACK_SUPPORT_REQD -D__HEAP_SIZE="0" -DBOARD_PCA10028 -DS130 -DBSP_DEFINES_ONLY -DNRF51 -DSOFTDEVICE_PRESENT -DSWI_DISABLE0-o .\_build\app_timer.o --omf_browse .\_build\app_timer.crf --depend .\_build\app_timer.d)
-I (..\..\..\..\..\..\components\libraries\timer\app_timer.h)(0x56407685)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5475F300)
-I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x5475F300)
-I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5475F300)
-I (..\..\..\..\..\..\components\libraries\util\app_error.h)(0x56407685)
-I (..\..\..\..\..\..\components\softdevice\s130\headers\nrf_error.h)(0x56407687)
-I (..\..\..\..\..\..\components\libraries\util\app_util.h)(0x56407685)
-I (C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.2.0\Device\Include\compiler_abstraction.h)(0x5625C0AA)
-I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x5475F300)
-I (C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.2.0\Device\Include\nrf.h)(0x5625C0AA)
-I (C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.2.0\Device\Include\nrf51.h)(0x5625C0A6)
-I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cm0.h)(0x5625B70C)
-I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cmInstr.h)(0x5625A350)
-I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\cmsis_armcc.h)(0x5625A350)
-I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cmFunc.h)(0x5625A350)
-I (C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.2.0\Device\Include\system_nrf51.h)(0x5625C0AA)
-I (C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.2.0\Device\Include\nrf51_bitfields.h)(0x5625C0A8)
-I (C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.2.0\Device\Include\nrf51_deprecated.h)(0x5625C0AA)
-I (..\..\..\..\..\..\components\softdevice\s130\headers\nrf_soc.h)(0x56407687)
-I (..\..\..\..\..\..\components\softdevice\s130\headers\nrf_svc.h)(0x56407687)
-I (..\..\..\..\..\..\components\softdevice\s130\headers\nrf_error_soc.h)(0x56407687)
-I (..\..\..\..\..\..\components\drivers_nrf\delay\nrf_delay.h)(0x56407685)
-I (..\..\..\..\..\..\components\libraries\util\app_util_platform.h)(0x56407685)
-F (..\..\..\..\..\..\components\libraries\timer\app_timer_appsh.c)(0x56407685)(-c --cpu Cortex-M0 -D__MICROLIB -g -O3 --apcs=interwork -I..\..\..\config\dfu_dual_bank_ble_s130_pca10028 -I..\..\..\config -I..\..\..\..\..\bsp -I..\..\..\..\..\..\components\toolchain -I..\..\..\..\..\..\components\ble\ble_services\ble_dfu -I..\..\..\..\..\..\components\ble\common -I..\..\..\..\..\..\components\drivers_nrf\delay -I..\..\..\..\..\..\components\drivers_nrf\hal -I..\..\..\..\..\..\components\drivers_nrf\pstorage -I..\..\..\..\..\..\components\libraries\bootloader_dfu -I..\..\..\..\..\..\components\libraries\bootloader_dfu\ble_transport -I..\..\..\..\..\..\components\libraries\crc16 -I..\..\..\..\..\..\components\libraries\hci -I..\..\..\..\..\..\components\libraries\scheduler -I..\..\..\..\..\..\components\libraries\timer -I..\..\..\..\..\..\components\libraries\util -I..\..\..\..\..\..\components\softdevice\common\softdevice_handler -I..\..\..\..\..\..\components\softdevice\s130\headers --c99-I F:\RedBear_Work_Finished\nRF51822_N4\Bootloader\nRF51_SDK_10.0.0_DFU_S130_1.0\examples\dfu\bootloader\pca10028\dual_bank_ble_s130\arm5_no_packs\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.2.0\Device\Include-I C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.7.1\Device\Include-D__UVISION_VERSION="513" -D_RTE_ -DNRF51 -DBLE_STACK_SUPPORT_REQD -D__HEAP_SIZE="0" -DBOARD_PCA10028 -DS130 -DBSP_DEFINES_ONLY -DNRF51 -DSOFTDEVICE_PRESENT -DSWI_DISABLE0-o .\_build\app_timer_appsh.o --omf_browse .\_build\app_timer_appsh.crf --depend .\_build\app_timer_appsh.d)
-I (..\..\..\..\..\..\components\libraries\timer\app_timer_appsh.h)(0x56407685)
-I (..\..\..\..\..\..\components\libraries\timer\app_timer.h)(0x56407685)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5475F300)
-I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x5475F300)
-I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5475F300)
-I (..\..\..\..\..\..\components\libraries\util\app_error.h)(0x56407685)
-I (..\..\..\..\..\..\components\softdevice\s130\headers\nrf_error.h)(0x56407687)
-I (..\..\..\..\..\..\components\libraries\util\app_util.h)(0x56407685)
-I (C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.2.0\Device\Include\compiler_abstraction.h)(0x5625C0AA)
-I (..\..\..\..\..\..\components\libraries\scheduler\app_scheduler.h)(0x56407685)
-F (..\..\..\..\..\..\components\libraries\bootloader_dfu\bootloader.c)(0x56407685)(-c --cpu Cortex-M0 -D__MICROLIB -g -O3 --apcs=interwork -I..\..\..\config\dfu_dual_bank_ble_s130_pca10028 -I..\..\..\config -I..\..\..\..\..\bsp -I..\..\..\..\..\..\components\toolchain -I..\..\..\..\..\..\components\ble\ble_services\ble_dfu -I..\..\..\..\..\..\components\ble\common -I..\..\..\..\..\..\components\drivers_nrf\delay -I..\..\..\..\..\..\components\drivers_nrf\hal -I..\..\..\..\..\..\components\drivers_nrf\pstorage -I..\..\..\..\..\..\components\libraries\bootloader_dfu -I..\..\..\..\..\..\components\libraries\bootloader_dfu\ble_transport -I..\..\..\..\..\..\components\libraries\crc16 -I..\..\..\..\..\..\components\libraries\hci -I..\..\..\..\..\..\components\libraries\scheduler -I..\..\..\..\..\..\components\libraries\timer -I..\..\..\..\..\..\components\libraries\util -I..\..\..\..\..\..\components\softdevice\common\softdevice_handler -I..\..\..\..\..\..\components\softdevice\s130\headers --c99-I F:\RedBear_Work_Finished\nRF51822_N4\Bootloader\nRF51_SDK_10.0.0_DFU_S130_1.0\examples\dfu\bootloader\pca10028\dual_bank_ble_s130\arm5_no_packs\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.2.0\Device\Include-I C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.7.1\Device\Include-D__UVISION_VERSION="513" -D_RTE_ -DNRF51 -DBLE_STACK_SUPPORT_REQD -D__HEAP_SIZE="0" -DBOARD_PCA10028 -DS130 -DBSP_DEFINES_ONLY -DNRF51 -DSOFTDEVICE_PRESENT -DSWI_DISABLE0-o .\_build\bootloader.o --omf_browse .\_build\bootloader.crf --depend .\_build\bootloader.d)
-I (..\..\..\..\..\..\components\libraries\bootloader_dfu\bootloader.h)(0x56407685)
-I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x5475F300)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5475F300)
-I (..\..\..\..\..\..\components\libraries\bootloader_dfu\bootloader_types.h)(0x56407685)
-I (..\..\..\..\..\..\components\libraries\bootloader_dfu\dfu_types.h)(0x56407685)
-I (..\..\..\..\..\..\components\softdevice\s130\headers\nrf_sdm.h)(0x56407687)
-I (..\..\..\..\..\..\components\softdevice\s130\headers\nrf_svc.h)(0x56407687)
-I (C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.2.0\Device\Include\nrf.h)(0x5625C0AA)
-I (C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.2.0\Device\Include\nrf51.h)(0x5625C0A6)
-I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cm0.h)(0x5625B70C)
-I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cmInstr.h)(0x5625A350)
-I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\cmsis_armcc.h)(0x5625A350)
-I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cmFunc.h)(0x5625A350)
-I (C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.2.0\Device\Include\system_nrf51.h)(0x5625C0AA)
-I (C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.2.0\Device\Include\nrf51_bitfields.h)(0x5625C0A8)
-I (C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.2.0\Device\Include\nrf51_deprecated.h)(0x5625C0AA)
-I (C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.2.0\Device\Include\compiler_abstraction.h)(0x5625C0AA)
-I (..\..\..\..\..\..\components\softdevice\s130\headers\nrf_soc.h)(0x56407687)
-I (..\..\..\..\..\..\components\softdevice\s130\headers\nrf_error_soc.h)(0x56407687)
-I (..\..\..\..\..\..\components\softdevice\s130\headers\nrf_error.h)(0x56407687)
-I (..\..\..\..\..\..\components\softdevice\s130\headers\nrf_error_sdm.h)(0x56407687)
-I (..\..\..\..\..\..\components\libraries\util\app_util.h)(0x56407685)
-I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5475F300)
-I (..\..\..\..\..\..\components\libraries\bootloader_dfu\bootloader_util.h)(0x56407685)
-I (..\..\..\..\..\..\components\libraries\bootloader_dfu\bootloader_settings.h)(0x56407685)
-I (..\..\..\..\..\..\components\libraries\bootloader_dfu\dfu.h)(0x56407685)
-I (..\..\..\..\..\..\components\libraries\bootloader_dfu\dfu_transport.h)(0x56407685)
-I (..\..\..\..\..\..\components\libraries\util\app_error.h)(0x56407685)
-I (..\..\..\..\..\..\components\libraries\util\nordic_common.h)(0x56407685)
-I (..\..\..\..\..\..\components\libraries\crc16\crc16.h)(0x56407685)
-I (..\..\..\..\..\..\components\drivers_nrf\pstorage\pstorage.h)(0x56407685)
-I (..\..\..\config\pstorage_platform.h)(0x56407688)
-I (..\..\..\..\..\..\components\libraries\scheduler\app_scheduler.h)(0x56407685)
-I (..\..\..\..\..\..\components\drivers_nrf\delay\nrf_delay.h)(0x56407685)
-F (..\..\..\..\..\..\components\libraries\bootloader_dfu\bootloader_settings.c)(0x56407685)(-c --cpu Cortex-M0 -D__MICROLIB -g -O3 --apcs=interwork -I..\..\..\config\dfu_dual_bank_ble_s130_pca10028 -I..\..\..\config -I..\..\..\..\..\bsp -I..\..\..\..\..\..\components\toolchain -I..\..\..\..\..\..\components\ble\ble_services\ble_dfu -I..\..\..\..\..\..\components\ble\common -I..\..\..\..\..\..\components\drivers_nrf\delay -I..\..\..\..\..\..\components\drivers_nrf\hal -I..\..\..\..\..\..\components\drivers_nrf\pstorage -I..\..\..\..\..\..\components\libraries\bootloader_dfu -I..\..\..\..\..\..\components\libraries\bootloader_dfu\ble_transport -I..\..\..\..\..\..\components\libraries\crc16 -I..\..\..\..\..\..\components\libraries\hci -I..\..\..\..\..\..\components\libraries\scheduler -I..\..\..\..\..\..\components\libraries\timer -I..\..\..\..\..\..\components\libraries\util -I..\..\..\..\..\..\components\softdevice\common\softdevice_handler -I..\..\..\..\..\..\components\softdevice\s130\headers --c99-I F:\RedBear_Work_Finished\nRF51822_N4\Bootloader\nRF51_SDK_10.0.0_DFU_S130_1.0\examples\dfu\bootloader\pca10028\dual_bank_ble_s130\arm5_no_packs\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.2.0\Device\Include-I C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.7.1\Device\Include-D__UVISION_VERSION="513" -D_RTE_ -DNRF51 -DBLE_STACK_SUPPORT_REQD -D__HEAP_SIZE="0" -DBOARD_PCA10028 -DS130 -DBSP_DEFINES_ONLY -DNRF51 -DSOFTDEVICE_PRESENT -DSWI_DISABLE0-o .\_build\bootloader_settings.o --omf_browse .\_build\bootloader_settings.crf --depend .\_build\bootloader_settings.d)
-I (..\..\..\..\..\..\components\libraries\bootloader_dfu\bootloader_settings.h)(0x56407685)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5475F300)
-I (..\..\..\..\..\..\components\libraries\bootloader_dfu\bootloader_types.h)(0x56407685)
-I (..\..\..\..\..\..\components\libraries\bootloader_dfu\dfu_types.h)(0x56407685)
-I (..\..\..\..\..\..\components\softdevice\s130\headers\nrf_sdm.h)(0x56407687)
-I (..\..\..\..\..\..\components\softdevice\s130\headers\nrf_svc.h)(0x56407687)
-I (C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.2.0\Device\Include\nrf.h)(0x5625C0AA)
-I (C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.2.0\Device\Include\nrf51.h)(0x5625C0A6)
-I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cm0.h)(0x5625B70C)
-I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cmInstr.h)(0x5625A350)
-I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\cmsis_armcc.h)(0x5625A350)
-I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cmFunc.h)(0x5625A350)
-I (C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.2.0\Device\Include\system_nrf51.h)(0x5625C0AA)
-I (C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.2.0\Device\Include\nrf51_bitfields.h)(0x5625C0A8)
-I (C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.2.0\Device\Include\nrf51_deprecated.h)(0x5625C0AA)
-I (C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.2.0\Device\Include\compiler_abstraction.h)(0x5625C0AA)
-I (..\..\..\..\..\..\components\softdevice\s130\headers\nrf_soc.h)(0x56407687)
-I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x5475F300)
-I (..\..\..\..\..\..\components\softdevice\s130\headers\nrf_error_soc.h)(0x56407687)
-I (..\..\..\..\..\..\components\softdevice\s130\headers\nrf_error.h)(0x56407687)
-I (..\..\..\..\..\..\components\softdevice\s130\headers\nrf_error_sdm.h)(0x56407687)
-I (..\..\..\..\..\..\components\libraries\util\app_util.h)(0x56407685)
-F (..\..\..\..\..\..\components\libraries\bootloader_dfu\bootloader_util.c)(0x56407685)(-c --cpu Cortex-M0 -D__MICROLIB -g -O3 --apcs=interwork -I..\..\..\config\dfu_dual_bank_ble_s130_pca10028 -I..\..\..\config -I..\..\..\..\..\bsp -I..\..\..\..\..\..\components\toolchain -I..\..\..\..\..\..\components\ble\ble_services\ble_dfu -I..\..\..\..\..\..\components\ble\common -I..\..\..\..\..\..\components\drivers_nrf\delay -I..\..\..\..\..\..\components\drivers_nrf\hal -I..\..\..\..\..\..\components\drivers_nrf\pstorage -I..\..\..\..\..\..\components\libraries\bootloader_dfu -I..\..\..\..\..\..\components\libraries\bootloader_dfu\ble_transport -I..\..\..\..\..\..\components\libraries\crc16 -I..\..\..\..\..\..\components\libraries\hci -I..\..\..\..\..\..\components\libraries\scheduler -I..\..\..\..\..\..\components\libraries\timer -I..\..\..\..\..\..\components\libraries\util -I..\..\..\..\..\..\components\softdevice\common\softdevice_handler -I..\..\..\..\..\..\components\softdevice\s130\headers --c99-I F:\RedBear_Work_Finished\nRF51822_N4\Bootloader\nRF51_SDK_10.0.0_DFU_S130_1.0\examples\dfu\bootloader\pca10028\dual_bank_ble_s130\arm5_no_packs\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.2.0\Device\Include-I C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.7.1\Device\Include-D__UVISION_VERSION="513" -D_RTE_ -DNRF51 -DBLE_STACK_SUPPORT_REQD -D__HEAP_SIZE="0" -DBOARD_PCA10028 -DS130 -DBSP_DEFINES_ONLY -DNRF51 -DSOFTDEVICE_PRESENT -DSWI_DISABLE0-o .\_build\bootloader_util.o --omf_browse .\_build\bootloader_util.crf --depend .\_build\bootloader_util.d)
-I (..\..\..\..\..\..\components\libraries\bootloader_dfu\bootloader_util.h)(0x56407685)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5475F300)
-I (..\..\..\..\..\..\components\libraries\bootloader_dfu\bootloader_types.h)(0x56407685)
-I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5475F300)
-F (..\..\..\..\..\..\components\libraries\crc16\crc16.c)(0x56407685)(-c --cpu Cortex-M0 -D__MICROLIB -g -O3 --apcs=interwork -I..\..\..\config\dfu_dual_bank_ble_s130_pca10028 -I..\..\..\config -I..\..\..\..\..\bsp -I..\..\..\..\..\..\components\toolchain -I..\..\..\..\..\..\components\ble\ble_services\ble_dfu -I..\..\..\..\..\..\components\ble\common -I..\..\..\..\..\..\components\drivers_nrf\delay -I..\..\..\..\..\..\components\drivers_nrf\hal -I..\..\..\..\..\..\components\drivers_nrf\pstorage -I..\..\..\..\..\..\components\libraries\bootloader_dfu -I..\..\..\..\..\..\components\libraries\bootloader_dfu\ble_transport -I..\..\..\..\..\..\components\libraries\crc16 -I..\..\..\..\..\..\components\libraries\hci -I..\..\..\..\..\..\components\libraries\scheduler -I..\..\..\..\..\..\components\libraries\timer -I..\..\..\..\..\..\components\libraries\util -I..\..\..\..\..\..\components\softdevice\common\softdevice_handler -I..\..\..\..\..\..\components\softdevice\s130\headers --c99-I F:\RedBear_Work_Finished\nRF51822_N4\Bootloader\nRF51_SDK_10.0.0_DFU_S130_1.0\examples\dfu\bootloader\pca10028\dual_bank_ble_s130\arm5_no_packs\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.2.0\Device\Include-I C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.7.1\Device\Include-D__UVISION_VERSION="513" -D_RTE_ -DNRF51 -DBLE_STACK_SUPPORT_REQD -D__HEAP_SIZE="0" -DBOARD_PCA10028 -DS130 -DBSP_DEFINES_ONLY -DNRF51 -DSOFTDEVICE_PRESENT -DSWI_DISABLE0-o .\_build\crc16.o --omf_browse .\_build\crc16.crf --depend .\_build\crc16.d)
-I (..\..\..\..\..\..\components\libraries\crc16\crc16.h)(0x56407685)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5475F300)
-I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5475F300)
-F (..\..\..\..\..\..\components\libraries\bootloader_dfu\dfu_single_bank.c)(0x57BD4B00)(-c --cpu Cortex-M0 -D__MICROLIB -g -O3 --apcs=interwork -I..\..\..\config\dfu_dual_bank_ble_s130_pca10028 -I..\..\..\config -I..\..\..\..\..\bsp -I..\..\..\..\..\..\components\toolchain -I..\..\..\..\..\..\components\ble\ble_services\ble_dfu -I..\..\..\..\..\..\components\ble\common -I..\..\..\..\..\..\components\drivers_nrf\delay -I..\..\..\..\..\..\components\drivers_nrf\hal -I..\..\..\..\..\..\components\drivers_nrf\pstorage -I..\..\..\..\..\..\components\libraries\bootloader_dfu -I..\..\..\..\..\..\components\libraries\bootloader_dfu\ble_transport -I..\..\..\..\..\..\components\libraries\crc16 -I..\..\..\..\..\..\components\libraries\hci -I..\..\..\..\..\..\components\libraries\scheduler -I..\..\..\..\..\..\components\libraries\timer -I..\..\..\..\..\..\components\libraries\util -I..\..\..\..\..\..\components\softdevice\common\softdevice_handler -I..\..\..\..\..\..\components\softdevice\s130\headers --c99-I F:\RedBear_Work_Finished\nRF51822_N4\Bootloader\nRF51_SDK_10.0.0_DFU_S130_1.0\examples\dfu\bootloader\pca10028\dual_bank_ble_s130\arm5_no_packs\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.2.0\Device\Include-I C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.7.1\Device\Include-D__UVISION_VERSION="513" -D_RTE_ -DNRF51 -DBLE_STACK_SUPPORT_REQD -D__HEAP_SIZE="0" -DBOARD_PCA10028 -DS130 -DBSP_DEFINES_ONLY -DNRF51 -DSOFTDEVICE_PRESENT -DSWI_DISABLE0-o .\_build\dfu_single_bank.o --omf_browse .\_build\dfu_single_bank.crf --depend .\_build\dfu_single_bank.d)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5475F300)
-I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5475F300)
-I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5475F300)
-I (..\..\..\..\..\..\components\libraries\bootloader_dfu\dfu.h)(0x56407685)
-I (..\..\..\..\..\..\components\libraries\bootloader_dfu\dfu_types.h)(0x56407685)
-I (..\..\..\..\..\..\components\softdevice\s130\headers\nrf_sdm.h)(0x56407687)
-I (..\..\..\..\..\..\components\softdevice\s130\headers\nrf_svc.h)(0x56407687)
-I (C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.2.0\Device\Include\nrf.h)(0x5625C0AA)
-I (C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.2.0\Device\Include\nrf51.h)(0x5625C0A6)
-I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cm0.h)(0x5625B70C)
-I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cmInstr.h)(0x5625A350)
-I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\cmsis_armcc.h)(0x5625A350)
-I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cmFunc.h)(0x5625A350)
-I (C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.2.0\Device\Include\system_nrf51.h)(0x5625C0AA)
-I (C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.2.0\Device\Include\nrf51_bitfields.h)(0x5625C0A8)
-I (C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.2.0\Device\Include\nrf51_deprecated.h)(0x5625C0AA)
-I (C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.2.0\Device\Include\compiler_abstraction.h)(0x5625C0AA)
-I (..\..\..\..\..\..\components\softdevice\s130\headers\nrf_soc.h)(0x56407687)
-I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x5475F300)
-I (..\..\..\..\..\..\components\softdevice\s130\headers\nrf_error_soc.h)(0x56407687)
-I (..\..\..\..\..\..\components\softdevice\s130\headers\nrf_error.h)(0x56407687)
-I (..\..\..\..\..\..\components\softdevice\s130\headers\nrf_error_sdm.h)(0x56407687)
-I (..\..\..\..\..\..\components\libraries\util\app_util.h)(0x56407685)
-I (..\..\..\..\..\..\components\libraries\bootloader_dfu\dfu_bank_internal.h)(0x57BD14A6)
-I (..\..\..\..\..\..\components\libraries\util\app_error.h)(0x56407685)
-I (..\..\..\..\..\..\components\libraries\timer\app_timer.h)(0x56407685)
-I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5475F300)
-I (..\..\..\..\..\..\components\libraries\util\nordic_common.h)(0x56407685)
-I (..\..\..\..\..\..\components\libraries\bootloader_dfu\bootloader.h)(0x56407685)
-I (..\..\..\..\..\..\components\libraries\bootloader_dfu\bootloader_types.h)(0x56407685)
-I (..\..\..\..\..\..\components\drivers_nrf\pstorage\pstorage.h)(0x56407685)
-I (..\..\..\config\pstorage_platform.h)(0x56407688)
-I (..\..\..\..\..\..\components\softdevice\s130\headers\nrf_mbr.h)(0x56407687)
-I (..\..\..\..\..\..\components\libraries\bootloader_dfu\dfu_init.h)(0x56407685)
-I (..\..\..\..\..\..\components\drivers_nrf\hal\nrf_gpio.h)(0x56407685)
-F (..\..\..\..\..\..\components\libraries\bootloader_dfu\dfu_init_template.c)(0x56407685)(-c --cpu Cortex-M0 -D__MICROLIB -g -O3 --apcs=interwork -I..\..\..\config\dfu_dual_bank_ble_s130_pca10028 -I..\..\..\config -I..\..\..\..\..\bsp -I..\..\..\..\..\..\components\toolchain -I..\..\..\..\..\..\components\ble\ble_services\ble_dfu -I..\..\..\..\..\..\components\ble\common -I..\..\..\..\..\..\components\drivers_nrf\delay -I..\..\..\..\..\..\components\drivers_nrf\hal -I..\..\..\..\..\..\components\drivers_nrf\pstorage -I..\..\..\..\..\..\components\libraries\bootloader_dfu -I..\..\..\..\..\..\components\libraries\bootloader_dfu\ble_transport -I..\..\..\..\..\..\components\libraries\crc16 -I..\..\..\..\..\..\components\libraries\hci -I..\..\..\..\..\..\components\libraries\scheduler -I..\..\..\..\..\..\components\libraries\timer -I..\..\..\..\..\..\components\libraries\util -I..\..\..\..\..\..\components\softdevice\common\softdevice_handler -I..\..\..\..\..\..\components\softdevice\s130\headers --c99-I F:\RedBear_Work_Finished\nRF51822_N4\Bootloader\nRF51_SDK_10.0.0_DFU_S130_1.0\examples\dfu\bootloader\pca10028\dual_bank_ble_s130\arm5_no_packs\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.2.0\Device\Include-I C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.7.1\Device\Include-D__UVISION_VERSION="513" -D_RTE_ -DNRF51 -DBLE_STACK_SUPPORT_REQD -D__HEAP_SIZE="0" -DBOARD_PCA10028 -DS130 -DBSP_DEFINES_ONLY -DNRF51 -DSOFTDEVICE_PRESENT -DSWI_DISABLE0-o .\_build\dfu_init_template.o --omf_browse .\_build\dfu_init_template.crf --depend .\_build\dfu_init_template.d)
-I (..\..\..\..\..\..\components\libraries\bootloader_dfu\dfu_init.h)(0x56407685)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5475F300)
-I (C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.2.0\Device\Include\nrf.h)(0x5625C0AA)
-I (C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.2.0\Device\Include\nrf51.h)(0x5625C0A6)
-I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cm0.h)(0x5625B70C)
-I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cmInstr.h)(0x5625A350)
-I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\cmsis_armcc.h)(0x5625A350)
-I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cmFunc.h)(0x5625A350)
-I (C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.2.0\Device\Include\system_nrf51.h)(0x5625C0AA)
-I (C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.2.0\Device\Include\nrf51_bitfields.h)(0x5625C0A8)
-I (C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.2.0\Device\Include\nrf51_deprecated.h)(0x5625C0AA)
-I (C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.2.0\Device\Include\compiler_abstraction.h)(0x5625C0AA)
-I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5475F300)
-I (..\..\..\..\..\..\components\libraries\bootloader_dfu\dfu_types.h)(0x56407685)
-I (..\..\..\..\..\..\components\softdevice\s130\headers\nrf_sdm.h)(0x56407687)
-I (..\..\..\..\..\..\components\softdevice\s130\headers\nrf_svc.h)(0x56407687)
-I (..\..\..\..\..\..\components\softdevice\s130\headers\nrf_soc.h)(0x56407687)
-I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x5475F300)
-I (..\..\..\..\..\..\components\softdevice\s130\headers\nrf_error_soc.h)(0x56407687)
-I (..\..\..\..\..\..\components\softdevice\s130\headers\nrf_error.h)(0x56407687)
-I (..\..\..\..\..\..\components\softdevice\s130\headers\nrf_error_sdm.h)(0x56407687)
-I (..\..\..\..\..\..\components\libraries\util\app_util.h)(0x56407685)
-I (..\..\..\..\..\..\components\libraries\crc16\crc16.h)(0x56407685)
-F (..\..\..\..\..\..\components\libraries\bootloader_dfu\dfu_transport_ble.c)(0x56407685)(-c --cpu Cortex-M0 -D__MICROLIB -g -O3 --apcs=interwork -I..\..\..\config\dfu_dual_bank_ble_s130_pca10028 -I..\..\..\config -I..\..\..\..\..\bsp -I..\..\..\..\..\..\components\toolchain -I..\..\..\..\..\..\components\ble\ble_services\ble_dfu -I..\..\..\..\..\..\components\ble\common -I..\..\..\..\..\..\components\drivers_nrf\delay -I..\..\..\..\..\..\components\drivers_nrf\hal -I..\..\..\..\..\..\components\drivers_nrf\pstorage -I..\..\..\..\..\..\components\libraries\bootloader_dfu -I..\..\..\..\..\..\components\libraries\bootloader_dfu\ble_transport -I..\..\..\..\..\..\components\libraries\crc16 -I..\..\..\..\..\..\components\libraries\hci -I..\..\..\..\..\..\components\libraries\scheduler -I..\..\..\..\..\..\components\libraries\timer -I..\..\..\..\..\..\components\libraries\util -I..\..\..\..\..\..\components\softdevice\common\softdevice_handler -I..\..\..\..\..\..\components\softdevice\s130\headers --c99-I F:\RedBear_Work_Finished\nRF51822_N4\Bootloader\nRF51_SDK_10.0.0_DFU_S130_1.0\examples\dfu\bootloader\pca10028\dual_bank_ble_s130\arm5_no_packs\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.2.0\Device\Include-I C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.7.1\Device\Include-D__UVISION_VERSION="513" -D_RTE_ -DNRF51 -DBLE_STACK_SUPPORT_REQD -D__HEAP_SIZE="0" -DBOARD_PCA10028 -DS130 -DBSP_DEFINES_ONLY -DNRF51 -DSOFTDEVICE_PRESENT -DSWI_DISABLE0-o .\_build\dfu_transport_ble.o --omf_browse .\_build\dfu_transport_ble.crf --depend .\_build\dfu_transport_ble.d)
-I (..\..\..\..\..\..\components\libraries\bootloader_dfu\dfu_transport.h)(0x56407685)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5475F300)
-I (..\..\..\..\..\..\components\libraries\bootloader_dfu\dfu.h)(0x56407685)
-I (..\..\..\..\..\..\components\libraries\bootloader_dfu\dfu_types.h)(0x56407685)
-I (..\..\..\..\..\..\components\softdevice\s130\headers\nrf_sdm.h)(0x56407687)
-I (..\..\..\..\..\..\components\softdevice\s130\headers\nrf_svc.h)(0x56407687)
-I (C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.2.0\Device\Include\nrf.h)(0x5625C0AA)
-I (C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.2.0\Device\Include\nrf51.h)(0x5625C0A6)
-I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cm0.h)(0x5625B70C)
-I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cmInstr.h)(0x5625A350)
-I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\cmsis_armcc.h)(0x5625A350)
-I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cmFunc.h)(0x5625A350)
-I (C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.2.0\Device\Include\system_nrf51.h)(0x5625C0AA)
-I (C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.2.0\Device\Include\nrf51_bitfields.h)(0x5625C0A8)
-I (C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.2.0\Device\Include\nrf51_deprecated.h)(0x5625C0AA)
-I (C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.2.0\Device\Include\compiler_abstraction.h)(0x5625C0AA)
-I (..\..\..\..\..\..\components\softdevice\s130\headers\nrf_soc.h)(0x56407687)
-I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x5475F300)
-I (..\..\..\..\..\..\components\softdevice\s130\headers\nrf_error_soc.h)(0x56407687)
-I (..\..\..\..\..\..\components\softdevice\s130\headers\nrf_error.h)(0x56407687)
-I (..\..\..\..\..\..\components\softdevice\s130\headers\nrf_error_sdm.h)(0x56407687)
-I (..\..\..\..\..\..\components\libraries\util\app_util.h)(0x56407685)
-I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5475F300)
-I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5475F300)
-I (..\..\..\..\..\bsp\boards.h)(0x56407688)
-I (..\..\..\..\..\..\components\drivers_nrf\hal\nrf_gpio.h)(0x56407685)
-I (..\..\..\..\..\bsp\pca10028.h)(0x56407688)
-I (..\..\..\..\..\..\components\libraries\util\app_error.h)(0x56407685)
-I (..\..\..\..\..\..\components\softdevice\common\softdevice_handler\softdevice_handler.h)(0x56407687)
-I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x5475F300)
-I (..\..\..\..\..\..\components\libraries\util\nordic_common.h)(0x56407685)
-I (..\..\..\..\..\..\components\softdevice\common\softdevice_handler\ble_stack_handler_types.h)(0x56407687)
-I (..\..\..\..\..\..\components\softdevice\s130\headers\ble.h)(0x56407687)
-I (..\..\..\..\..\..\components\softdevice\s130\headers\ble_ranges.h)(0x56407687)
-I (..\..\..\..\..\..\components\softdevice\s130\headers\ble_types.h)(0x56407687)
-I (..\..\..\..\..\..\components\softdevice\s130\headers\ble_gap.h)(0x56407687)
-I (..\..\..\..\..\..\components\softdevice\s130\headers\ble_l2cap.h)(0x56407687)
-I (..\..\..\..\..\..\components\softdevice\s130\headers\ble_err.h)(0x56407687)
-I (..\..\..\..\..\..\components\softdevice\s130\headers\ble_gatt.h)(0x56407687)
-I (..\..\..\..\..\..\components\softdevice\s130\headers\ble_gattc.h)(0x56407687)
-I (..\..\..\..\..\..\components\softdevice\s130\headers\ble_gatts.h)(0x56407687)
-I (..\..\..\..\..\..\components\softdevice\common\softdevice_handler\ant_stack_handler_types.h)(0x56407687)
-I (..\..\..\..\..\..\components\ble\common\ble_advdata.h)(0x56407685)
-I (..\..\..\..\..\..\components\softdevice\s130\headers\ble_hci.h)(0x56407687)
-I (..\..\..\..\..\..\components\ble\ble_services\ble_dfu\ble_dfu.h)(0x56407685)
-I (..\..\..\..\..\..\components\ble\common\ble_srv_common.h)(0x56407685)
-I (..\..\..\..\..\..\components\libraries\timer\app_timer.h)(0x56407685)
-I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5475F300)
-I (..\..\..\..\..\..\components\ble\common\ble_conn_params.h)(0x56407685)
-I (..\..\..\..\..\..\components\libraries\hci\hci_mem_pool.h)(0x56407685)
-I (..\..\..\..\..\..\components\libraries\bootloader_dfu\bootloader.h)(0x56407685)
-I (..\..\..\..\..\..\components\libraries\bootloader_dfu\bootloader_types.h)(0x56407685)
-I (..\..\..\..\..\..\components\libraries\bootloader_dfu\dfu_ble_svc_internal.h)(0x56407685)
-I (..\..\..\..\..\..\components\libraries\bootloader_dfu\dfu_ble_svc.h)(0x56407685)
-I (..\..\..\..\..\..\components\drivers_nrf\delay\nrf_delay.h)(0x56407685)
-F (..\..\..\..\..\..\components\libraries\hci\hci_mem_pool.c)(0x56407685)(-c --cpu Cortex-M0 -D__MICROLIB -g -O3 --apcs=interwork -I..\..\..\config\dfu_dual_bank_ble_s130_pca10028 -I..\..\..\config -I..\..\..\..\..\bsp -I..\..\..\..\..\..\components\toolchain -I..\..\..\..\..\..\components\ble\ble_services\ble_dfu -I..\..\..\..\..\..\components\ble\common -I..\..\..\..\..\..\components\drivers_nrf\delay -I..\..\..\..\..\..\components\drivers_nrf\hal -I..\..\..\..\..\..\components\drivers_nrf\pstorage -I..\..\..\..\..\..\components\libraries\bootloader_dfu -I..\..\..\..\..\..\components\libraries\bootloader_dfu\ble_transport -I..\..\..\..\..\..\components\libraries\crc16 -I..\..\..\..\..\..\components\libraries\hci -I..\..\..\..\..\..\components\libraries\scheduler -I..\..\..\..\..\..\components\libraries\timer -I..\..\..\..\..\..\components\libraries\util -I..\..\..\..\..\..\components\softdevice\common\softdevice_handler -I..\..\..\..\..\..\components\softdevice\s130\headers --c99-I F:\RedBear_Work_Finished\nRF51822_N4\Bootloader\nRF51_SDK_10.0.0_DFU_S130_1.0\examples\dfu\bootloader\pca10028\dual_bank_ble_s130\arm5_no_packs\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.2.0\Device\Include-I C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.7.1\Device\Include-D__UVISION_VERSION="513" -D_RTE_ -DNRF51 -DBLE_STACK_SUPPORT_REQD -D__HEAP_SIZE="0" -DBOARD_PCA10028 -DS130 -DBSP_DEFINES_ONLY -DNRF51 -DSOFTDEVICE_PRESENT -DSWI_DISABLE0-o .\_build\hci_mem_pool.o --omf_browse .\_build\hci_mem_pool.crf --depend .\_build\hci_mem_pool.d)
-I (..\..\..\..\..\..\components\libraries\hci\hci_mem_pool.h)(0x56407685)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5475F300)
-I (..\..\..\..\..\..\components\softdevice\s130\headers\nrf_error.h)(0x56407687)
-I (..\..\..\config\dfu_dual_bank_ble_s130_pca10028\hci_mem_pool_internal.h)(0x56407688)
-I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x5475F300)
-I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5475F300)
-F (..\..\..\..\..\..\components\libraries\util\nrf_assert.c)(0x56407685)(-c --cpu Cortex-M0 -D__MICROLIB -g -O3 --apcs=interwork -I..\..\..\config\dfu_dual_bank_ble_s130_pca10028 -I..\..\..\config -I..\..\..\..\..\bsp -I..\..\..\..\..\..\components\toolchain -I..\..\..\..\..\..\components\ble\ble_services\ble_dfu -I..\..\..\..\..\..\components\ble\common -I..\..\..\..\..\..\components\drivers_nrf\delay -I..\..\..\..\..\..\components\drivers_nrf\hal -I..\..\..\..\..\..\components\drivers_nrf\pstorage -I..\..\..\..\..\..\components\libraries\bootloader_dfu -I..\..\..\..\..\..\components\libraries\bootloader_dfu\ble_transport -I..\..\..\..\..\..\components\libraries\crc16 -I..\..\..\..\..\..\components\libraries\hci -I..\..\..\..\..\..\components\libraries\scheduler -I..\..\..\..\..\..\components\libraries\timer -I..\..\..\..\..\..\components\libraries\util -I..\..\..\..\..\..\components\softdevice\common\softdevice_handler -I..\..\..\..\..\..\components\softdevice\s130\headers --c99-I F:\RedBear_Work_Finished\nRF51822_N4\Bootloader\nRF51_SDK_10.0.0_DFU_S130_1.0\examples\dfu\bootloader\pca10028\dual_bank_ble_s130\arm5_no_packs\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.2.0\Device\Include-I C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.7.1\Device\Include-D__UVISION_VERSION="513" -D_RTE_ -DNRF51 -DBLE_STACK_SUPPORT_REQD -D__HEAP_SIZE="0" -DBOARD_PCA10028 -DS130 -DBSP_DEFINES_ONLY -DNRF51 -DSOFTDEVICE_PRESENT -DSWI_DISABLE0-o .\_build\nrf_assert.o --omf_browse .\_build\nrf_assert.crf --depend .\_build\nrf_assert.d)
-I (..\..\..\..\..\..\components\libraries\util\nrf_assert.h)(0x56407685)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5475F300)
-I (C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.2.0\Device\Include\compiler_abstraction.h)(0x5625C0AA)
-F (..\..\..\..\..\..\components\softdevice\s130\doc\s130_nrf51822_1.0.0_licence_agreement.txt)(0x56407687)()
-F (..\..\..\..\..\..\components\softdevice\common\softdevice_handler\softdevice_handler.c)(0x56407687)(-c --cpu Cortex-M0 -D__MICROLIB -g -O3 --apcs=interwork -I..\..\..\config\dfu_dual_bank_ble_s130_pca10028 -I..\..\..\config -I..\..\..\..\..\bsp -I..\..\..\..\..\..\components\toolchain -I..\..\..\..\..\..\components\ble\ble_services\ble_dfu -I..\..\..\..\..\..\components\ble\common -I..\..\..\..\..\..\components\drivers_nrf\delay -I..\..\..\..\..\..\components\drivers_nrf\hal -I..\..\..\..\..\..\components\drivers_nrf\pstorage -I..\..\..\..\..\..\components\libraries\bootloader_dfu -I..\..\..\..\..\..\components\libraries\bootloader_dfu\ble_transport -I..\..\..\..\..\..\components\libraries\crc16 -I..\..\..\..\..\..\components\libraries\hci -I..\..\..\..\..\..\components\libraries\scheduler -I..\..\..\..\..\..\components\libraries\timer -I..\..\..\..\..\..\components\libraries\util -I..\..\..\..\..\..\components\softdevice\common\softdevice_handler -I..\..\..\..\..\..\components\softdevice\s130\headers --c99-I F:\RedBear_Work_Finished\nRF51822_N4\Bootloader\nRF51_SDK_10.0.0_DFU_S130_1.0\examples\dfu\bootloader\pca10028\dual_bank_ble_s130\arm5_no_packs\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.2.0\Device\Include-I C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.7.1\Device\Include-D__UVISION_VERSION="513" -D_RTE_ -DNRF51 -DBLE_STACK_SUPPORT_REQD -D__HEAP_SIZE="0" -DBOARD_PCA10028 -DS130 -DBSP_DEFINES_ONLY -DNRF51 -DSOFTDEVICE_PRESENT -DSWI_DISABLE0-o .\_build\softdevice_handler.o --omf_browse .\_build\softdevice_handler.crf --depend .\_build\softdevice_handler.d)
-I (..\..\..\..\..\..\components\softdevice\common\softdevice_handler\softdevice_handler.h)(0x56407687)
-I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x5475F300)
-I (..\..\..\..\..\..\components\libraries\util\nordic_common.h)(0x56407685)
-I (..\..\..\..\..\..\components\softdevice\s130\headers\nrf_sdm.h)(0x56407687)
-I (..\..\..\..\..\..\components\softdevice\s130\headers\nrf_svc.h)(0x56407687)
-I (C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.2.0\Device\Include\nrf.h)(0x5625C0AA)
-I (C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.2.0\Device\Include\nrf51.h)(0x5625C0A6)
-I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cm0.h)(0x5625B70C)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5475F300)
-I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cmInstr.h)(0x5625A350)
-I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\cmsis_armcc.h)(0x5625A350)
-I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cmFunc.h)(0x5625A350)
-I (C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.2.0\Device\Include\system_nrf51.h)(0x5625C0AA)
-I (C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.2.0\Device\Include\nrf51_bitfields.h)(0x5625C0A8)
-I (C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.2.0\Device\Include\nrf51_deprecated.h)(0x5625C0AA)
-I (C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.2.0\Device\Include\compiler_abstraction.h)(0x5625C0AA)
-I (..\..\..\..\..\..\components\softdevice\s130\headers\nrf_soc.h)(0x56407687)
-I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x5475F300)
-I (..\..\..\..\..\..\components\softdevice\s130\headers\nrf_error_soc.h)(0x56407687)
-I (..\..\..\..\..\..\components\softdevice\s130\headers\nrf_error.h)(0x56407687)
-I (..\..\..\..\..\..\components\softdevice\s130\headers\nrf_error_sdm.h)(0x56407687)
-I (..\..\..\..\..\..\components\libraries\util\app_error.h)(0x56407685)
-I (..\..\..\..\..\..\components\libraries\util\app_util.h)(0x56407685)
-I (..\..\..\..\..\..\components\softdevice\common\softdevice_handler\ble_stack_handler_types.h)(0x56407687)
-I (..\..\..\..\..\..\components\softdevice\s130\headers\ble.h)(0x56407687)
-I (..\..\..\..\..\..\components\softdevice\s130\headers\ble_ranges.h)(0x56407687)
-I (..\..\..\..\..\..\components\softdevice\s130\headers\ble_types.h)(0x56407687)
-I (..\..\..\..\..\..\components\softdevice\s130\headers\ble_gap.h)(0x56407687)
-I (..\..\..\..\..\..\components\softdevice\s130\headers\ble_l2cap.h)(0x56407687)
-I (..\..\..\..\..\..\components\softdevice\s130\headers\ble_err.h)(0x56407687)
-I (..\..\..\..\..\..\components\softdevice\s130\headers\ble_gatt.h)(0x56407687)
-I (..\..\..\..\..\..\components\softdevice\s130\headers\ble_gattc.h)(0x56407687)
-I (..\..\..\..\..\..\components\softdevice\s130\headers\ble_gatts.h)(0x56407687)
-I (..\..\..\..\..\..\components\softdevice\common\softdevice_handler\ant_stack_handler_types.h)(0x56407687)
-I (..\..\..\..\..\..\components\libraries\util\nrf_assert.h)(0x56407685)
-F (..\..\..\..\..\..\components\softdevice\common\softdevice_handler\softdevice_handler_appsh.c)(0x56407687)(-c --cpu Cortex-M0 -D__MICROLIB -g -O3 --apcs=interwork -I..\..\..\config\dfu_dual_bank_ble_s130_pca10028 -I..\..\..\config -I..\..\..\..\..\bsp -I..\..\..\..\..\..\components\toolchain -I..\..\..\..\..\..\components\ble\ble_services\ble_dfu -I..\..\..\..\..\..\components\ble\common -I..\..\..\..\..\..\components\drivers_nrf\delay -I..\..\..\..\..\..\components\drivers_nrf\hal -I..\..\..\..\..\..\components\drivers_nrf\pstorage -I..\..\..\..\..\..\components\libraries\bootloader_dfu -I..\..\..\..\..\..\components\libraries\bootloader_dfu\ble_transport -I..\..\..\..\..\..\components\libraries\crc16 -I..\..\..\..\..\..\components\libraries\hci -I..\..\..\..\..\..\components\libraries\scheduler -I..\..\..\..\..\..\components\libraries\timer -I..\..\..\..\..\..\components\libraries\util -I..\..\..\..\..\..\components\softdevice\common\softdevice_handler -I..\..\..\..\..\..\components\softdevice\s130\headers --c99-I F:\RedBear_Work_Finished\nRF51822_N4\Bootloader\nRF51_SDK_10.0.0_DFU_S130_1.0\examples\dfu\bootloader\pca10028\dual_bank_ble_s130\arm5_no_packs\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.2.0\Device\Include-I C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.7.1\Device\Include-D__UVISION_VERSION="513" -D_RTE_ -DNRF51 -DBLE_STACK_SUPPORT_REQD -D__HEAP_SIZE="0" -DBOARD_PCA10028 -DS130 -DBSP_DEFINES_ONLY -DNRF51 -DSOFTDEVICE_PRESENT -DSWI_DISABLE0-o .\_build\softdevice_handler_appsh.o --omf_browse .\_build\softdevice_handler_appsh.crf --depend .\_build\softdevice_handler_appsh.d)
-I (..\..\..\..\..\..\components\softdevice\common\softdevice_handler\softdevice_handler_appsh.h)(0x56407687)
-I (..\..\..\..\..\..\components\softdevice\common\softdevice_handler\softdevice_handler.h)(0x56407687)
-I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x5475F300)
-I (..\..\..\..\..\..\components\libraries\util\nordic_common.h)(0x56407685)
-I (..\..\..\..\..\..\components\softdevice\s130\headers\nrf_sdm.h)(0x56407687)
-I (..\..\..\..\..\..\components\softdevice\s130\headers\nrf_svc.h)(0x56407687)
-I (C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.2.0\Device\Include\nrf.h)(0x5625C0AA)
-I (C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.2.0\Device\Include\nrf51.h)(0x5625C0A6)
-I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cm0.h)(0x5625B70C)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5475F300)
-I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cmInstr.h)(0x5625A350)
-I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\cmsis_armcc.h)(0x5625A350)
-I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cmFunc.h)(0x5625A350)
-I (C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.2.0\Device\Include\system_nrf51.h)(0x5625C0AA)
-I (C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.2.0\Device\Include\nrf51_bitfields.h)(0x5625C0A8)
-I (C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.2.0\Device\Include\nrf51_deprecated.h)(0x5625C0AA)
-I (C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.2.0\Device\Include\compiler_abstraction.h)(0x5625C0AA)
-I (..\..\..\..\..\..\components\softdevice\s130\headers\nrf_soc.h)(0x56407687)
-I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x5475F300)
-I (..\..\..\..\..\..\components\softdevice\s130\headers\nrf_error_soc.h)(0x56407687)
-I (..\..\..\..\..\..\components\softdevice\s130\headers\nrf_error.h)(0x56407687)
-I (..\..\..\..\..\..\components\softdevice\s130\headers\nrf_error_sdm.h)(0x56407687)
-I (..\..\..\..\..\..\components\libraries\util\app_error.h)(0x56407685)
-I (..\..\..\..\..\..\components\libraries\util\app_util.h)(0x56407685)
-I (..\..\..\..\..\..\components\softdevice\common\softdevice_handler\ble_stack_handler_types.h)(0x56407687)
-I (..\..\..\..\..\..\components\softdevice\s130\headers\ble.h)(0x56407687)
-I (..\..\..\..\..\..\components\softdevice\s130\headers\ble_ranges.h)(0x56407687)
-I (..\..\..\..\..\..\components\softdevice\s130\headers\ble_types.h)(0x56407687)
-I (..\..\..\..\..\..\components\softdevice\s130\headers\ble_gap.h)(0x56407687)
-I (..\..\..\..\..\..\components\softdevice\s130\headers\ble_l2cap.h)(0x56407687)
-I (..\..\..\..\..\..\components\softdevice\s130\headers\ble_err.h)(0x56407687)
-I (..\..\..\..\..\..\components\softdevice\s130\headers\ble_gatt.h)(0x56407687)
-I (..\..\..\..\..\..\components\softdevice\s130\headers\ble_gattc.h)(0x56407687)
-I (..\..\..\..\..\..\components\softdevice\s130\headers\ble_gatts.h)(0x56407687)
-I (..\..\..\..\..\..\components\softdevice\common\softdevice_handler\ant_stack_handler_types.h)(0x56407687)
-I (..\..\..\..\..\..\components\libraries\scheduler\app_scheduler.h)(0x56407685)
-I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5475F300)
-F (RTE\Device\nRF51822_xxAA\arm_startup_nrf51.s)(0x5625C0AA)(--cpu Cortex-M0 -g --apcs=interwork --pd "__MICROLIB SETA 1"-I F:\RedBear_Work_Finished\nRF51822_N4\Bootloader\nRF51_SDK_10.0.0_DFU_S130_1.0\examples\dfu\bootloader\pca10028\dual_bank_ble_s130\arm5_no_packs\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.2.0\Device\Include-I C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.7.1\Device\Include--pd "__UVISION_VERSION SETA 513" --pd "_RTE_ SETA 1" --pd "NRF51 SETA 1" --pd "BLE_STACK_SUPPORT_REQD SETA 1" --pd "__HEAP_SIZE SETA 0" --pd "BOARD_PCA10028 SETA 1" --pd "S130 SETA 1" --pd "BSP_DEFINES_ONLY SETA 1" --pd "NRF51 SETA 1" --pd "SOFTDEVICE_PRESENT SETA 1" --pd "SWI_DISABLE0 SETA 1"--list .\_build\arm_startup_nrf51.lst --xref -o .\_build\arm_startup_nrf51.o --depend .\_build\arm_startup_nrf51.d)
-F (RTE\Device\nRF51822_xxAA\system_nrf51.c)(0x5625C0AA)(-c --cpu Cortex-M0 -D__MICROLIB -g -O3 --apcs=interwork -I..\..\..\config\dfu_dual_bank_ble_s130_pca10028 -I..\..\..\config -I..\..\..\..\..\bsp -I..\..\..\..\..\..\components\toolchain -I..\..\..\..\..\..\components\ble\ble_services\ble_dfu -I..\..\..\..\..\..\components\ble\common -I..\..\..\..\..\..\components\drivers_nrf\delay -I..\..\..\..\..\..\components\drivers_nrf\hal -I..\..\..\..\..\..\components\drivers_nrf\pstorage -I..\..\..\..\..\..\components\libraries\bootloader_dfu -I..\..\..\..\..\..\components\libraries\bootloader_dfu\ble_transport -I..\..\..\..\..\..\components\libraries\crc16 -I..\..\..\..\..\..\components\libraries\hci -I..\..\..\..\..\..\components\libraries\scheduler -I..\..\..\..\..\..\components\libraries\timer -I..\..\..\..\..\..\components\libraries\util -I..\..\..\..\..\..\components\softdevice\common\softdevice_handler -I..\..\..\..\..\..\components\softdevice\s130\headers --c99-I F:\RedBear_Work_Finished\nRF51822_N4\Bootloader\nRF51_SDK_10.0.0_DFU_S130_1.0\examples\dfu\bootloader\pca10028\dual_bank_ble_s130\arm5_no_packs\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.2.0\Device\Include-I C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.7.1\Device\Include-D__UVISION_VERSION="513" -D_RTE_ -DNRF51 -DBLE_STACK_SUPPORT_REQD -D__HEAP_SIZE="0" -DBOARD_PCA10028 -DS130 -DBSP_DEFINES_ONLY -DNRF51 -DSOFTDEVICE_PRESENT -DSWI_DISABLE0-o .\_build\system_nrf51.o --omf_browse .\_build\system_nrf51.crf --depend .\_build\system_nrf51.d)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5475F300)
-I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x5475F300)
-I (C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.2.0\Device\Include\nrf.h)(0x5625C0AA)
-I (C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.2.0\Device\Include\nrf51.h)(0x5625C0A6)
-I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cm0.h)(0x5625B70C)
-I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cmInstr.h)(0x5625A350)
-I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\cmsis_armcc.h)(0x5625A350)
-I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cmFunc.h)(0x5625A350)
-I (C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.2.0\Device\Include\system_nrf51.h)(0x5625C0AA)
-I (C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.2.0\Device\Include\nrf51_bitfields.h)(0x5625C0A8)
-I (C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.2.0\Device\Include\nrf51_deprecated.h)(0x5625C0AA)
-I (C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.2.0\Device\Include\compiler_abstraction.h)(0x5625C0AA)
-I (..\..\..\..\..\..\components\toolchain\system_nrf51.h)(0x5640769B)
