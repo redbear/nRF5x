@@ -1,15 +1,26 @@
 # USB Interface
 
-##DAPLink USB Interface (new)
+## DAPLink USB Interface (DAPLink V1.5)
+
+### PCB Version
+
+![image](DAPLink.jpg)
+
 The DAPLink V1.5 User Guide can be found here:
 
 * [DAPLink V1.5 User Guide](../nRF52832/docs/DAPLink_User_Guide.md)
+
+For V1.5version of the DAPLink USB dongle, you can update it to the latest interface firmware called DAPLink which is supported and developed by ARM mbed.
+
+[Source code](https://github.com/mbedmicro/DAPLink)
+
+[Latest interface firmware (DAPLink) for nRF52832](../nRF52832/daplink/)
 
 ### Updating Interface Firmware
 
 Pressing and holding the button and then connecting the board to PC USB, the drive ***"MAINTENANCE"*** will appeare. Drag & drop the interface firmware (.bin file) into the drive, re-connected the board to PC USB.
 
-## MK20/DAPLink USB Interface (old)
+## MK20/DAPLink USB Interface (DAPLink V1.0 MK20 V1.0 MK20 V1.5)
 
 ### PCB Version
 
@@ -25,7 +36,7 @@ For V1.0 version of the DAPLink USB dongle, you can update it to the latest inte
 
 [Source code](https://github.com/mbedmicro/DAPLink)
 
-[Latest interface firmware (DAPLink)](../nRF51822/daplink/F103-DAPLink/board_v1.0)
+[Latest interface firmware (DAPLink) for nRF51822](../nRF51822/daplink/F103-DAPLink/board_v1.0)
 
 ### MK20 USB V1.0
 
@@ -33,13 +44,15 @@ For V1.0 version of the MK20 USB dongle, you can update it to the latest interfa
 
 [Source code](https://github.com/mbedmicro/DAPLink)
 
-[Latest interface firmware (DAPLink)](../nRF51822/daplink/MK20-USB/board_v1.0)
+[Latest interface firmware (DAPLink) for nRF51822](../nRF51822/daplink/MK20-USB/board_v1.0)
+
+[Latest interface firmware (DAPLink) for nRF52832](../nRF52832/daplink/)
 
 ### MK20 USB V1.5
 
 For V1.5, you can only use the CMSIS-DAP firmware.
 
-[Latest interface firmware (CMSIS)](../nRF51822/daplink/MK20-USB/board_v1.5)
+[Latest interface firmware (CMSIS) for nRF51822](../nRF51822/daplink/MK20-USB/board_v1.5)
 
 ### Updating Interface Firmware
  
