@@ -27,7 +27,8 @@ In DFU mode, LED should blink in 100ms.If no any operations, will exit after 30s
 ### 2. DFU service
 &nbsp; &nbsp; Add dfu service to application(Refer to official examples).
 
-## How to export compiled binary file from Arduino program
+## How to export compiled binary file from Arduino program:
+
 Arduino IDE Hot Key: Ctrl + Alt + S
 
 ## How to create .zip:
@@ -52,3 +53,7 @@ e.g. : create a application zip
 e.g. : create softdevice+bootloader zip
 
     nrfutil.exe dfu genpkg --application-version 0xFFFFFFFF --softdevice D:\softdevice.hex --bootloader D:\bootloader.hex --dev-type 0xFFFF --dev-revision 0xFFFF --sd-req 0xFFFE D:\Softdevice_bootloader.zip
+
+##How to OTA:
+
+Use the DFU function of the nRF Toolbox APP.
