@@ -27,6 +27,8 @@ In DFU mode, LED should blink in 100ms.If no any operations, will exit after 30s
 ### 2. DFU service
 &nbsp; &nbsp; Add dfu service to application(Refer to official examples).
 
+## How to export compiled binary file from Arduino program
+Arduino IDE Hot Key: Ctrl + Alt + S
 
 ## How to create .zip:
 
