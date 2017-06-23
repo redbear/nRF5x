@@ -33,19 +33,19 @@ We are submitting the information of Blend 2.0 and Nano 2.0 to mbed platform for
 
  * Click **Import** then Click **click here**:
 
-    ![Eddystone_1](images/Eddystone/Eddystone_1.png)
+    ![Eddystone_1](images/Eddystone/eddystone_1.png)
 
  * Add Source URL: https://developer.mbed.org/teams/Bluetooth-Low-Energy/code/BLE_EddystoneBeacon_Service/, then Click Import:
 
-    ![Eddystone_2](images/Eddystone/Eddystone_2.png)
+    ![Eddystone_2](images/Eddystone/eddystone_2.png)
 
-    ![Eddystone_3](images/Eddystone/Eddystone_3.png)
+    ![Eddystone_3](images/Eddystone/eddystone_3.png)
 
 ### 3. Compilling programs
 
  * Select example **BLE_EddystoneBeacon_Service**, click **Compile**:
 
-    ![Eddystone_4](images/Eddystone/Eddystone_4.png)
+    ![Eddystone_4](images/Eddystone/eddystone_4.png)
 
  * When the compilation is complete, the **BLE_EddystoneBeacon_Service_NRF52_DK.hex** will generate.
 
@@ -53,5 +53,5 @@ We are submitting the information of Blend 2.0 and Nano 2.0 to mbed platform for
 
  * Connecting BLE Nano2 to PC, then a driver **DAPLink** will appear. Drag hex file **BLE_EddystoneBeacon_Service_NRF52_DK.hex** to this driver.Then Eddystone will running.
 
-    ![Eddystone_5](images/Eddystone/Eddystone_5.png)
+    ![Eddystone_5](images/Eddystone/eddystone_5.png)
 
