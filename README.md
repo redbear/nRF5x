@@ -82,7 +82,7 @@ Before starting to use the nRF52832 boards, you need to do some preparations.
 	* [Product Specifications](./docs/Specifications.md)
 	* [Getting Started Guide](./docs/Getting_Started_Guide.md)
 * [Nordic nRF52832 Product Specification](http://infocenter.nordicsemi.com/index.jsp?topic=%2Fcom.nordic.infocenter.nrf52%2Fdita%2Fnrf52%2Fchips%2Fnrf52832_ps.html)
-* [MB-N2 Datasheet](./datasheet/MB-N2 Datasheet.pdf)
+* [MB-N2 Datasheet](./datasheet/MB-N2%20Datasheet.pdf)
 * [PCB Files](./pcb)
 
 
