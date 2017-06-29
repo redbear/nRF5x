@@ -1,12 +1,16 @@
-# nRF52832
+# nRF5x
 
-Thank you for supporting [RedBear nRF52832 Kickstarter](https://www.kickstarter.com/projects/redbearinc/bluetooth-5-ready-ble-module-nano-2-and-blend-2).
+Thank you for supporting [RedBear nRF52832 Kickstarter](https://www.kickstarter.com/projects/redbearinc/bluetooth-5-ready-ble-module-nano-2-and-blend-2) campaign.
+
+Currently, this repository is for nRF52832 based boards, we will merge nRF51 to this later.
+
+## nRF52832
 
 ![image](./docs/images/nRF52832.png)
 
 The nRF52832 BLE SoC combines its ARM processor with a 2.4GHz multiprotocol radio featuring -96 dB RX sensitivity, 512 kB Flash memory, 64 kB RAM and NFC-A tag for “Touch-to-Pair” capability. You can read all [nRF52832 advanced features](https://www.nordicsemi.com/eng/Products/Bluetooth-low-energy/nRF52832) on Nordic's website.
 
-## nRF52 vs nRF51
+### nRF52 vs nRF51
 
 The nRF51822 runs at 16 MHz only, it is only a Cortex-M0 MCU without DSP and FPU for complicated applications. You will not be able to develop Apple HomeKit projects using nRF51.
 
@@ -78,7 +82,7 @@ Before starting to use the nRF52832 boards, you need to do some preparations.
 	* [Product Specifications](./docs/Specifications.md)
 	* [Getting Started Guide](./docs/Getting_Started_Guide.md)
 * [Nordic nRF52832 Product Specification](http://infocenter.nordicsemi.com/index.jsp?topic=%2Fcom.nordic.infocenter.nrf52%2Fdita%2Fnrf52%2Fchips%2Fnrf52832_ps.html)
-* [MB-N2 Datasheet](./datasheet/MB-N2_Datasheet.pdf)
+* [MB-N2 Datasheet](./datasheet/MB-N2%20Datasheet.pdf)
 * [PCB Files](./pcb)
 
 
