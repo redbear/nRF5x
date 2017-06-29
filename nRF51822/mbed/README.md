@@ -1,3 +1,3 @@
-# nRF52-mbed
+# nRF51-mbed
 
-* [ARM mbed User Guide](../docs/Mbed_IDE_User_Guide.md)
+* ARM mbed User Guide
