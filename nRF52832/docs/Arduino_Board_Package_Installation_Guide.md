@@ -14,7 +14,7 @@ We assume that you have installed Arduino IDE 1.8.0 or above on your computer, o
 
     ![arduino_board_package_1](images/Arduino/arduino_board_package_1.png)
   
-3. Click on the icon on the right. On the pop up window, new a row and fill it with ***https://redbear.github.io/arduino/package_redbear_nRF5x_beta_index.json.*** Click on "OK" to close the preferences window.
+3. Click on the icon on the right. On the pop up window, new a row and fill it with ***https://redbear.github.io/arduino/package_redbear_nRF5x_index.json.*** Click on "OK" to close the preferences window.
 
     ![arduino_board_package_2](images/Arduino/arduino_board_package_2.png)
 
