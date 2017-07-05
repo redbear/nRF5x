@@ -16,8 +16,7 @@ For Blend2 and Nano2
 *  DFU bootloader is based on DFU example in nordic SDK11.0.
 *  Memory range of bootloader : 0x0007A000~0x0007F000
 
-
-## How to enter DFU mode:
+##Step1: Enter DFU mode
 
 In DFU mode, LED should blink in 100ms.If no any operations, will exit after 30s.
 
@@ -27,11 +26,13 @@ In DFU mode, LED should blink in 100ms.If no any operations, will exit after 30s
 ### 2. DFU service
 &nbsp; &nbsp; Add dfu service to application(Refer to official examples).
 
-## How to export compiled binary file from Arduino program:
+##Step2: Export compiled binary file from Arduino program
 
-Arduino IDE Hot Key: Ctrl + Alt + S
+Arduino IDE Hot Key: Ctrl + Alt + S or Click Arduino IDE menu Sketch==>Export compiled Binary
 
-## How to create .zip:
+![image](./images/DFU/DFU1.png)
+
+##Step3: Create .zip
 
 ### Tools
 
@@ -39,7 +40,7 @@ Arduino IDE Hot Key: Ctrl + Alt + S
 
 ### Command Line
 
-    nrfutil.exe dfu genpkg --application [app_file_name].hex --application-versio   [app_version] --softdevice [sd_file_name].hex --bootloader [bootloader_name].hex --    dev-type [dev-type] --dev-revision [dev-revision] --sd-req [supported-softdevice-ids] [name of distribution packet].zip
+    nrfutil.exe dfu genpkg --application [app_file_name].hex --application-version   [app_version] --softdevice [sd_file_name].hex --bootloader [bootloader_name].hex --    dev-type [dev-type] --dev-revision [dev-revision] --sd-req [supported-softdevice-ids] [name of distribution packet].zip
 
 
 Note : app_version use default 0xFFFFFFFF,dev-type use default 0xFFFF, dev-revision use default 0xFFFF, supported-softdevice-ids use default 0xFFFE.
@@ -54,6 +55,26 @@ e.g. : create softdevice+bootloader zip
 
     nrfutil.exe dfu genpkg --application-version 0xFFFFFFFF --softdevice D:\softdevice.hex --bootloader D:\bootloader.hex --dev-type 0xFFFF --dev-revision 0xFFFF --sd-req 0xFFFE D:\Softdevice_bootloader.zip
 
-##How to OTA:
+##Step4: Copy the upgrade package to the nRF Toolbox App for Ipad or Iphone
+
+![image](./images/DFU/DFU2.png)
+
+![image](./images/DFU/DFU3.png)
+
+##Step5: OTA
 
 Use the DFU function of the nRF Toolbox APP.
+
+![image](./images/DFU/DFU4.png)
+
+![image](./images/DFU/DFU5.png)
+
+![image](./images/DFU/DFU6.png)
+
+![image](./images/DFU/DFU7.png)
+
+![image](./images/DFU/DFU8.png)
+
+![image](./images/DFU/DFU9.png)
+
+![image](./images/DFU/DFU10.png)
