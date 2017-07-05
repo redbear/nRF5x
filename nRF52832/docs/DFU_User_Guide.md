@@ -63,18 +63,24 @@ e.g. : create softdevice+bootloader zip
 
 ##Step5: OTA
 
-Use the DFU function of the nRF Toolbox APP.
+###1.Open nRF Toolbox  App and select DFU function.
 
 ![image](./images/DFU/DFU4.PNG)
 
+###2.Select File and Select Device
+
 ![image](./images/DFU/DFU5.PNG)
+
+- Select Device
 
 ![image](./images/DFU/DFU6.PNG)
 
-![image](./images/DFU/DFU7.PNG)
+- Select File
 
+![image](./images/DFU/DFU7.PNG) 
 ![image](./images/DFU/DFU8.PNG)
 
-![image](./images/DFU/DFU9.PNG)
+###3.Upload
 
+![image](./images/DFU/DFU9.PNG)
 ![image](./images/DFU/DFU10.PNG)
