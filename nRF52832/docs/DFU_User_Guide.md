@@ -65,16 +65,16 @@ e.g. : create softdevice+bootloader zip
 
 Use the DFU function of the nRF Toolbox APP.
 
-![image](./images/DFU/DFU4.png)
+![image](./images/DFU/DFU4.PNG)
 
-![image](./images/DFU/DFU5.png)
+![image](./images/DFU/DFU5.PNG)
 
-![image](./images/DFU/DFU6.png)
+![image](./images/DFU/DFU6.PNG)
 
-![image](./images/DFU/DFU7.png)
+![image](./images/DFU/DFU7.PNG)
 
-![image](./images/DFU/DFU8.png)
+![image](./images/DFU/DFU8.PNG)
 
-![image](./images/DFU/DFU9.png)
+![image](./images/DFU/DFU9.PNG)
 
-![image](./images/DFU/DFU10.png)
+![image](./images/DFU/DFU10.PNG)
