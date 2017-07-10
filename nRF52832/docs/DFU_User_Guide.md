@@ -1,13 +1,12 @@
 
 # DFU User Guide
 
-For Blend2 and Nano2
-
-***
+This Device Firmware Upgrade (DFU) User Guide shows how to use the pre-compiled bootloader to do firmware upgrade over the air (OTA) for the Blend 2 and BLE Nano 2.
 
 ## Bootloader Version
 
 * SoftdeviceS132-2.0-SDK11-Bootloader-20161221.hex
+* [Source](../dfu)
 
 ## Features
 
@@ -16,13 +15,13 @@ For Blend2 and Nano2
 *  DFU bootloader is based on DFU example in nordic SDK11.0.
 *  Memory range of bootloader : 0x0007A000~0x0007F000
 
-## Step1: Export compiled binary file from Arduino program
+## Step 1: Export compiled binary file from Arduino program
 
 Arduino IDE Hot Key: Ctrl + Alt + S or Click Arduino IDE menu Sketch==>Export compiled Binary
 
 ![image](./images/DFU/DFU1.png)
 
-## Step2: Create .zip
+## Step 2: Create .zip
 
 ### Tools
 
@@ -45,29 +44,31 @@ e.g. : create softdevice+bootloader zip
 
     nrfutil.exe dfu genpkg --application-version 0xFFFFFFFF --softdevice D:\softdevice.hex --bootloader D:\bootloader.hex --dev-type 0xFFFF --dev-revision 0xFFFF --sd-req 0xFFFE D:\Softdevice_bootloader.zip
 
-## Step3: Copy the upgrade package to the nRF Toolbox App for Ipad or Iphone
+## Step 3: Using iTunes on PC or Mac, copy the upgrade package to the nRF Toolbox App for iPad or iPhone
 
 ![image](./images/DFU/DFU2.png)
 
 ![image](./images/DFU/DFU3.png)
 
-## Step4: Enter DFU mode
+## Step 4: Enter DFU mode
 
 In DFU mode, LED should blink in 100ms.If no any operations, will exit after 30s.
 
 ### 1. Booloader Button
+
 &nbsp; &nbsp; Bootloader Button is P0_04.Connecting to GND, then power on or reset.
 
 ### 2. DFU service
+
 &nbsp; &nbsp; Add dfu service to application(Refer to official examples).
 
-## Step5: OTA
+## Step 5: OTA Update
 
-### 1.Open nRF Toolbox  App and select DFU function.
+### 1. Open nRF Toolbox App and select DFU function.
 
 ![image](./images/DFU/DFU4.PNG)
 
-### 2.Select File and Select Device
+### 2. Select File and Select Device
 
 ![image](./images/DFU/DFU5.PNG)
 
