@@ -4,6 +4,8 @@
 
 #include "Arduino.h"
 
+//#define RBL_Nano2
+
 #ifdef RBL_NRF51822  
 
 #define TOTAL_ANALOG_PINS 3
@@ -50,6 +52,23 @@
 #define PIN_TO_DIGITAL(p) (p)
 #define PIN_TO_ANALOG(p)  ((p)-16)
 #define PIN_TO_PWM(p)     PIN_TO_DIGITAL(p)
+#define PIN_TO_SERVO(p)   (p)
+
+#endif
+
+#ifdef RBL_Nano2
+
+#define TOTAL_ANALOG_PINS 4
+#define TOTAL_PINS        (10+1)
+#define VERSION_BLINK_PIN 13
+#define IS_PIN_DIGITAL(p) ( (p) >= 2 && (p) <= 10 )
+#define IS_PIN_ANALOG(p)  ( (p) >= 2 && (p) <= 5 ) //A0~A5
+#define IS_PIN_PWM(p)     ( (p) >= 2 && (p) <= 10 )
+#define IS_PIN_SERVO(p)   ( (p) >= 2 && (p) <= 10  )
+
+#define PIN_TO_DIGITAL(p) (p)
+#define PIN_TO_ANALOG(p)  (p)
+#define PIN_TO_PWM(p)     (p)
 #define PIN_TO_SERVO(p)   (p)
 
 #endif
