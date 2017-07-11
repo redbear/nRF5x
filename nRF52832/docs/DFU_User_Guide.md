@@ -52,23 +52,23 @@ e.g. : create softdevice+bootloader zip
 
 ## Step 4: Enter DFU mode
 
-In DFU mode, LED should blink in 100ms.If no any operations, will exit after 30s.
+In DFU mode, LED should blink in 100ms. If no any operations, it will exit after 30s.
 
-### 1. Booloader Button
+### 1. Via Booloader Button
 
-&nbsp; &nbsp; Bootloader Button is P0_04.Connecting to GND, then power on or reset.
+&nbsp; &nbsp; Bootloader Button is P0_04. Connect it to GND, then power on or reset to enter the bootloader.
 
-### 2. DFU service
+### 2. Via DFU service
 
-&nbsp; &nbsp; Add dfu service to application(Refer to official examples).
+&nbsp; &nbsp; Add DFU service to application (Refer to official examples) if you want to have OTA feature in your application.
 
 ## Step 5: OTA Update
 
-### 1. Open nRF Toolbox App and select DFU function.
+### 1. Open the nRF Toolbox App and select DFU function.
 
 ![image](./images/DFU/DFU4.PNG)
 
-### 2. Select File and Select Device
+### 2. Select File and select Device
 
 ![image](./images/DFU/DFU5.PNG)
 
