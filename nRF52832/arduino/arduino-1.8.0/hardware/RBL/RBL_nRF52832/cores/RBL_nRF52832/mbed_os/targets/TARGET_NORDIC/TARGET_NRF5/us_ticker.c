@@ -234,21 +234,33 @@ void common_rtc_set_interrupt(uint32_t us_timestamp, uint32_t cc_channel,
     uint32_t current_rtc   = (int)current_ticks;
     uint64_t current_time64= rtc_to_usec(current_ticks);
     uint32_t compare_rtc;
+    int      late_us = (int)current_time64-us_timestamp;
 
-    // [add upper 32 bits from the current time to the timestamp value]
-    uint64_t timestamp64 = us_timestamp +
-        (current_time64 & ~(uint64_t)0xFFFFFFFF);
-    // [if the original timestamp value happens to be after the 32 bit counter
-    //  of microsends overflows, correct the upper 32 bits accordingly]
-    if (us_timestamp < (uint32_t)current_time64)
+    // Since it is possible for the us_timestamp to be expired due to
+    // a tick in the clock after the check in ticker_irq_handler() in
+    // mbed_ticker_api.c, must check for expire instead of adjusting
+    // the upper 32 bits.
+    // Only allow for ~1 second latency here, thus can use this code
+    // for up to 2^32-2^20 uSecs.  Note that call from mbed_ticker_api.c
+    // only allows up to 2^31-1 uSec timeout.
+    if (late_us >= 0 && late_us < (1<<20))
     {
-        timestamp64 += ((uint64_t)1 << 32);
+        compare_rtc = current_rtc;
     }
-    // [microseconds -> ticks, always round the result up to avoid too early
-    //  interrupt generation].  The TICK_GCD extends the overflow to 17.85*64 years.
-    compare_rtc = (uint32_t)CEIL_DIV((timestamp64) *
+    else
+    {
+    // [add upper 32 bits from the current time to the timestamp value]
+        uint64_t timestamp64 = us_timestamp +
+            (current_time64 & ~(uint64_t)0xFFFFFFFF);
+        // [if the original timestamp value happens to be after the 32 bit counter
+        //  of microsends overflows, correct the upper 32 bits accordingly]
+        if (us_timestamp < (uint32_t)current_time64)
+            timestamp64 += ((uint64_t)1 << 32);
+        // [microseconds -> ticks, always round the result up to avoid too early
+        //  interrupt generation].  The TICK_GCD extends the overflow to 17.85*64 years.
+        compare_rtc = (uint32_t)CEIL_DIV((timestamp64) *
                      (RTC_INPUT_FREQ/TICK_GCD), 1000000/TICK_GCD);
-    
+    }
     // Use latest value of rtc by adjusting current_rtc.  Expect 0
     // change but could change by 1 since last read, assuming no higher
     // priority interrupts.  Note that if higher priority interrupts are
