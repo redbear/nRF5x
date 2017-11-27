@@ -48,6 +48,16 @@
 //
 #include "app_util_platform.h"
 
+// If the RTC input frequency is a multiple of 64, we can increase the
+// range of the tick conversion for real time.  Since 1000000 (number of
+// uSecs in a second is 2^6*5^6, can reduce to 5^6 with corresponding
+// reduction in the input frequency multiplier/divider.
+#if (RTC_INPUT_FREQ/64)*64 == RTC_INPUT_FREQ
+#define TICK_GCD 64
+#else
+#define TICK_GCD 1
+#endif
+
 bool              m_common_rtc_enabled = false;
 uint32_t volatile m_common_rtc_overflows = 0;
 
@@ -139,26 +149,76 @@ void common_rtc_init(void)
     m_common_rtc_enabled = true;
 }
 
-uint32_t common_rtc_32bit_ticks_get(void)
+
+// Get 64 bit tick value.
+
+// If only get 32 bit and convert to ticks, then we end up with ticks resetting
+// after only approximately 1.5 days.  This messes up periodic timers as well
+// as returning wrong 64 bit rtc value.  Using this 64 bit value prevents
+// rollover, at least for 69730 years.
+
+// This code works in interrupt or not and handles overflow during reading.
+uint64_t common_rtc_64bit_ticks_get(void)
 {
-    uint32_t ticks = nrf_rtc_counter_get(COMMON_RTC_INSTANCE);
-    // The counter used for time measurements is less than 32 bit wide,
-    // so its value is complemented with the number of registered overflows
-    // of the counter.
-    ticks += (m_common_rtc_overflows << RTC_COUNTER_BITS);
-    return ticks;
+    // Read the overflow counter, then the ticks.
+    volatile uint32_t overflows = m_common_rtc_overflows;
+    volatile uint32_t ticks     = nrf_rtc_counter_get(COMMON_RTC_INSTANCE);
+
+    // Make sure overflow interrupt can execute before rereading overflow
+    // counter, assuming interrupts are enabled.
+    __NOP();
+    __NOP();
+    // If overflow changes, then use new (one greater than last read).
+    // Interrupts must be enabled if overflow changes.
+    if (overflows != m_common_rtc_overflows)
+    {
+        // Tick counter should be 0 but we reread it anyway.
+        ticks = nrf_rtc_counter_get(COMMON_RTC_INSTANCE);
+        overflows++;
+    }
+    else
+    {
+        // If pending event, either just happened or interrupts are off.
+        // Either way, overflows go up by 1 and use new tick counter.
+        if (nrf_rtc_event_pending(COMMON_RTC_INSTANCE, NRF_RTC_EVENT_OVERFLOW))
+        {
+            // Since may have ints off, the tick counter may be greater than 0.
+            ticks = nrf_rtc_counter_get(COMMON_RTC_INSTANCE);
+            overflows++;
+        }
+    }
+    return (uint64_t)ticks + ((uint64_t)overflows << RTC_COUNTER_BITS);
+}
+
+// Convert real time ticks to micro seconds.
+// If RTC_INPUT_FREQ is a multiple of 64, this overflows at 17.85*64 years.
+// At the overflow, there is a discontinuity since the uSec counter will wrap
+// but the rtc will not, causing a break in time.
+//
+// ticks - number of ticks of real time counter from common_rtc_64bit_ticks_get().
+// returns uSecs from those ticks.
+inline uint64_t rtc_to_usec(uint64_t ticks)
+{
+    return ROUNDED_DIV(ticks * (1000000/TICK_GCD), RTC_INPUT_FREQ/TICK_GCD);
 }
 
 uint64_t common_rtc_64bit_us_get(void)
 {
-    uint32_t ticks = common_rtc_32bit_ticks_get();
-    // [ticks -> microseconds]
-    return ROUNDED_DIV(((uint64_t)ticks) * 1000000, RTC_INPUT_FREQ);
+    uint64_t ticks = common_rtc_64bit_ticks_get();
+    return rtc_to_usec(ticks);
+}
+
+uint32_t common_rtc_32bit_ticks_get(void)
+{
+    return (uint32_t)common_rtc_64bit_ticks_get();
 }
 
 void common_rtc_set_interrupt(uint32_t us_timestamp, uint32_t cc_channel,
                               uint32_t int_mask)
 {
+    // Minimum rtc tick difference for timer expire set.
+#define MIN_RTC_TICK_EXPIRE 2
+
     // The internal counter is clocked with a frequency that cannot be easily
     // multiplied to 1 MHz, therefore besides the translation of values
     // (microsecond <-> ticks) a special care of overflows handling must be
@@ -168,31 +228,59 @@ void common_rtc_set_interrupt(uint32_t us_timestamp, uint32_t cc_channel,
     // is then translated to counter ticks. Finally, the lower 24 bits of thus
     // calculated value is written to the counter compare register to prepare
     // the interrupt generation.
-    uint64_t current_time64 = common_rtc_64bit_us_get();
-    // [add upper 32 bits from the current time to the timestamp value]
-    uint64_t timestamp64 = us_timestamp +
-        (current_time64 & ~(uint64_t)0xFFFFFFFF);
-    // [if the original timestamp value happens to be after the 32 bit counter
-    //  of microsends overflows, correct the upper 32 bits accordingly]
-    if (us_timestamp < (uint32_t)(current_time64 & 0xFFFFFFFF)) {
-        timestamp64 += ((uint64_t)1 << 32);
-    }
-    // [microseconds -> ticks, always round the result up to avoid too early
-    //  interrupt generation]
-    uint32_t compare_value =
-        (uint32_t)CEIL_DIV((timestamp64) * RTC_INPUT_FREQ, 1000000);
 
+    // Get the rtc once to save time.
+    uint64_t current_ticks = common_rtc_64bit_ticks_get();
+    uint32_t current_rtc   = (int)current_ticks;
+    uint64_t current_time64= rtc_to_usec(current_ticks);
+    uint32_t compare_rtc;
+    int      late_us = (int)current_time64-us_timestamp;
+
+    // Since it is possible for the us_timestamp to be expired due to
+    // a tick in the clock after the check in ticker_irq_handler() in
+    // mbed_ticker_api.c, must check for expire instead of adjusting
+    // the upper 32 bits.
+    // Only allow for ~1 second latency here, thus can use this code
+    // for up to 2^32-2^20 uSecs.  Note that call from mbed_ticker_api.c
+    // only allows up to 2^31-1 uSec timeout.
+    if (late_us >= 0 && late_us < (1<<20))
+    {
+        compare_rtc = current_rtc;
+    }
+    else
+    {
+    // [add upper 32 bits from the current time to the timestamp value]
+        uint64_t timestamp64 = us_timestamp +
+            (current_time64 & ~(uint64_t)0xFFFFFFFF);
+        // [if the original timestamp value happens to be after the 32 bit counter
+        //  of microsends overflows, correct the upper 32 bits accordingly]
+        if (us_timestamp < (uint32_t)current_time64)
+            timestamp64 += ((uint64_t)1 << 32);
+        // [microseconds -> ticks, always round the result up to avoid too early
+        //  interrupt generation].  The TICK_GCD extends the overflow to 17.85*64 years.
+        compare_rtc = (uint32_t)CEIL_DIV((timestamp64) *
+                     (RTC_INPUT_FREQ/TICK_GCD), 1000000/TICK_GCD);
+    }
+    // Use latest value of rtc by adjusting current_rtc.  Expect 0
+    // change but could change by 1 since last read, assuming no higher
+    // priority interrupts.  Note that if higher priority interrupts are
+    // allowed, we could be too close to the expire time when the counter
+    // is set.
+    current_rtc += RTC_WRAP((nrf_rtc_counter_get(COMMON_RTC_INSTANCE)-current_rtc));
     // The COMPARE event occurs when the value in compare register is N and
     // the counter value changes from N-1 to N. Therefore, the minimal safe
     // difference between the compare value to be set and the current counter
     // value is 2 ticks. This guarantees that the compare trigger is properly
     // setup before the compare condition occurs.
-    uint32_t closest_safe_compare = common_rtc_32bit_ticks_get() + 2;
-    if ((int)(compare_value - closest_safe_compare) <= 0) {
-        compare_value = closest_safe_compare;
+    // At this point, the compare_rtc has a wrap of 36 hours.  The maximum
+    // timeout using the us ticker is (2^31)/1000000 seconds (35.79 minutes).
+    // Thus, if the timestamp has expired, this test is guaranteed to work.
+    if ((int)(compare_rtc-current_rtc) < MIN_RTC_TICK_EXPIRE)
+    {
+       compare_rtc = current_rtc+MIN_RTC_TICK_EXPIRE;
     }
-
-    nrf_rtc_cc_set(COMMON_RTC_INSTANCE, cc_channel, RTC_WRAP(compare_value));
+    // Set the interrupt.  Only bottom 24 bits are used.
+    nrf_rtc_cc_set(COMMON_RTC_INSTANCE, cc_channel, RTC_WRAP(compare_rtc));
     nrf_rtc_event_enable(COMMON_RTC_INSTANCE, int_mask);
 }
 //------------------------------------------------------------------------------
