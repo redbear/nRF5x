@@ -6,4 +6,4 @@ This is the interface firmware for the DAPLink USB interface. The DAPLink User G
 
 ## Updating Interface Firmware
 
-Pressing and holding the button and then connecting the board to PC USB, the drive ***"MAINTENANCE"*** will appeare. Drag & drop the interface firmware (.bin file) into the drive, re-connected the board to PC USB.
+Pressing and holding the button and then connecting the board to PC USB, the drive ***"MAINTENANCE"*** will appear. Drag & drop the interface firmware (.bin file) into the drive, re-connect the board to PC USB.
