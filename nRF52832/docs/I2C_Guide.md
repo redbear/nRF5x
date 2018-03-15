@@ -13,9 +13,9 @@ This is a guide for I2C with BLE control. You can use BLE Nano 2 to write and re
 ## STEPS
 We assume that you have installed Arduino IDE 1.8.0 or above on your computer and the nRF52 board package.
 
-1. Connect the VDD、GND、SCLK、SDIO pin on DAPlink to Nano2. Connect the SCL、SDA、VCC、GND on AT24C04 to the pin D2、D3、VDD、GND on nano2.Then Connect DAPlink to PC.
+1. Connect the VDD、GND、SCLK、SDIO pin on DAPlink to Nano2. Connect the SCL、SDA、VCC、GND on AT24C04 to the pin D2、D3、VDD、GND on nano2.Then Connect DAPlink to PC. Optionally, you can use logic analyzer also.
 
-	![I2C connection](./images/I2C_Connection.png)
+	![Nano2](./images/I2C_Connection.png)
 2. Start Arduino IDE.
 3. After installing nRF52 board package successfully, navigate to "Tools > Board", you need to now select board、port and programmer as below:
 	
