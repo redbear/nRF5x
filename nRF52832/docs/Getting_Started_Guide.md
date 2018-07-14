@@ -31,7 +31,7 @@ To test the board for the first time, follow these steps:
 
 ## mbed
 
-- To be written -
+* Follow the [Mbed IDE User Guide](./Mbed_IDE_User_Guide.md).
 
 
 
