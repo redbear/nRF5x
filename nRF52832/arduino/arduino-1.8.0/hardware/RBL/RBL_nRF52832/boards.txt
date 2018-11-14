@@ -1,4 +1,6 @@
 
+menu.lfclk=Low Frequency Clock
+
 nRF52DK.name=nRF52DK(PCA10040)
 
 nRF52DK.upload.tool=openocd
@@ -96,4 +98,44 @@ BLE_Nano2.build.sdk_include2="-I{runtime.platform.path}/cores/RBL_nRF52832/mbed_
 BLE_Nano2.build.sdk_include3="-I{runtime.platform.path}/cores/RBL_nRF52832/mbed_os/sdk/libraries" "-I{runtime.platform.path}/cores/RBL_nRF52832/mbed_os/sdk/libraries/bootloader_dfu" "-I{runtime.platform.path}/cores/RBL_nRF52832/mbed_os/sdk/libraries/bootloader_dfu/hci_transport" "-I{runtime.platform.path}/cores/RBL_nRF52832/mbed_os/sdk/libraries/crc16" "-I{runtime.platform.path}/cores/RBL_nRF52832/mbed_os/sdk/libraries/experimental_section_vars" "-I{runtime.platform.path}/cores/RBL_nRF52832/mbed_os/sdk/libraries/fds" "-I{runtime.platform.path}/cores/RBL_nRF52832/mbed_os/sdk/libraries/fds/config" "-I{runtime.platform.path}/cores/RBL_nRF52832/mbed_os/sdk/libraries/fstorage" "-I{runtime.platform.path}/cores/RBL_nRF52832/mbed_os/sdk/libraries/fstorage/config" "-I{runtime.platform.path}/cores/RBL_nRF52832/mbed_os/sdk/libraries/hci" "-I{runtime.platform.path}/cores/RBL_nRF52832/mbed_os/sdk/libraries/hci/config" "-I{runtime.platform.path}/cores/RBL_nRF52832/mbed_os/sdk/libraries/pwm" "-I{runtime.platform.path}/cores/RBL_nRF52832/mbed_os/sdk/libraries/scheduler" "-I{runtime.platform.path}/cores/RBL_nRF52832/mbed_os/sdk/libraries/trace" "-I{runtime.platform.path}/cores/RBL_nRF52832/mbed_os/sdk/libraries/util"
 BLE_Nano2.build.sdk_include4="-I{runtime.platform.path}/cores/RBL_nRF52832/mbed_os/sdk/device" "-I{runtime.platform.path}/cores/RBL_nRF52832/mbed_os/sdk/softdevice" "-I{runtime.platform.path}/cores/RBL_nRF52832/mbed_os/sdk/softdevice/common/softdevice_handler" "-I{runtime.platform.path}/cores/RBL_nRF52832/mbed_os/sdk/softdevice/s132/headers" "-I{runtime.platform.path}/cores/RBL_nRF52832/mbed_os/sdk/softdevice/s132/headers/nrf52"
 BLE_Nano2.build.sdk_include5="-I{runtime.platform.path}/cores/RBL_nRF52832/FEATURE_BLE" "-I{runtime.platform.path}/cores/RBL_nRF52832/FEATURE_BLE/targets/TARGET_NORDIC/TARGET_NRF5/source" "-I{runtime.platform.path}/cores/RBL_nRF52832/FEATURE_BLE/targets/TARGET_NORDIC/TARGET_NRF5/source/btle" "-I{runtime.platform.path}/cores/RBL_nRF52832/FEATURE_BLE/targets/TARGET_NORDIC/TARGET_NRF5/source/btle/custom" "-I{runtime.platform.path}/cores/RBL_nRF52832/FEATURE_BLE/targets/TARGET_NORDIC/TARGET_NRF5/source/common"
+##############################################################
+
+BLE_Generic_NRF52.name=BLE_Generic_NRF52
+
+BLE_Generic_NRF52.upload.tool=openocd
+BLE_Generic_NRF52.upload.protocol=
+BLE_Generic_NRF52.upload.interface=cmsis-dap
+BLE_Generic_NRF52.upload.target=nrf52
+BLE_Generic_NRF52.upload.maximum_size=524288
+BLE_Generic_NRF52.upload.maximum_data_size=65536
+BLE_Generic_NRF52.upload.speed=115200
+BLE_Generic_NRF52.upload.disable_flushing=false
+BLE_Generic_NRF52.upload.use_1200bps_touch=false
+BLE_Generic_NRF52.upload.wait_for_upload_port=false
+
+BLE_Generic_NRF52.bootloader.tool=openocd
+#BLE_Nano2.bootloader.bootloader_file=SoftdeviceS132_2.0_SDK11_Bootloader_20161221.hex
+
+BLE_Generic_NRF52.menu.lfclk.lfxo=Crystal Oscillator
+#BLE_Generic_NRF52.menu.lfclk.lfxo.build.lfclk_flags=-DUSE_LFXO
+BLE_Generic_NRF52.menu.lfclk.lfxo.bootloader.bootloader_file=SoftdeviceS132_2.0_SDK11_Bootloader_20161221.hex
+BLE_Generic_NRF52.menu.lfclk.lfrc=RC Oscillator
+#BLE_Generic_NRF52.menu.lfclk.lfrc.build.lfclk_flags=-DUSE_LFRC
+BLE_Generic_NRF52.menu.lfclk.lfrc.bootloader.bootloader_file=SoftdeviceS132_2.0_SDK11_Bootloader_20161221_no_xtal.hex
+
+BLE_Generic_NRF52.build.mcu=cortex-m4
+BLE_Generic_NRF52.build.f_cpu=64000000
+BLE_Generic_NRF52.build.usb_product="Arduino RBL"
+BLE_Generic_NRF52.build.board=RBL_nRF52832
+BLE_Generic_NRF52.build.core=RBL_nRF52832
+BLE_Generic_NRF52.build.variant=BLE_Nano2
+BLE_Generic_NRF52.build.ldscript=linker_scripts/gcc/BLE_Nano2.ld
+BLE_Generic_NRF52.build.ld_include="-L{runtime.platform.path}/variants/BLE_Nano2/linker_scripts/gcc"
+BLE_Generic_NRF52.build.system_include="-I{build.system.path}/CMSIS/Include"
+BLE_Generic_NRF52.build.mbed_os_iclude="-I{runtime.platform.path}/cores/RBL_nRF52832/mbed_os" "-I{runtime.platform.path}/cores/RBL_nRF52832/mbed_os/drivers" "-I{runtime.platform.path}/cores/RBL_nRF52832/mbed_os/hal" "-I{runtime.platform.path}/cores/RBL_nRF52832/mbed_os/hal/hal" "-I{runtime.platform.path}/cores/RBL_nRF52832/mbed_os/hal/storage_abstraction" "-I{runtime.platform.path}/cores/RBL_nRF52832/mbed_os/platform" "-I{runtime.platform.path}/cores/RBL_nRF52832/mbed_os/targets/TARGET_NORDIC" "-I{runtime.platform.path}/cores/RBL_nRF52832/mbed_os/targets/TARGET_NORDIC/TARGET_NRF5" "-I{runtime.platform.path}/cores/RBL_nRF52832/mbed_os/targets/TARGET_NORDIC/TARGET_NRF5/TARGET_MCU_NRF52832" "-I{runtime.platform.path}/cores/RBL_nRF52832/mbed_os/targets/TARGET_NORDIC/TARGET_NRF5/TARGET_MCU_NRF52832/device" "-I{runtime.platform.path}/cores/RBL_nRF52832/mbed_os/targets/TARGET_NORDIC/TARGET_NRF5/TARGET_MCU_NRF52832/TARGET_NRF52_DK"
+BLE_Generic_NRF52.build.sdk_include1="-I{runtime.platform.path}/cores/RBL_nRF52832/mbed_os/sdk/ble" "-I{runtime.platform.path}/cores/RBL_nRF52832/mbed_os/sdk/ble/ble_advertising" "-I{runtime.platform.path}/cores/RBL_nRF52832/mbed_os/sdk/ble/ble_db_discovery" "-I{runtime.platform.path}/cores/RBL_nRF52832/mbed_os/sdk/ble/ble_debug_assert_handler" "-I{runtime.platform.path}/cores/RBL_nRF52832/mbed_os/sdk/ble//ble_dtm" "-I{runtime.platform.path}/cores/RBL_nRF52832/mbed_os/sdk/ble/ble_error_log" "-I{runtime.platform.path}/cores/RBL_nRF52832/mbed_os/sdk/ble/ble_racp" "-I{runtime.platform.path}/cores/RBL_nRF52832/mbed_os/sdk/ble/ble_radio_notification" "-I{runtime.platform.path}/cores/RBL_nRF52832/mbed_os/sdk/ble/ble_services/ble_dfu" "-I{runtime.platform.path}/cores/RBL_nRF52832/mbed_os/sdk/ble/common" "-I{runtime.platform.path}/cores/RBL_nRF52832/mbed_os/sdk/ble/device_manager" "-I{runtime.platform.path}/cores/RBL_nRF52832/mbed_os/sdk/ble/device_manager/config" "-I{runtime.platform.path}/cores/RBL_nRF52832/mbed_os/sdk/ble/peer_manager"
+BLE_Generic_NRF52.build.sdk_include2="-I{runtime.platform.path}/cores/RBL_nRF52832/mbed_os/sdk/drivers_nrf" "-I{runtime.platform.path}/cores/RBL_nRF52832/mbed_os/sdk/drivers_nrf/ble_flash" "-I{runtime.platform.path}/cores/RBL_nRF52832/mbed_os/sdk/drivers_nrf/clock" "-I{runtime.platform.path}/cores/RBL_nRF52832/mbed_os/sdk/drivers_nrf/common" "-I{runtime.platform.path}/cores/RBL_nRF52832/mbed_os/sdk/drivers_nrf/config" "-I{runtime.platform.path}/cores/RBL_nRF52832/mbed_os/sdk/drivers_nrf/delay" "-I{runtime.platform.path}/cores/RBL_nRF52832/mbed_os/sdk/drivers_nrf/gpiote" "-I{runtime.platform.path}/cores/RBL_nRF52832/mbed_os/sdk/drivers_nrf/hal" "-I{runtime.platform.path}/cores/RBL_nRF52832/mbed_os/sdk/drivers_nrf/hal" "-I{runtime.platform.path}/cores/RBL_nRF52832/mbed_os/sdk/drivers_nrf/ppi" "-I{runtime.platform.path}/cores/RBL_nRF52832/mbed_os/sdk/drivers_nrf/pstorage" "-I{runtime.platform.path}/cores/RBL_nRF52832/mbed_os/sdk/drivers_nrf/pstorage/config" "-I{runtime.platform.path}/cores/RBL_nRF52832/mbed_os/sdk/drivers_nrf/pwm" "-I{runtime.platform.path}/cores/RBL_nRF52832/mbed_os/sdk/drivers_nrf/saadc" "-I{runtime.platform.path}/cores/RBL_nRF52832/mbed_os/sdk/drivers_nrf/spi_master" "-I{runtime.platform.path}/cores/RBL_nRF52832/mbed_os/sdk/drivers_nrf/spi_slave" "-I{runtime.platform.path}/cores/RBL_nRF52832/mbed_os/sdk/drivers_nrf/timer" "-I{runtime.platform.path}/cores/RBL_nRF52832/mbed_os/sdk/drivers_nrf/twi_master"
+BLE_Generic_NRF52.build.sdk_include3="-I{runtime.platform.path}/cores/RBL_nRF52832/mbed_os/sdk/libraries" "-I{runtime.platform.path}/cores/RBL_nRF52832/mbed_os/sdk/libraries/bootloader_dfu" "-I{runtime.platform.path}/cores/RBL_nRF52832/mbed_os/sdk/libraries/bootloader_dfu/hci_transport" "-I{runtime.platform.path}/cores/RBL_nRF52832/mbed_os/sdk/libraries/crc16" "-I{runtime.platform.path}/cores/RBL_nRF52832/mbed_os/sdk/libraries/experimental_section_vars" "-I{runtime.platform.path}/cores/RBL_nRF52832/mbed_os/sdk/libraries/fds" "-I{runtime.platform.path}/cores/RBL_nRF52832/mbed_os/sdk/libraries/fds/config" "-I{runtime.platform.path}/cores/RBL_nRF52832/mbed_os/sdk/libraries/fstorage" "-I{runtime.platform.path}/cores/RBL_nRF52832/mbed_os/sdk/libraries/fstorage/config" "-I{runtime.platform.path}/cores/RBL_nRF52832/mbed_os/sdk/libraries/hci" "-I{runtime.platform.path}/cores/RBL_nRF52832/mbed_os/sdk/libraries/hci/config" "-I{runtime.platform.path}/cores/RBL_nRF52832/mbed_os/sdk/libraries/pwm" "-I{runtime.platform.path}/cores/RBL_nRF52832/mbed_os/sdk/libraries/scheduler" "-I{runtime.platform.path}/cores/RBL_nRF52832/mbed_os/sdk/libraries/trace" "-I{runtime.platform.path}/cores/RBL_nRF52832/mbed_os/sdk/libraries/util"
+BLE_Generic_NRF52.build.sdk_include4="-I{runtime.platform.path}/cores/RBL_nRF52832/mbed_os/sdk/device" "-I{runtime.platform.path}/cores/RBL_nRF52832/mbed_os/sdk/softdevice" "-I{runtime.platform.path}/cores/RBL_nRF52832/mbed_os/sdk/softdevice/common/softdevice_handler" "-I{runtime.platform.path}/cores/RBL_nRF52832/mbed_os/sdk/softdevice/s132/headers" "-I{runtime.platform.path}/cores/RBL_nRF52832/mbed_os/sdk/softdevice/s132/headers/nrf52"
+BLE_Generic_NRF52.build.sdk_include5="-I{runtime.platform.path}/cores/RBL_nRF52832/FEATURE_BLE" "-I{runtime.platform.path}/cores/RBL_nRF52832/FEATURE_BLE/targets/TARGET_NORDIC/TARGET_NRF5/source" "-I{runtime.platform.path}/cores/RBL_nRF52832/FEATURE_BLE/targets/TARGET_NORDIC/TARGET_NRF5/source/btle" "-I{runtime.platform.path}/cores/RBL_nRF52832/FEATURE_BLE/targets/TARGET_NORDIC/TARGET_NRF5/source/btle/custom" "-I{runtime.platform.path}/cores/RBL_nRF52832/FEATURE_BLE/targets/TARGET_NORDIC/TARGET_NRF5/source/common"
 ##############################################################
