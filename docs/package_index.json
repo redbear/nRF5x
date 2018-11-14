@@ -14,7 +14,7 @@
                     "architecture": "nRF51822",
                     "version": "1.0.9",
                     "category": "RedBear",
-                    "url": "https://mtiutiu.github.io/arduino/nRF51822/nRF51822_board_v109.zip",
+                    "url": "https://mtiutiu.github.io/nRF5x/nRF51822_board_v109.zip",
                     "archiveFileName": "nRF51822_board_v109.zip",
                     "checksum": "SHA-256:533778E8E2CCB591765AA61DC9EA83BA70C6A7798238CD8CEE6675F5215033F8",
                     "size": "1523760",
